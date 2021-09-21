@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Modal component should render match snapshot 1`] = `
+<Modal
+  ariaHideApp={false}
+  bodyOpenClassName="body-0-2-3"
+  className="root-0-2-1"
+  closeTimeoutMS={0}
+  contentElement={[Function]}
+  isOpen={true}
+  onRequestClose={[MockFunction]}
+  overlayClassName="overlay-0-2-2"
+  overlayElement={[Function]}
+  parentSelector={[Function]}
+  portalClassName="ReactModalPortal"
+  preventScroll={false}
+  role="dialog"
+  shouldCloseOnEsc={true}
+  shouldCloseOnOverlayClick={true}
+  shouldFocusAfterRender={true}
+  shouldReturnFocusAfterClose={true}
+>
+  Modal content
+</Modal>
+`;

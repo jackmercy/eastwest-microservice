@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Input component > FieldInput should render match snapshot 1`] = `
+<input
+  className="root-0-2-1 medium"
+  name="somename"
+/>
+`;

@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Terms should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="Please review these Terms of Use (the “Terms”) carefully before using The East West Initiative and its subsidiaries (“East West”) websites and services. By accessing, browsing or using these websites or services, you fully acknowledge that you have read, understood and agree to abide by these Terms and comply with all applicable laws and regulations. If you do not agree to these Terms, you are not authorized to use East West websites and services, including but not limited to Dashboard, Talent Labs, ART, Router, Cultivator, Nova, Admin and Data Labs. These terms control your use of the websites and services, any content (such as text, data, information, software, graphics or photographs) that East West may make available through the websites (collectively, “Materials”) and any services that East West may provide through the websites (collectively, “Services”). The websites, Materials and Services are referred to in these terms collectively as the “East West Websites.”"
+    image=""
+    keywords=""
+    siteName=""
+    title="Terms of East West"
+    url="https://dev.eastwest.live/terms"
+  />
+  <ForwardRef(LoadableComponent) />
+  <div
+    className="teaser-0-2-1"
+    data-test="terms-teaser-image"
+  >
+    <Memo(Content)
+      className="teaserContent-0-2-2"
+    >
+      <h1
+        className="teaserTitle-0-2-3"
+        data-test="terms-teaser-title"
+      >
+        Term of use
+      </h1>
+    </Memo(Content)>
+  </div>
+  <Memo(Content)
+    className="content-0-2-4"
+  >
+    <Memo(Content) />
+  </Memo(Content)>
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs components > Become should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(Content)
+    className="content-0-2-2"
+  >
+    <h2
+      className="title-0-2-3"
+      data-test="become-title"
+    >
+      Become us
+    </h2>
+    <div
+      className="listItems-0-2-4"
+      data-test="become-list-items"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+        data-test="become-item"
+        key="brand-become-01"
+      >
+        <h2
+          className="itemTitle-0-2-6"
+        >
+          title 01
+        </h2>
+        <div
+          className="itemGroup-0-2-7"
+        >
+          <img
+            alt="title 01"
+            className="itemImage-0-2-8"
+            loading="lazy"
+            src="image"
+          />
+          <p
+            className="itemNumber-0-2-9"
+          >
+            <CountUp
+              decimal="."
+              decimals={0}
+              delay={null}
+              duration={null}
+              easingFn={null}
+              end={45}
+              formattingFn={null}
+              onEnd={[Function]}
+              onPauseResume={[Function]}
+              onReset={[Function]}
+              onStart={[Function]}
+              onUpdate={[Function]}
+              prefix=""
+              preserveValue={false}
+              redraw={false}
+              separator=""
+              start={null}
+              startOnMount={true}
+              suffix="+"
+              useEasing={true}
+            >
+              <Component />
+            </CountUp>
+          </p>
+        </div>
+        <p
+          className="itemDescription-0-2-10"
+        >
+          decription 01
+        </p>
+      </div>
+      <div
+        className="itemWrapper-0-2-5"
+        data-test="become-item"
+        key="brand-become-02"
+      >
+        <h2
+          className="itemTitle-0-2-6"
+        >
+          title 02
+        </h2>
+        <div
+          className="itemGroup-0-2-7"
+        >
+          <img
+            alt="title 02"
+            className="itemImage-0-2-8"
+            loading="lazy"
+            src="image"
+          />
+          <p
+            className="itemNumber-0-2-9"
+          >
+            <CountUp
+              decimal="."
+              decimals={0}
+              delay={null}
+              duration={null}
+              easingFn={null}
+              end={145}
+              formattingFn={null}
+              onEnd={[Function]}
+              onPauseResume={[Function]}
+              onReset={[Function]}
+              onStart={[Function]}
+              onUpdate={[Function]}
+              prefix=""
+              preserveValue={false}
+              redraw={false}
+              separator=""
+              start={null}
+              startOnMount={true}
+              suffix="+"
+              useEasing={true}
+            >
+              <Component />
+            </CountUp>
+          </p>
+        </div>
+        <p
+          className="itemDescription-0-2-10"
+        >
+          decription 02
+        </p>
+      </div>
+      <div
+        className="itemWrapper-0-2-5"
+        data-test="become-item"
+        key="brand-become-03"
+      >
+        <h2
+          className="itemTitle-0-2-6"
+        >
+          title 03
+        </h2>
+        <div
+          className="itemGroup-0-2-7"
+        >
+          <img
+            alt="title 03"
+            className="itemImage-0-2-8"
+            loading="lazy"
+            src="image"
+          />
+          <p
+            className="itemNumber-0-2-9"
+          >
+            <CountUp
+              decimal="."
+              decimals={0}
+              delay={null}
+              duration={null}
+              easingFn={null}
+              end={245}
+              formattingFn={null}
+              onEnd={[Function]}
+              onPauseResume={[Function]}
+              onReset={[Function]}
+              onStart={[Function]}
+              onUpdate={[Function]}
+              prefix=""
+              preserveValue={false}
+              redraw={false}
+              separator=""
+              start={null}
+              startOnMount={true}
+              suffix="+"
+              useEasing={true}
+            >
+              <Component />
+            </CountUp>
+          </p>
+        </div>
+        <p
+          className="itemDescription-0-2-10"
+        >
+          decription 03
+        </p>
+      </div>
+    </div>
+  </Memo(Content)>
+</div>
+`;

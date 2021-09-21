@@ -1,0 +1,160 @@
+import { createUseStyles } from 'react-jss';
+
+import { rem } from '../../utils/jss';
+import COLORS from '../../constants/COLORS';
+import BREAKPOINTS from '../../constants/BREAKPOINTS';
+
+export default createUseStyles({
+  teaser: {
+    width: '100%',
+    height: rem(350),
+    boxSizing: 'border-box',
+    backgroundImage: 'url(/static/images/contact/teaser.png)',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
+    backgroundPosition: 'right',
+  },
+  teaserContent: {
+    display: 'flex',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    height: '100%',
+    color: COLORS.textWhite,
+  },
+  teaserTitle: {
+    margin: 0,
+    fontWeight: 900,
+    fontSize: rem(72),
+    lineHeight: rem(88),
+  },
+  teaserDescription: {
+    fontWeight: 600,
+    fontSize: rem(24),
+    lineHeight: rem(40),
+    marginTop: rem(24),
+    marginBottom: 0,
+  },
+  content: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    paddingTop: rem(64),
+    paddingBottom: rem(64),
+  },
+  form: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    width: '100%',
+    maxWidth: rem(529),
+    margin: rem(-8),
+  },
+  formInput: { width: '100%', padding: rem(8), boxSizing: 'border-box' },
+  form30: { flex: '30%', maxWidth: '30%' },
+  form50: { flex: '50%', maxWidth: '50%' },
+  form70: { flex: '70%', maxWidth: '70%' },
+  formInputPhoneLabel: { visibility: 'hidden' },
+  formCheckBox: {
+    display: 'flex',
+    alignItems: 'center',
+    width: '100%',
+    maxWidth: `calc(100% - ${rem(16)})`,
+    marginTop: rem(8),
+  },
+  formTerms: {
+    fontWeight: 600,
+    fontSize: rem(12),
+    lineHeight: rem(16),
+    color: COLORS.primary,
+    cursor: 'pointer',
+  },
+  formButton: {
+    width: '100%',
+    maxWidth: `calc(100% - ${rem(16)})`,
+    marginTop: rem(32),
+  },
+  contact: { maxWidth: rem(596), marginLeft: rem(16), overflow: 'hidden' },
+  contactImage: {
+    margin: [0, 'auto', rem(40)],
+    maxWidth: rem(435),
+    display: 'block',
+    width: '100%',
+  },
+  contactLayout: {
+    display: 'flex',
+    alignItems: 'flex-end',
+    margin: [0, rem(-16)],
+    '& + $contactLayout': { marginTop: rem(24) },
+  },
+  contact50: { padding: [0, rem(16)], flex: '50%', maxWidth: '50%' },
+  contact100: { padding: [0, rem(16)], flex: '100%', maxWidth: '100%' },
+  contactRegion: {
+    fontWeight: 900,
+    fontSize: rem(24),
+    lineHeight: rem(40),
+    marginTop: 0,
+    marginBottom: rem(12),
+  },
+  contactLabel: {
+    fontWeight: 900,
+    fontSize: rem(18),
+    lineHeight: rem(32),
+    marginTop: 0,
+    marginBottom: rem(8),
+  },
+  contactText: {
+    fontSize: rem(18),
+    lineHeight: rem(32),
+    margin: 0,
+    '& > [class^=icon-]': { fontSize: rem(18), marginRight: rem(16) },
+    '& + $contactText': { marginTop: rem(8) },
+  },
+  contactPhone: {
+    color: COLORS.textBlack01,
+    textDecoration: 'none',
+    '&:hover': { color: COLORS.primary },
+  },
+  contactLink: {
+    color: COLORS.primary,
+    textDecoration: 'none',
+  },
+  modal: { maxWidth: rem(1440), top: '5%', maxHeight: '90%' },
+
+  [`@media only screen and (max-width: ${BREAKPOINTS.maxMd}px)`]: {
+    content: {
+      paddingTop: rem(25),
+      flexDirection: 'column',
+      alignItems: 'center',
+    },
+    contact: { marginLeft: 0, marginTop: rem(64) },
+  },
+  [`@media only screen and (max-width: ${BREAKPOINTS.maxSm}px)`]: {
+    teaser: {
+      height: rem(248),
+      backgroundImage: 'url(/static/images/contact/teaser-mobile.png)',
+    },
+    teaserTitle: { fontSize: rem(40), lineHeight: rem(48) },
+    teaserDescription: {
+      fontSize: rem(16),
+      lineHeight: rem(24),
+      marginTop: rem(16),
+    },
+    form: { maxWidth: '100%', margin: 0 },
+    formInput: { padding: 0, '& + $formInput': { marginTop: rem(16) } },
+    form30: { flex: '100%', maxWidth: '100%' },
+    form50: { flex: '100%', maxWidth: '100%' },
+    form70: { flex: '100%', maxWidth: '100%' },
+    formInputPhoneLabel: { display: 'none' },
+    formCheckBox: { maxWidth: '100%', marginTop: rem(16) },
+    formButton: { maxWidth: '100%' },
+    contact: { maxWidth: '100%' },
+    contactImage: { marginBottom: rem(32) },
+    contactLayout: { display: 'block', margin: 0 },
+    contact50: {
+      padding: 0,
+      flex: '100%',
+      maxWidth: '100%',
+      '& + $contact50': { marginTop: rem(8) },
+    },
+    contact100: { padding: 0, flex: '100%', maxWidth: '100%' },
+  },
+});

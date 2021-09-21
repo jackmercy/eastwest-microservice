@@ -1,0 +1,54 @@
+.landing-page:build:
+  stage: build
+  script:
+    - export LANDING_PAGE_VERSION=$(cat landing-page/package.json | jq -r .version)
+    - export DOCKER_CLIENT_TIMEOUT=120
+    - export COMPOSE_HTTP_TIMEOUT=120
+    - docker login -u gitlab-ci-token -p "${CI_BUILD_TOKEN}" ${DOCKER_REGISTRY_DOMAIN}
+    - docker-compose build
+      --build-arg LANDING_PAGE_DOMAIN=https://${LANDING_PAGE_DOMAIN}
+      --build-arg API_ENDPOINT=https://${LANDING_PAGE_DOMAIN}/api
+      --build-arg GA_MEASUREMENT_ID=${GA_MEASUREMENT_ID}
+      e2w-landing-page
+    - docker-compose push e2w-landing-page
+  dependencies: []
+  tags:
+    - docker
+
+.landing-page:test:
+  stage: test
+  script:
+    - cd landing-page
+    - cp configs.template.js configs.js
+    - npm install
+    - npm run test -- -u
+  cache:
+    paths:
+      - landing-page/node_modules
+  dependencies: []
+  tags:
+    - node
+    - test
+
+.landing-page:deploy:
+  stage: deploy
+  script:
+    - eval `ssh-agent -s`
+    - mkdir ${DOCKER_CERT_PATH}
+    - echo "${DOCKER_CA}" > ${DOCKER_CERT_PATH}/ca.pem
+    - echo "${DOCKER_CERT}" > ${DOCKER_CERT_PATH}/cert.pem
+    - echo "${DOCKER_KEY}" > ${DOCKER_CERT_PATH}/key.pem
+    - docker login -u ${DOCKER_REGISTRY_USER} -p "${DOCKER_REGISTRY_PASSWORD}" ${DOCKER_REGISTRY_DOMAIN}
+    - export LANDING_PAGE_VERSION=$(cat landing-page/package.json | jq -r .version)
+    - docker pull ${DOCKER_REGISTRY_DOMAIN}/e2w-landing-page:${LANDING_PAGE_VERSION}${IMAGE_SUFFIX}
+    - docker-compose up -d --force-recreate e2w-landing-page
+    - rm -rf ${DOCKER_CERT_PATH}
+  tags:
+    - docker
+    - e2w
+
+.landing-page:only-changes:
+  only:
+    changes:
+      - ci/landing-page.yml
+      - landing-page/**/*

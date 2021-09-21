@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Textarea component should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  data-test="component-text-area-root"
+>
+  <Memo(FieldLabel)
+    className=""
+    htmlFor="note"
+    label="Note"
+    required={false}
+  />
+  <Memo(FieldInput)
+    className="custom-scrollbar input-0-2-2"
+    disabled={false}
+    name="note"
+    required={false}
+    size="medium"
+    tag="textarea"
+  />
+  <Memo(FieldError)
+    className=""
+    error="some error"
+  />
+</div>
+`;

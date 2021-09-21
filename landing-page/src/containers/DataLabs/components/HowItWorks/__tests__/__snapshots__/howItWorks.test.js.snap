@@ -1,0 +1,57 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs components > HowItWorks should render match snapshot 1`] = `
+<Memo(Content)
+  className="content-0-2-1"
+>
+  <h2
+    className="title-0-2-2"
+    data-test="how-it-works-title"
+  >
+    How it works
+  </h2>
+  <p
+    className="description-0-2-3"
+    data-test="how-it-works-description"
+  >
+    Type something
+  </p>
+  <div
+    className="listItems-0-2-4"
+    data-test="how-it-works-list-items"
+  >
+    <div
+      className="itemWrapper-0-2-5"
+      data-test="how-it-works-item"
+      key="1"
+    >
+      <div
+        className="itemInfoWrapper-0-2-7"
+      >
+        <img
+          alt="title"
+          className="itemIcon-0-2-8"
+          src="icon"
+        />
+        <div>
+          <h2
+            className="itemTitle-0-2-9"
+          >
+            title
+          </h2>
+          <p
+            className="itemDescription-0-2-10"
+          >
+            description
+          </p>
+        </div>
+      </div>
+      <img
+        alt="title"
+        className="itemImage-0-2-6"
+        src="image"
+      />
+    </div>
+  </div>
+</Memo(Content)>
+`;

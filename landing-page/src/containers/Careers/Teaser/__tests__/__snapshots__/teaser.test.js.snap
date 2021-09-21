@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers > Teaser should render match snapshot 1`] = `
+<Fragment>
+  <Memo(Content)
+    className="root-0-2-2"
+  >
+    <h1
+      className="title-0-2-3"
+      data-test="teaser-title"
+    >
+      We are 
+      <span
+        className="primary-0-2-1"
+        key=".1"
+      >
+        hiring
+      </span>
+      !
+    </h1>
+    <p
+      className="description-0-2-4"
+      data-test="teaser-description"
+    >
+      We are on a mission to help everyone achieve product scalability through adoption of our products and methodology. Our partners have unleashed innovation and reduced time-to-market, spending less to maintain their existing application portfolio.
+    </p>
+    <Memo([object Object])
+      className="button-0-2-5"
+      color="primary"
+      dataTest="teaser-cta"
+      onClick={[Function]}
+    >
+      Explore roles
+    </Memo([object Object])>
+  </Memo(Content)>
+  <div
+    className="image-0-2-6"
+    data-test="teaser-image"
+  />
+</Fragment>
+`;

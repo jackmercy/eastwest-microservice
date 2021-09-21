@@ -1,0 +1,25 @@
+export const partners = [
+  { name: 'Corekees', logo: '/static/images/homepage/partner-01.png' },
+  { name: 'RNW', logo: '/static/images/homepage/partner-02.png' },
+  { name: 'KoiQuestion', logo: '/static/images/homepage/partner-03.png' },
+  { name: 'Phoenix', logo: '/static/images/homepage/partner-04.png' },
+  { name: 'Voicepick', logo: '/static/images/homepage/partner-05.png' },
+  { name: 'TymeBank', logo: '/static/images/homepage/partner-06.png' },
+  { name: 'Quadriz', logo: '/static/images/homepage/partner-07.png' },
+  { name: 'Toiya', logo: '/static/images/homepage/partner-08.png' },
+  { name: 'Dias Advisors', logo: '/static/images/homepage/partner-09.png' },
+  { name: 'Duality', logo: '/static/images/homepage/partner-10.png' },
+  { name: '5QLive', logo: '/static/images/homepage/partner-11.png' },
+  { name: 'Media 21', logo: '/static/images/homepage/partner-12.png' },
+  { name: 'GambleCoin', logo: '/static/images/homepage/partner-13.png' },
+  { name: 'Microad', logo: '/static/images/homepage/partner-14.png' },
+  { name: 'Grad Greenhouse', logo: '/static/images/homepage/partner-15.png' },
+  { name: 'Pycogroup', logo: '/static/images/homepage/partner-16.png' },
+  { name: 'Seleno', logo: '/static/images/homepage/partner-17.png' },
+  { name: 'Dagiac', logo: '/static/images/homepage/partner-18.png' },
+  { name: 'NashTech', logo: '/static/images/homepage/partner-19.png' },
+  { name: 'Moogento', logo: '/static/images/homepage/partner-20.png' },
+  { name: 'SourceOne', logo: '/static/images/homepage/partner-21.png' },
+];
+
+export default { partners };

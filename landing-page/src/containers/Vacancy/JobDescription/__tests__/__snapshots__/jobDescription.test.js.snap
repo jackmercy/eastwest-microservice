@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Vacancy > JobDescription should render match snapshot 1`] = `
+<Memo(Content)
+  className="content-0-2-1"
+>
+  <div
+    className="ck-content"
+    data-test="job-description-preview"
+  >
+    <StaticHTML
+      stringHtml="<div>content</div>"
+    />
+  </div>
+  <Memo([object Object])
+    className="button-0-2-2"
+    color="primary"
+    dataTest="job-description-button"
+    onClick={[MockFunction]}
+  >
+    Apply now
+  </Memo([object Object])>
+</Memo(Content)>
+`;

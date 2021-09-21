@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Input component should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  data-test="component-input-root"
+>
+  <Memo(FieldLabel)
+    className=""
+    htmlFor="input"
+    label="input"
+    required={false}
+  />
+  <Memo(FieldInput)
+    className=""
+    hasError={true}
+    name="input"
+    required={false}
+  />
+  <Memo(FieldError)
+    className=""
+    error="some error"
+  />
+</div>
+`;

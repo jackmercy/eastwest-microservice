@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Header > MobileHeader should render match snapshot 1`] = `
+<header
+  className="root-0-2-1"
+>
+  <div
+    className="main-0-2-2"
+  >
+    <Memo(Logo)
+      className="logo-0-2-3"
+      dataTest="header-logo"
+    />
+    <span
+      className="toggleMenuButton-0-2-4"
+      onClick={[Function]}
+      role="presentation"
+    >
+      <i
+        className="icon-hamberger"
+      />
+    </span>
+  </div>
+  <div
+    className="menu-0-2-5"
+  >
+    <div
+      className="custom-scrollbar navbar-0-2-6"
+    >
+      <Component
+        dataTest="header-url-products"
+        href="/#"
+        key="products"
+        label="Products & Services"
+        onClick={[Function]}
+      >
+        <Component />
+      </Component>
+      <Component
+        active={false}
+        dataTest="header-url-company"
+        href="/company"
+        key="company"
+        label="Company"
+      />
+    </div>
+  </div>
+</header>
+`;

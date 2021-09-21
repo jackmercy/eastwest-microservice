@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMedia should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="Latest, Insights, Tips & Tricks, Articles, Data Talk & More East West News!"
+    image=""
+    keywords="East West, XP, News, Engineering, Product development, eXtreme Programming, UCD, User-centered design, Tech News, Lean Product Management, Growth, Remote, Freelance, Vietnam, Ireland"
+    siteName=""
+    title="East West - News & Media"
+    url="https://dev.eastwest.live/news-and-media"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(Outstanding)
+    categories={
+      Array [
+        Object {
+          "id": "610752dd1f174b00188e6359",
+          "name": "Insights",
+          "shortDescription": "Insights",
+          "slug": "insights",
+          "tags": Array [
+            "Insights",
+          ],
+        },
+      ]
+    }
+    data={
+      Array [
+        Object {
+          "author": "610752fc1f174b00188e635a",
+          "category": "610752dd1f174b00188e6359",
+          "htmlContent": "<p>Test 1</p>",
+          "id": "61075fb61f174b00188e635b",
+          "shortDescription": "short description",
+          "slug": "test-new-news",
+          "tags": Array [],
+          "thumbnail": "61075fb6c8e8db00182e1819",
+          "title": "title 1",
+        },
+      ]
+    }
+  />
+  <Memo(Content)
+    className="content-0-2-1"
+  >
+    <h2
+      className="title-0-2-2"
+    >
+      News & Media
+    </h2>
+    <ForwardRef(LoadableComponent)
+      className="listCategories-0-2-3"
+      data={
+        Array [
+          Object {
+            "id": "610752dd1f174b00188e6359",
+            "name": "Insights",
+            "shortDescription": "Insights",
+            "slug": "insights",
+            "tags": Array [
+              "Insights",
+            ],
+          },
+        ]
+      }
+      onSearch={[Function]}
+    />
+    <Memo(ListNews)
+      categories={
+        Array [
+          Object {
+            "id": "610752dd1f174b00188e6359",
+            "name": "Insights",
+            "shortDescription": "Insights",
+            "slug": "insights",
+            "tags": Array [
+              "Insights",
+            ],
+          },
+        ]
+      }
+      className="listNews-0-2-4"
+      data={
+        Array [
+          Object {
+            "author": "610752fc1f174b00188e635a",
+            "category": "610752dd1f174b00188e6359",
+            "htmlContent": "<p>Test 1</p>",
+            "id": "61075fb61f174b00188e635b",
+            "shortDescription": "short description",
+            "slug": "test-new-news",
+            "tags": Array [],
+            "thumbnail": "61075fb6c8e8db00182e1819",
+            "title": "title 1",
+          },
+        ]
+      }
+      totalNews={10}
+    />
+    <Memo(ListRankings)
+      categories={
+        Array [
+          Object {
+            "id": "610752dd1f174b00188e6359",
+            "name": "Insights",
+            "shortDescription": "Insights",
+            "slug": "insights",
+            "tags": Array [
+              "Insights",
+            ],
+          },
+        ]
+      }
+      className="listRankings-0-2-5"
+      data={
+        Array [
+          Object {
+            "author": "610752fc1f174b00188e635a",
+            "category": "610752dd1f174b00188e6359",
+            "htmlContent": "<p>Test 1</p>",
+            "id": "61075fb61f174b00188e635b",
+            "shortDescription": "short description",
+            "slug": "test-new-news",
+            "tags": Array [],
+            "thumbnail": "61075fb6c8e8db00182e1819",
+            "title": "title 1",
+          },
+        ]
+      }
+    />
+  </Memo(Content)>
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

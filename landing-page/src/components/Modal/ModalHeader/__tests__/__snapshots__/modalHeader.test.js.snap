@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Modal component > ModalHeader should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <span
+    className="closeButton-0-2-3"
+    data-test="component-modal-header-button-close"
+    onClick={[MockFunction]}
+    role="presentation"
+  >
+    <i
+      className="icon-close"
+    />
+  </span>
+  <h2
+    className="title-0-2-2"
+    data-test="component-modal-header-title"
+  >
+    Modal header
+  </h2>
+</div>
+`;

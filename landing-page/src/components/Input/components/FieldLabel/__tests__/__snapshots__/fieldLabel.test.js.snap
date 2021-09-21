@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Input component > FieldLabel should render match snapshot 1`] = `
+<label
+  className="root-0-2-1"
+  htmlFor="something"
+>
+  Label
+</label>
+`;

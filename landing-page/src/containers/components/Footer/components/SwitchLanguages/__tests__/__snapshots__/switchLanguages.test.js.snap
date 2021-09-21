@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Footer > SwitchLanguages should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(SectionTitle)
+    dataTest="switch-languages-title"
+    title="Choose your language"
+  />
+  <div
+    className="content-0-2-2"
+  >
+    <span
+      className="toggleButton-0-2-3"
+      data-test="switch-languages-toggle-button"
+      onClick={[Function]}
+      role="presentation"
+    >
+      <i
+        className="icon-global"
+      />
+      English
+      <i
+        className="icon-triangle-down"
+      />
+    </span>
+  </div>
+</div>
+`;

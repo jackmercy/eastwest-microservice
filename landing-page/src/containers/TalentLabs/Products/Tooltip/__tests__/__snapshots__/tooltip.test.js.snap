@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing TalentLabs > Products > Tooltip should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  style={
+    Object {
+      "left": 0,
+      "top": 0,
+      "visibility": "hidden",
+    }
+  }
+>
+  <span>
+    Some content
+  </span>
+</div>
+`;

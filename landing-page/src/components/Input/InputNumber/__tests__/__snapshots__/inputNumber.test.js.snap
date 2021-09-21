@@ -1,0 +1,40 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Input component > InputNumber should render match snapshot 1`] = `
+<div
+  className=""
+  data-test="component-input-number-root"
+>
+  <Memo(FieldLabel)
+    className=""
+    htmlFor="amount"
+    label="Amount"
+    required={false}
+  />
+  <div
+    className="inputWrapper-0-2-1 prefix"
+  >
+    <div
+      className="unit-0-2-2"
+      data-test="component-input-number-unit"
+    >
+      $
+    </div>
+    <Memo(FieldInput)
+      autoComplete="off"
+      className="input-0-2-3"
+      disabled={false}
+      hasError={true}
+      name="amount"
+      onChange={[Function]}
+      onKeyDown={[Function]}
+      required={false}
+      type="number"
+    />
+  </div>
+  <Memo(FieldError)
+    className=""
+    error="some error"
+  />
+</div>
+`;

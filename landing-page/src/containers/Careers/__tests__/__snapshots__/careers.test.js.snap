@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="We are on a mission to help everyone achieve product scalability through adoption of our products and methodology. Our partners have unleashed innovation and reduced time-to-market, spending less to maintain their existing application portfolio."
+    image=""
+    keywords=""
+    siteName=""
+    title="East West - Careers"
+    url="https://dev.eastwest.live/careers"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(Teaser)
+    CTAId="opportunities"
+  />
+  <Memo(Content)
+    className="menuScrollableLayout-0-2-1"
+  >
+    <Memo(MenuScrollableLayout)
+      menuConfigs={
+        Array [
+          Object {
+            "id": "our-mission",
+            "label": "Our mission",
+          },
+          Object {
+            "id": "core-values",
+            "label": "Core values",
+          },
+          Object {
+            "id": "benefits",
+            "label": "Benefits",
+          },
+        ]
+      }
+    >
+      <Memo(OurMission)
+        id="our-mission"
+      />
+      <ForwardRef(LoadableComponent)
+        id="core-values"
+      />
+      <Memo(Benefits)
+        id="benefits"
+      />
+    </Memo(MenuScrollableLayout)>
+  </Memo(Content)>
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

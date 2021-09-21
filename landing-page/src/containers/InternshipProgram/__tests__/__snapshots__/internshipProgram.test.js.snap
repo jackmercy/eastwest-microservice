@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing InternshipProgram should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="Description here"
+    image=""
+    keywords=""
+    siteName=""
+    title="East West - Internship Program"
+    url="https://dev.eastwest.live/internship-program"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(ComingSoon) />
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

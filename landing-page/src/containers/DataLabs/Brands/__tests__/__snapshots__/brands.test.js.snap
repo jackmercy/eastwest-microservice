@@ -1,0 +1,107 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs > Brands should render match snapshot 1`] = `
+<Fragment>
+  <ForwardRef(LoadableComponent)
+    defaultReason={4}
+    description="Build products and promote your brand using data-driven user insights. Gather real data from real users, at any time. A product that connects brands with influencers by contributing feedback and information on developing products and  leveraging value towards your positioning in the market. Real data on your competitors, and consumer insights from your clients and users."
+    image="/static/images/data-labs/brands/teaser.png"
+    isBrands={true}
+    mobileImage="/static/images/data-labs/brands/teaser-mobile.png"
+    otherText="For Influencers"
+    purpose="For Brands"
+  />
+  <Memo(HowItWorks)
+    data={
+      Array [
+        Object {
+          "description": "Register now for our closed alpha and gain advantage in your market right now! More than 45.000 influencers are available on our platform to participate in leveraging value for your brand.",
+          "icon": "/static/images/data-labs/brands/hiw-icon-01.png",
+          "image": "/static/images/data-labs/brands/hiw-01.png",
+          "key": "active",
+          "title": "Activate Data Labs",
+        },
+        Object {
+          "description": "Get access to a data-driven product environment that allows you to create surveys, visualize data, gather insights, create focus groups, assign team members and properly setup your segmentation strategy.",
+          "icon": "/static/images/data-labs/brands/hiw-icon-02.png",
+          "image": "/static/images/data-labs/brands/hiw-02.png",
+          "key": "tools",
+          "title": "Choose one of our tools",
+        },
+        Object {
+          "description": "You are able to determine a budget for each campaign and target a specific niche within your segment using diversified tools. Segmentation based on geographics, demographics, psychographics & behavioral aspects.",
+          "icon": "/static/images/data-labs/brands/hiw-icon-03.png",
+          "image": "/static/images/data-labs/brands/hiw-03.png",
+          "key": "segmentation",
+          "title": "Create audience segmentation",
+        },
+        Object {
+          "description": "Our Matching engine will automatically select users from the platform based on your user segmentation. Once notified, they will review the project and decide if they want to participate.",
+          "icon": "/static/images/data-labs/brands/hiw-icon-04.png",
+          "image": "/static/images/data-labs/brands/hiw-04.png",
+          "key": "matching-engine",
+          "title": "Matching engine",
+        },
+        Object {
+          "description": "Run multiple campaigns simultaneously to get better consumer insights regarding your brand and product. Ad-hoc or ahead of time. Multiple campaigns for multiple products.",
+          "icon": "/static/images/data-labs/brands/hiw-icon-05.png",
+          "image": "/static/images/data-labs/brands/hiw-05.png",
+          "key": "data",
+          "title": "Continuous streams of real data from real users",
+        },
+      ]
+    }
+    description="Setup continuous data streams, gather user insights, approach your audience directly and have them promote your brand as influencers. A great way to leverage value!"
+    title="How it works"
+  />
+  <Memo(AboutUs) />
+  <Memo(Become)
+    data={
+      Array [
+        Object {
+          "countUpConfigs": Object {
+            "prefix": "",
+            "suffix": "+",
+          },
+          "description": "Data-driven organizations are 165% more like to generate higher revenue growth and profitability than their peers.",
+          "image": "/static/images/data-labs/become-01.png",
+          "key": "brand-become-01",
+          "number": 165,
+          "title": "Data-driven Decision Making",
+        },
+        Object {
+          "countUpConfigs": Object {
+            "prefix": "",
+            "suffix": "+",
+          },
+          "description": "The right strategy and architecture help manage data and analytics, and mitigate cost increases up to 300% in a user-centered environment.",
+          "image": "/static/images/data-labs/become-02.png",
+          "key": "brand-become-02",
+          "number": 300,
+          "title": "User-Centered feedback from real users",
+        },
+        Object {
+          "countUpConfigs": Object {
+            "prefix": "",
+            "suffix": "+",
+          },
+          "description": "Build the data foundation for intelligent workflows, as 80% of the effort is know where you will have the highest chance of succes.",
+          "image": "/static/images/data-labs/become-03.png",
+          "key": "brand-become-03",
+          "number": 80,
+          "title": "Leverage value within your market",
+        },
+      ]
+    }
+    title="Why you should activate Data Labs for your Brand?"
+  />
+  <ForwardRef(LoadableComponent)
+    defaultReason={4}
+  />
+  <Memo(Reviews) />
+  <Memo(JoinUs)
+    defaultReason={4}
+    description="Activate Data Labs for your brand"
+  />
+</Fragment>
+`;

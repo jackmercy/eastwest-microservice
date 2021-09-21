@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Vacancy > Application > Successful should render match snapshot 1`] = `
+<Memo(Content)
+  className="root-0-2-1"
+>
+  <Link
+    href="/careers"
+    passHref={true}
+  >
+    <a
+      className="link-0-2-4"
+      data-test="successful-more-button"
+      href="/careers"
+    >
+      <span>
+        Explore more opportunities at 
+        <span
+          className="textBlack-0-2-6"
+          key=".1"
+        >
+          East
+        </span>
+         West
+      </span>
+      <i
+        className="icon-arrow-right"
+      />
+    </a>
+  </Link>
+  <h2
+    className="title-0-2-2"
+    data-test="successful-title"
+  >
+    Thank you for applying.
+  </h2>
+  <p
+    className="description-0-2-3"
+    data-test="successful-description"
+  >
+    We have received your application with great care and will get back to you as soon as possible!
+  </p>
+  <button
+    className="backButton-0-2-5"
+    data-test="successful-back-button"
+    onClick={[MockFunction]}
+  >
+    <i
+      className="icon-arrow-left"
+    />
+    <span>
+      Back to application
+    </span>
+  </button>
+</Memo(Content)>
+`;

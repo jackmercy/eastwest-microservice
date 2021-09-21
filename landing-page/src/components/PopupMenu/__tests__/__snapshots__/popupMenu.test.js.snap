@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing PopupMenu component should render match snapshot 1`] = `
+<ul
+  className="menu-0-2-1"
+>
+  <li
+    className="menuItem-0-2-2"
+    data-test="popup-menu-menu-item"
+    key="item1"
+  >
+    Item 1
+  </li>
+  <li
+    className="menuItem-0-2-2"
+    data-test="popup-menu-menu-item"
+    key="item2"
+  >
+    Item 3
+  </li>
+</ul>
+`;

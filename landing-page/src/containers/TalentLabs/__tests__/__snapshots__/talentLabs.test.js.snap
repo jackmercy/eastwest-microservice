@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing TalentLabs should render match snapshot 1`] = `
+<Memo(Layout)
+  className="layout-0-2-1"
+>
+  <SEO
+    creator=""
+    description="Our world-class team of agile engineers, product managers, and designers works alongside you to build and deploy products differently than you have before. In the process, you become enabled to do this work self-sufficiently in the future. Your team learns cutting-edge technology and best practices the best way possible: by doing it. The knowledge you absorb while working with Talent Labs is just as valuable as the finished product itself."
+    image=""
+    keywords=""
+    siteName=""
+    title="East West - Talent Labs"
+    url="https://dev.eastwest.live/talent-labs"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(Teaser) />
+  <Memo(Technologies) />
+  <ForwardRef(LoadableComponent) />
+  <Memo(Partners) />
+  <Memo(CreateProject) />
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

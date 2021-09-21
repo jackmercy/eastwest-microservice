@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Vacancy should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="short description"
+    image=""
+    keywords=""
+    siteName=""
+    title="Vacancy"
+    url="https://dev.eastwest.live/undefined"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(Teaser)
+    subTitle="new vacancy"
+    title="Vacancy"
+  />
+  <div
+    className="tabWrapper-0-2-1"
+  >
+    <Memo(Content)
+      id="list-tabs"
+    >
+      <ul
+        className="tab-0-2-2"
+      >
+        <li
+          className="tabItem-0-2-3 active"
+          id="job-descriptions"
+          key="job-descriptions"
+          onClick={[Function]}
+          role="presentation"
+        >
+          Job description
+        </li>
+        <li
+          className="tabItem-0-2-3"
+          id="job-application"
+          key="job-application"
+          onClick={[Function]}
+          role="presentation"
+        >
+          Application
+        </li>
+      </ul>
+    </Memo(Content)>
+  </div>
+  <Memo(JobDescription)
+    htmlContent="<div>Content</div>"
+    onApply={[Function]}
+  />
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

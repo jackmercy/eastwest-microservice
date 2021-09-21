@@ -1,0 +1,30 @@
+export default {
+  primary: '#C80030',
+
+  textWhite: '#fff',
+  textBlack: '#000',
+  textBlack01: '#333',
+  textGray: '#8a8a8a',
+  textGray01: '#AEAEAE',
+  textGray02: '#BDBDBD',
+  textRed: '#DA2A2A',
+  textGreen: '#20B713',
+
+  bgWhite: '#fff',
+  bgBlack: '#000',
+  bgBlack01: '#333',
+  bgGray: '#F7F7F7',
+  bgGray01: '#F8F8F8',
+  bgGray02: '#F9F9F9',
+  bgGray03: '#E5E5E5',
+  bgRed: '#DA2A2A',
+  bgPink: '#F9E7EB',
+
+  borderWhite: '#fff',
+  borderBlack: '#000',
+  borderBlack01: '#333',
+  borderGray: '#F5F5F5',
+  borderGray01: '#D3D3D3',
+  borderGray02: '#8a8a8a',
+  borderRed: '#DA2A2A',
+};

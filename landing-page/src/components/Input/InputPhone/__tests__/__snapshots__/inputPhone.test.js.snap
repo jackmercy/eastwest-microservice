@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Input component > InputPhone should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  data-test="component-input-phone-root"
+>
+  <Memo(FieldLabel)
+    className=""
+    htmlFor="phone"
+    label="Phone"
+    required={false}
+  />
+  <Memo(FieldInput)
+    autoComplete="off"
+    className=""
+    hasError={true}
+    name="phone"
+    onChange={[Function]}
+    onKeyDown={[Function]}
+    required={false}
+    type="text"
+  />
+  <Memo(FieldError)
+    className=""
+    error="some error"
+  />
+</div>
+`;

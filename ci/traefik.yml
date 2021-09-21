@@ -1,0 +1,39 @@
+.traefik:deploy:
+  stage: deploy
+  script:
+    - eval `ssh-agent -s`
+    - mkdir ${DOCKER_CERT_PATH}
+    - echo "${DOCKER_CA}" > ${DOCKER_CERT_PATH}/ca.pem
+    - echo "${DOCKER_CERT}" > ${DOCKER_CERT_PATH}/cert.pem
+    - echo "${DOCKER_KEY}" > ${DOCKER_CERT_PATH}/key.pem
+    - docker login -u ${DOCKER_REGISTRY_USER} -p "${DOCKER_REGISTRY_PASSWORD}" ${DOCKER_REGISTRY_DOMAIN}
+    - sed -i -e "s;TRAEFIK_AUTH_TOKEN;${TRAEFIK_AUTH};g" ./traefik.toml
+    - if [ "$NODE_ENV" == "development" ] || [ "$NODE_ENV" == "staging" ]
+      ;then
+        sed -i -e "s;# caServer = "https://acme-staging.api.letsencrypt.org/directory";caServer = "https://acme-staging.api.letsencrypt.org/directory";g" ./traefik.toml
+      ;fi
+    - echo "${DEPLOY_KEY}" > ${DOCKER_CERT_PATH}/deploy.pem
+    - chmod 400 ${DOCKER_CERT_PATH}/deploy.pem
+    - ssh-add ${DOCKER_CERT_PATH}/deploy.pem
+    - apt-get update
+    - apt-get install -y telnet
+    - echo -e '\x1dclose\x0d' | telnet ${DEPLOY_HOST} 22
+    - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $(pwd)/traefik.toml root@${DEPLOY_HOST}:/root/traefik.toml
+    - scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null $(pwd)/acme.json root@${DEPLOY_HOST}:/root/acme.json
+    - ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null root@${DEPLOY_HOST} 'chmod 600 /root/acme.json'
+    - docker-compose up -d --force-recreate e2w-traefik
+    - rm -rf ${DOCKER_CERT_PATH}
+  dependencies: []
+  variables:
+    DOCKER_CERT_PATH: 'certs'
+  tags:
+    - docker
+    - e2w
+
+.traefik:only-changes:
+  only:
+    changes:
+      - docker-compose.yml
+      - ci/traefik.yml
+      - traefik.toml
+    

@@ -1,0 +1,96 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMediaDetails > Comments > CommentBox should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <ForwardRef(TextareaAutosize)
+    className="custom-scrollbar input-0-2-2"
+    maxRows={20}
+    minRows={3}
+    onChange={[Function]}
+    placeholder="Share your comment"
+    value=""
+  />
+  <div
+    className="buttonGroup-0-2-3"
+  >
+    <Memo([object Object])
+      className="button-0-2-4"
+      color="tertiary"
+      dataTest="comment-box-cancel-button"
+      onClick={[Function]}
+      size="small"
+    >
+      Cancel
+    </Memo([object Object])>
+    <Memo([object Object])
+      className="button-0-2-4"
+      color="primary"
+      dataTest="comment-box-submit-button"
+      disabled={true}
+      onClick={[Function]}
+      size="small"
+    >
+      Send comment
+      <Memo([object Object])
+        list={
+          Array [
+            Object {
+              "key": "send-with-fb",
+              "label": <t
+                appId="867875764142815"
+                authType=""
+                callback={[Function]}
+                cookie={false}
+                disableMobileRedirect={false}
+                fields="name,email,picture"
+                isMobile={false}
+                language="en_US"
+                onFailure={null}
+                redirectUri="http://localhost/"
+                render={[Function]}
+                responseType="code"
+                returnScopes={false}
+                scope="public_profile,email"
+                state="facebookdirect"
+                version="2.3"
+                xfbml={false}
+              />,
+            },
+            Object {
+              "key": "send-with-gg",
+              "label": <y
+                accessType="online"
+                buttonText="Sign in with Google"
+                clientId="22281973040-vhnjr599tlhnlheef7dchge1t4k088gb.apps.googleusercontent.com"
+                cookiePolicy="single_host_origin"
+                disabledStyle={
+                  Object {
+                    "opacity": 0.6,
+                  }
+                }
+                fetchBasicProfile={true}
+                icon={true}
+                isSignedIn={false}
+                onFailure={[Function]}
+                onRequest={[Function]}
+                onSuccess={[Function]}
+                prompt=""
+                render={[Function]}
+                scope="profile email"
+                tag="button"
+                theme="light"
+                type="button"
+                uxMode="popup"
+              />,
+            },
+          ]
+        }
+        menuPosition="right"
+        show={false}
+      />
+    </Memo([object Object])>
+  </div>
+</div>
+`;

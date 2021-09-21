@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Vacancy > Teaser should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  data-test="teaser-image"
+>
+  <Memo(Content)
+    className="content-0-2-2"
+  >
+    <h1
+      className="title-0-2-3"
+      data-test="teaser-title"
+    >
+      Vacancy
+    </h1>
+    <p
+      className="subTitle-0-2-4"
+      data-test="teaser-sub-title"
+    >
+      new vacancy
+    </p>
+    <p
+      className="breadcrumb-0-2-5"
+      data-test="teaser-breadcrumb"
+    >
+      <Link
+        href="/careers"
+        passHref={true}
+      >
+        <a
+          className="link-0-2-6"
+          href="/careers"
+        >
+          Careers
+        </a>
+      </Link>
+      <span
+        className="arrow-0-2-7"
+      >
+        <i
+          className="icon-caret-right"
+        />
+      </span>
+      <span
+        className="subLink-0-2-8"
+      >
+        Vacancy
+      </span>
+    </p>
+  </Memo(Content)>
+</div>
+`;

@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMediaDetails > Comments > EmptyComment should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <img
+    alt="empty"
+    className="image-0-2-2"
+    data-test="empty-comment-image"
+    src="/static/images/news/empty-comment.png"
+  />
+  <h2
+    className="title-0-2-3"
+    data-test="empty-comment-title"
+  >
+    No comment
+  </h2>
+  <p
+    className="description-0-2-4"
+    data-test="empty-comment-description"
+  >
+    Become the first person to comment on this article
+  </p>
+  <Memo([object Object])
+    className="button-0-2-5"
+    color="primary"
+    dataTest="empty-comment-button"
+    onClick={[Function]}
+  >
+    Leave comment
+  </Memo([object Object])>
+</div>
+`;

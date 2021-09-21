@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers components > MenuScrollableLayout should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <ul
+    className="menu-0-2-2"
+    data-test="menu-scrollable-layout-menu"
+  >
+    <li
+      className="menuItem-0-2-3"
+      data-test="menu-scrollable-layout-menu-item"
+      key="id-01"
+    >
+      <Link
+        href="some path#id-01"
+        passHref={true}
+      >
+        <a
+          className="menuLink-0-2-4 active"
+          href="some path#id-01"
+          onClick={[Function]}
+        >
+          Menu-01
+        </a>
+      </Link>
+    </li>
+    <li
+      className="menuItem-0-2-3"
+      data-test="menu-scrollable-layout-menu-item"
+      key="id-02"
+    >
+      <Link
+        href="some path#id-02"
+        passHref={true}
+      >
+        <a
+          className="menuLink-0-2-4"
+          href="some path#id-02"
+          onClick={[Function]}
+        >
+          Menu-02
+        </a>
+      </Link>
+    </li>
+    <li
+      className="menuItem-0-2-3"
+      data-test="menu-scrollable-layout-menu-item"
+      key="id-03"
+    >
+      <Link
+        href="some path#id-03"
+        passHref={true}
+      >
+        <a
+          className="menuLink-0-2-4"
+          href="some path#id-03"
+          onClick={[Function]}
+        >
+          Menu-03
+        </a>
+      </Link>
+    </li>
+  </ul>
+  <div
+    className="content-0-2-5"
+  >
+    <div>
+      Content
+    </div>
+  </div>
+</div>
+`;

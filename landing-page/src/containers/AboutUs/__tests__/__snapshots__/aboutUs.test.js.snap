@@ -1,0 +1,700 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing AboutUs should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="We are here to support, guide and provide the tools you need to build and scale your business. Let us help you scale your product and secure product continuity, free from bad practices and unnecessary technical debt and risk."
+    image=""
+    keywords=""
+    siteName=""
+    title="About East West Company"
+    url="https://dev.eastwest.live/company"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(Content)
+    className="teaser-0-2-2"
+  >
+    <h1
+      className="teaserTitle-0-2-3"
+      data-test="about-us-teaser-title"
+    >
+      People, 
+      <span
+        className="primary-0-2-1"
+        key=".1"
+      >
+        Process
+      </span>
+       & Product!
+    </h1>
+    <p
+      className="teaserDescription-0-2-4"
+      data-test="about-us-teaser-description"
+    >
+      We are on a mission to help everyone achieve product scalability through adoption of our products and methodology. Our partners have unleashed innovation and reduced time-to-market, spending less to maintain their existing application portfolio.
+    </p>
+  </Memo(Content)>
+  <div
+    className="coverImage-0-2-5"
+    data-test="about-us-teaser-image"
+  />
+  <Memo(Content)
+    className="menuScrollableLayout-0-2-6"
+  >
+    <Memo(MenuScrollableLayout)
+      menuConfigs={
+        Array [
+          Object {
+            "id": "about-company",
+            "label": "About East West",
+          },
+          Object {
+            "id": "history",
+            "label": "History",
+          },
+          Object {
+            "id": "our-team",
+            "label": "Our team",
+          },
+        ]
+      }
+    >
+      <Link
+        href="/company#about-company"
+      >
+        <h1
+          className="introduceTitle-0-2-7"
+          id="about-company"
+          onClick={[Function]}
+          role="presentation"
+        >
+          About East 
+          <span
+            className="primary-0-2-1"
+            key=".1"
+          >
+            West
+          </span>
+        </h1>
+      </Link>
+      <p
+        className="aboutText-0-2-8"
+      >
+        Our eyes are set beyond the world of engineering, we want to create an ecosytem anyone can use. We believe East West will be the go-to platform for excellence and product scalability.
+      </p>
+      <div
+        className="aboutCompany-0-2-9"
+        data-test="about-us-details-about-company"
+      >
+        <div
+          className="aboutCompanySummary-0-2-10"
+          key="founded"
+        >
+          <h2
+            className="aboutCompanyValue-0-2-11"
+          >
+            <CountUp
+              decimal="."
+              decimals={0}
+              delay={null}
+              duration={null}
+              easingFn={null}
+              end={2018}
+              formattingFn={null}
+              onEnd={[Function]}
+              onPauseResume={[Function]}
+              onReset={[Function]}
+              onStart={[Function]}
+              onUpdate={[Function]}
+              prefix=""
+              preserveValue={false}
+              redraw={false}
+              separator=""
+              start={null}
+              startOnMount={true}
+              suffix=""
+              useEasing={true}
+            >
+              <Component />
+            </CountUp>
+          </h2>
+          <p
+            className="aboutCompanyLabel-0-2-12"
+          >
+            Founded
+          </p>
+        </div>
+        <div
+          className="aboutCompanySummary-0-2-10"
+          key="talents"
+        >
+          <h2
+            className="aboutCompanyValue-0-2-11"
+          >
+            <CountUp
+              decimal="."
+              decimals={0}
+              delay={null}
+              duration={null}
+              easingFn={null}
+              end={800}
+              formattingFn={null}
+              onEnd={[Function]}
+              onPauseResume={[Function]}
+              onReset={[Function]}
+              onStart={[Function]}
+              onUpdate={[Function]}
+              prefix=""
+              preserveValue={false}
+              redraw={false}
+              separator=""
+              start={null}
+              startOnMount={true}
+              suffix="+"
+              useEasing={true}
+            >
+              <Component />
+            </CountUp>
+          </h2>
+          <p
+            className="aboutCompanyLabel-0-2-12"
+          >
+            XP Talents
+          </p>
+        </div>
+        <div
+          className="aboutCompanySummary-0-2-10"
+          key="projects"
+        >
+          <h2
+            className="aboutCompanyValue-0-2-11"
+          >
+            <CountUp
+              decimal="."
+              decimals={0}
+              delay={null}
+              duration={null}
+              easingFn={null}
+              end={140}
+              formattingFn={null}
+              onEnd={[Function]}
+              onPauseResume={[Function]}
+              onReset={[Function]}
+              onStart={[Function]}
+              onUpdate={[Function]}
+              prefix=""
+              preserveValue={false}
+              redraw={false}
+              separator=""
+              start={null}
+              startOnMount={true}
+              suffix="+"
+              useEasing={true}
+            >
+              <Component />
+            </CountUp>
+          </h2>
+          <p
+            className="aboutCompanyLabel-0-2-12"
+          >
+            Amazing Projects
+          </p>
+        </div>
+        <div
+          className="aboutCompanySummary-0-2-10"
+          key="raised"
+        >
+          <h2
+            className="aboutCompanyValue-0-2-11"
+          >
+            <CountUp
+              decimal="."
+              decimals={1}
+              delay={null}
+              duration={null}
+              easingFn={null}
+              end={1.5}
+              formattingFn={null}
+              onEnd={[Function]}
+              onPauseResume={[Function]}
+              onReset={[Function]}
+              onStart={[Function]}
+              onUpdate={[Function]}
+              prefix="$"
+              preserveValue={false}
+              redraw={false}
+              separator=""
+              start={null}
+              startOnMount={true}
+              suffix="B+"
+              useEasing={true}
+            >
+              <Component />
+            </CountUp>
+          </h2>
+          <p
+            className="aboutCompanyLabel-0-2-12"
+          >
+            Raised by our clients globally
+          </p>
+        </div>
+      </div>
+      <p
+        className="aboutText-0-2-8"
+      >
+        We provide the tools you need to build and scale your business & product. Get support and guidance to enable Growth and innovation, free from bad practices, risk and technical debt.
+      </p>
+      <p
+        className="aboutText-0-2-8"
+      >
+        Focus on success and excellence! Automating your product development process and its underlying practices
+      </p>
+      <Link
+        href="/company#history"
+      >
+        <h2
+          className="introduceTitle-0-2-7"
+          id="history"
+          onClick={[Function]}
+          role="presentation"
+        >
+          History
+        </h2>
+      </Link>
+      <div
+        className="historyCompany-0-2-13"
+        data-test="about-us-details-history-company"
+      >
+        <div
+          className="historySummary-0-2-15"
+          key="history-2018"
+        >
+          <div
+            className="historyYear-0-2-16"
+          >
+            <span
+              className="historyMark-0-2-14"
+            />
+            2018
+          </div>
+          <ul
+            className="historyDescriptions-0-2-17"
+          >
+            <li
+              className="historyItem-0-2-18"
+              key="history-2018-0"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              The East West Initiative Limited, founded
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2018-1"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              1st Product Launch - Talent Labs, Software Development on a remote basis.
+            </li>
+          </ul>
+        </div>
+        <div
+          className="historySummary-0-2-15"
+          key="history-2019"
+        >
+          <div
+            className="historyYear-0-2-16"
+          >
+            <span
+              className="historyMark-0-2-14"
+            />
+            2019
+          </div>
+          <ul
+            className="historyDescriptions-0-2-17"
+          >
+            <li
+              className="historyItem-0-2-18"
+              key="history-2019-0"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              More than 800 engineers, designers and product managers qualify as talents for Talent Labs
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2019-1"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Adopted and integrated eXtreme Programming methodology into Talent Labs
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2019-2"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Adopted and integrated User-Centered Design methodology into Talent Labs
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2019-3"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Adopted and integrated Lean product Management methodology into Talent Labs
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2019-4"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Adopted Growth & Business Analysis as part of our service offering
+            </li>
+          </ul>
+        </div>
+        <div
+          className="historySummary-0-2-15"
+          key="history-2020"
+        >
+          <div
+            className="historyYear-0-2-16"
+          >
+            <span
+              className="historyMark-0-2-14"
+            />
+            2020
+          </div>
+          <ul
+            className="historyDescriptions-0-2-17"
+          >
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-0"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              The East West Initiative positions itself as a hybrid Augmented Product Development Company
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-1"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Talent Labs Automation V1 - Closed Alpha
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-2"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Release: ART ProtoType - The Automated Engagement Tool
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-3"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Release: DataLabs Closed Alpha - A Data Gathering tool built on an Influencer Marketplace
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-4"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Release: NOVA - The AI-enabled Virtual Assistant
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-5"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Release: Router ProtoType - The Referral Management Tool
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-6"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Release: Cultivator V1 - The HR Management Tool
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-7"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Release: Admin ProtoType - Customizable Platform Management Tool
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2020-8"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Release: Intercom ProtoType - Ticket Management Tool
+            </li>
+          </ul>
+        </div>
+        <div
+          className="historySummary-0-2-15"
+          key="history-2021"
+        >
+          <div
+            className="historyYear-0-2-16"
+          >
+            <span
+              className="historyMark-0-2-14"
+            />
+            2021
+          </div>
+          <ul
+            className="historyDescriptions-0-2-17"
+          >
+            <li
+              className="historyItem-0-2-18"
+              key="history-2021-0"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Under Development: Dashboard ProtoType - An Automated Product Management Tool
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2021-1"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              R&D: Project Alpha - Primary Health Management Vietnam
+            </li>
+            <li
+              className="historyItem-0-2-18"
+              key="history-2021-2"
+            >
+              <span
+                className="historyMark-0-2-14"
+              />
+              Coming Soon: The East West Accelerator Program
+            </li>
+          </ul>
+        </div>
+      </div>
+      <Link
+        href="/company#our-team"
+      >
+        <h2
+          className="introduceTitle-0-2-7"
+          id="our-team"
+          onClick={[Function]}
+          role="presentation"
+        >
+          The East 
+          <span
+            className="primary-0-2-1"
+            key=".1"
+          >
+            West
+          </span>
+           Team
+        </h2>
+      </Link>
+      <div
+        className="members-0-2-19"
+        data-test="about-us-details-company-members"
+      >
+        <div
+          className="member-0-2-20"
+          key="Rabih Souk"
+        >
+          <div
+            className="memberAvatar-0-2-21"
+            style={
+              Object {
+                "backgroundImage": "url(/static/images/about-us/member-1.png)",
+              }
+            }
+          />
+          <p
+            className="memberName-0-2-22"
+          >
+            Rabih Souk
+          </p>
+          <p
+            className="memberRole-0-2-23"
+          >
+            Chief Executive officer
+          </p>
+        </div>
+        <div
+          className="member-0-2-20"
+          key="Duyen Tran"
+        >
+          <div
+            className="memberAvatar-0-2-21"
+            style={
+              Object {
+                "backgroundImage": "url(/static/images/about-us/member-2.png)",
+              }
+            }
+          />
+          <p
+            className="memberName-0-2-22"
+          >
+            Duyen Tran
+          </p>
+          <p
+            className="memberRole-0-2-23"
+          >
+            Director of Operations
+          </p>
+        </div>
+        <div
+          className="member-0-2-20"
+          key="Tuan Nguyen"
+        >
+          <div
+            className="memberAvatar-0-2-21"
+            style={
+              Object {
+                "backgroundImage": "url(/static/images/about-us/member-5.png)",
+              }
+            }
+          />
+          <p
+            className="memberName-0-2-22"
+          >
+            Tuan Nguyen
+          </p>
+          <p
+            className="memberRole-0-2-23"
+          >
+            Product Design Manager
+          </p>
+        </div>
+        <div
+          className="member-0-2-20"
+          key="Hai Bui"
+        >
+          <div
+            className="memberAvatar-0-2-21"
+            style={
+              Object {
+                "backgroundImage": "url(/static/images/about-us/member-7.png)",
+              }
+            }
+          />
+          <p
+            className="memberName-0-2-22"
+          >
+            Hai Bui
+          </p>
+          <p
+            className="memberRole-0-2-23"
+          >
+            Software engineer
+          </p>
+        </div>
+        <div
+          className="member-0-2-20"
+          key="Hung Le"
+        >
+          <div
+            className="memberAvatar-0-2-21"
+            style={
+              Object {
+                "backgroundImage": "url(/static/images/about-us/member-8.png)",
+              }
+            }
+          />
+          <p
+            className="memberName-0-2-22"
+          >
+            Hung Le
+          </p>
+          <p
+            className="memberRole-0-2-23"
+          >
+            Software engineer
+          </p>
+        </div>
+        <div
+          className="member-0-2-20"
+          key="Hanh Van"
+        >
+          <div
+            className="memberAvatar-0-2-21"
+            style={
+              Object {
+                "backgroundImage": "url(/static/images/about-us/member-9.png)",
+              }
+            }
+          />
+          <p
+            className="memberName-0-2-22"
+          >
+            Hanh Van
+          </p>
+          <p
+            className="memberRole-0-2-23"
+          >
+            Junior talent Manager
+          </p>
+        </div>
+      </div>
+    </Memo(MenuScrollableLayout)>
+  </Memo(Content)>
+  <div
+    className="starting-0-2-24"
+  >
+    <h2
+      className="startingTitle-0-2-25"
+      data-test="about-us-starting-title"
+    >
+      Start with East West
+    </h2>
+    <Link
+      href="/#create-project-form"
+      passHref={true}
+    >
+      <Memo([object Object])
+        className="startingCTA-0-2-26"
+        color="secondary"
+        dataTest="about-us-starting-cta"
+        keepSizeOnMobile={true}
+        size="large"
+        tag="a"
+      >
+        Get started
+      </Memo([object Object])>
+    </Link>
+  </div>
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

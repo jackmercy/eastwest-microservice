@@ -1,0 +1,702 @@
+image: haibuieastwest/ubuntu-docker-compose:latest
+variables:
+  # When using dind, it's wise to use the overlayfs driver for
+  # improved performance.
+  DOCKER_DRIVER: overlay2
+  # Create the certificates inside this directory for both the server
+  # and client. The certificates used by the client will be created in
+  # /certs/client so we only need to share this directory with the
+  # volume mount in `config.toml`.
+  DOCKER_TLS_CERTDIR: "/certs"
+  DOCKER_HOST: "tcp://docker:2376"
+  DOCKER_TLS_VERIFY: 1
+  DOCKER_CERT_PATH: "/certs/client"
+services:
+  - docker:19.03.5-dind
+stages:
+  - build
+  - test
+  - deploy
+include:
+  - /ci/traefik.yml
+  - /ci/landing-page.yml
+  - /ci/cms.yml
+  - /ci/service.yml
+  - /ci/settings.yml
+
+# ============================ DEV ============================ #
+#                                                               #
+#                             BUILD                             #
+#                                                               #
+# ============================ DEV ============================ #
+build-landing-page-dev:
+  extends:
+    - .landing-page:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .landing-page:only-changes
+build-cms-dev:
+  extends:
+    - .cms:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .cms:only-changes
+build-mail-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:mail-service
+build-notifications-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:notifications-service
+build-prospects-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:prospects-service
+build-contacts-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:contacts-service
+build-roles-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:roles-service
+build-users-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:users-service
+build-admins-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:admins-service
+build-auth-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:auth-service
+build-vacancies-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:vacancies-service
+build-files-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:files-service
+build-news-service-dev:
+  extends:
+    - .service:build
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .service:news-service
+# ============================ DEV ============================ #
+#                                                               #
+#                            UNIT TEST                          #
+#                         RUN ONLY ON DEV                       #
+#                                                               #
+# ============================ DEV ============================ #
+test-landing-page:
+  extends:
+    - .landing-page:test
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .landing-page:only-changes
+  needs: ["build-landing-page-dev"]
+test-mail-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:mail-service
+  needs: ["build-mail-service-dev"]
+test-notifications-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:notifications-service
+  needs: ["build-notifications-service-dev"]
+test-prospects-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:prospects-service
+  needs: ["build-prospects-service-dev"]
+test-contacts-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:contacts-service
+  needs: ["build-contacts-service-dev"]
+test-roles-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:roles-service
+  needs: ["build-roles-service-dev"]
+test-users-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:users-service
+  needs: ["build-users-service-dev"]
+test-admins-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:admins-service
+  needs: ["build-admins-service-dev"]
+test-auth-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:auth-service
+  needs: ["build-auth-service-dev"]
+test-vacancies-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:vacancies-service
+  needs: ["build-vacancies-service-dev"]
+test-files-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:files-service
+  needs: ["build-files-service-dev"]
+test-news-service:
+  extends:
+    - .service:test
+    - .settings:only:dev
+    - .service:news-service
+  needs: ["build-news-service-dev"]
+# ============================ DEV ============================ #
+#                                                               #
+#                            DEPLOY                             #
+#                                                               #
+# ============================ DEV ============================ #
+deploy-docker-traefik-dev:
+  extends: 
+    - .traefik:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .traefik:only-changes
+deploy-landing-page-dev:
+  extends:
+    - .landing-page:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .landing-page:only-changes
+  needs: ["build-landing-page-dev", "test-landing-page"]
+deploy-cms-dev:
+  extends:
+    - .cms:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .cms:only-changes
+  needs: ["build-cms-dev"]
+deploy-mail-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:mail-service
+  needs: ["build-mail-service-dev", "test-mail-service"]
+deploy-notifications-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:notifications-service
+  needs: ["build-notifications-service-dev", "test-notifications-service"]
+deploy-prospects-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:prospects-service
+  needs: ["build-prospects-service-dev", "test-prospects-service"]
+deploy-contacts-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:contacts-service
+  needs: ["build-contacts-service-dev", "test-contacts-service"]
+deploy-roles-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:roles-service
+  needs: ["build-roles-service-dev", "test-roles-service"]
+deploy-users-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:users-service
+  needs: ["build-users-service-dev", "test-users-service"]
+deploy-admins-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:admins-service
+  needs: ["build-admins-service-dev", "test-admins-service"]
+deploy-auth-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:auth-service
+  needs: ["build-auth-service-dev", "test-auth-service"]
+deploy-vacancies-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:vacancies-service
+  needs: ["build-vacancies-service-dev", "test-vacancies-service"]
+deploy-files-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:files-service
+  needs: ["build-files-service-dev", "test-files-service"]
+deploy-news-service-dev:
+  extends:
+    - .service:deploy
+    - .settings:only:dev
+    - .settings:variables:dev
+    - .settings:variables:deploy:dev
+    - .service:news-service
+  needs: ["build-news-service-dev", "test-news-service"]
+# ============================ STAG =========================== #
+#                                                               #
+#                             BUILD                             #
+#                                                               #
+# ============================ STAG =========================== #
+build-landing-page-stag:
+  extends:
+    - .landing-page:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .landing-page:only-changes
+build-cms-stag:
+  extends:
+    - .cms:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .cms:only-changes
+build-mail-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:mail-service
+build-notifications-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:notifications-service
+build-prospects-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:prospects-service
+build-contacts-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:contacts-service
+build-roles-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:roles-service
+build-users-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:users-service
+build-admins-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:admins-service
+build-auth-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:auth-service
+build-vacancies-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:vacancies-service
+build-files-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:files-service
+build-news-service-stag:
+  extends:
+    - .service:build
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .service:news-service
+# ============================ STAG =========================== #
+#                                                               #
+#                          DEPLOY DOCKER                        #
+#                                                               #
+# ============================ STAG =========================== #
+deploy-docker-traefik-stag:
+  extends: 
+    - .traefik:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .traefik:only-changes
+deploy-landing-page-stag:
+  extends:
+    - .landing-page:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .landing-page:only-changes
+  needs: ["build-landing-page-stag"]
+deploy-cms-stag:
+  extends:
+    - .cms:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .cms:only-changes
+  needs: ["build-cms-stag"]
+deploy-mail-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:mail-service
+  needs: ["build-mail-service-stag"]
+deploy-notifications-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:notifications-service
+  needs: ["build-notifications-service-stag"]
+deploy-prospects-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:prospects-service
+  needs: ["build-prospects-service-stag"]
+deploy-contacts-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:contacts-service
+  needs: ["build-contacts-service-stag"]
+deploy-roles-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:roles-service
+  needs: ["build-roles-service-stag"]
+deploy-users-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:users-service
+  needs: ["build-users-service-stag"]
+deploy-admins-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:admins-service
+  needs: ["build-admins-service-stag"]
+deploy-auth-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:auth-service
+  needs: ["build-auth-service-stag"]
+deploy-vacancies-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:vacancies-service
+  needs: ["build-vacancies-service-stag"]
+deploy-files-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:files-service
+  needs: ["build-files-service-stag"]
+deploy-news-service-stag:
+  extends:
+    - .service:deploy
+    - .settings:only:stag
+    - .settings:variables:stag
+    - .settings:variables:deploy:stag
+    - .service:news-service
+  needs: ["build-news-service-stag"]
+# ============================ PROD ============================ #
+#                                                                #
+#                              BUILD                             #
+#                                                                #
+# ============================ PROD ============================ #
+build-landing-page-prod:
+  extends:
+    - .landing-page:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .landing-page:only-changes
+build-cms-prod:
+  extends:
+    - .cms:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .cms:only-changes
+build-mail-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:mail-service
+build-notifications-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:notifications-service
+build-prospects-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:prospects-service
+build-contacts-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:contacts-service
+build-roles-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:roles-service
+build-users-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:users-service
+build-admins-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:admins-service
+build-auth-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:auth-service
+build-vacancies-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:vacancies-service
+build-files-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:files-service
+build-news-service-prod:
+  extends:
+    - .service:build
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .service:news-service
+# ============================ PROD ============================ #
+#                                                                #
+#                          DEPLOY DOCKER                         #
+#                                                                #
+# ============================ PROD ============================ #
+deploy-docker-traefik-prod:
+  extends: 
+    - .traefik:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .traefik:only-changes
+deploy-landing-page-prod:
+  extends:
+    - .landing-page:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .landing-page:only-changes
+  needs: ["build-landing-page-prod"]
+deploy-cms-prod:
+  extends:
+    - .cms:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .cms:only-changes
+  needs: ["build-cms-prod"]
+deploy-mail-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:mail-service
+  needs: ["build-mail-service-prod"]
+deploy-notifications-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:notifications-service
+  needs: ["build-notifications-service-prod"]
+deploy-prospects-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:prospects-service
+  needs: ["build-prospects-service-prod"]
+deploy-contacts-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:contacts-service
+  needs: ["build-contacts-service-prod"]
+deploy-roles-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:roles-service
+  needs: ["build-roles-service-prod"]
+deploy-users-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:users-service
+  needs: ["build-users-service-prod"]
+deploy-admins-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:admins-service
+  needs: ["build-admins-service-prod"]
+deploy-auth-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:auth-service
+  needs: ["build-auth-service-prod"]
+deploy-vacancies-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:vacancies-service
+  needs: ["build-vacancies-service-prod"]
+deploy-files-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:files-service
+  needs: ["build-files-service-prod"]
+deploy-news-service-prod:
+  extends:
+    - .service:deploy
+    - .settings:only:prod
+    - .settings:variables:prod
+    - .settings:variables:deploy:prod
+    - .service:news-service
+  needs: ["build-news-service-prod"]

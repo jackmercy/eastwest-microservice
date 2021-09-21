@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Header > WebHeader should render match snapshot 1`] = `
+<header
+  className="root-0-2-1"
+  onMouseLeave={[Function]}
+>
+  <div
+    className="main-0-2-2"
+  >
+    <Memo(Logo)
+      className="logo-0-2-3"
+      dataTest="header-logo"
+      height={39}
+      key="logo"
+      onMouseEnter={[Function]}
+      width={206}
+    />
+    <Component
+      active={false}
+      dataTest="header-url-products"
+      href="/#"
+      isMenu={true}
+      key="products"
+      label="Products & Services"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    />
+    <Component
+      active={false}
+      dataTest="header-url-company"
+      href="/company"
+      key="company"
+      label="Company"
+      onMouseEnter={[Function]}
+    />
+  </div>
+  <div
+    className="menu-0-2-6"
+  />
+</header>
+`;

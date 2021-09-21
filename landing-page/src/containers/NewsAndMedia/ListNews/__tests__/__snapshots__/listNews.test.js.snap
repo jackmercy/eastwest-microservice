@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMedia > ListNews should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(Item)
+    data={
+      Object {
+        "category": Object {
+          "id": "610752dd1f174b00188e6359",
+          "name": "Insights",
+          "shortDescription": "Insights",
+          "slug": "insights",
+          "tags": Array [
+            "Insights",
+          ],
+        },
+        "id": "abc",
+        "shortDescription": "short description",
+        "slug": "test-new",
+        "thumbnail": "image url",
+        "title": "Some title",
+      }
+    }
+    dataTest="list-news-item"
+    key="abc"
+  />
+  <Memo(Item)
+    data={
+      Object {
+        "category": Object {
+          "id": "610752dd1f174b00188e6359",
+          "name": "Insights",
+          "shortDescription": "Insights",
+          "slug": "insights",
+          "tags": Array [
+            "Insights",
+          ],
+        },
+        "id": "abc2",
+        "shortDescription": "short description",
+        "slug": "test-new",
+        "thumbnail": "image url",
+        "title": "Some title",
+      }
+    }
+    dataTest="list-news-item"
+    key="abc2"
+  />
+  <s
+    activeClassName="selected"
+    activeLinkClassName="paginationActiveLink-0-2-5"
+    breakLabel="..."
+    containerClassName="paginationContainer-0-2-2"
+    disableInitialCallback={false}
+    disabledClassName="disabled"
+    eventListener="onClick"
+    forcePage={0}
+    marginPagesDisplayed={1}
+    nextAriaLabel="Next page"
+    nextClassName="paginationButton-0-2-3"
+    nextLabel="Next"
+    nextLinkClassName="paginationLink-0-2-4"
+    nextRel="next"
+    onPageChange={[Function]}
+    pageClassName="paginationButton-0-2-3"
+    pageCount={2}
+    pageLabelBuilder={[Function]}
+    pageLinkClassName="paginationLink-0-2-4"
+    pageRangeDisplayed={2}
+    prevRel="prev"
+    previousAriaLabel="Previous page"
+    previousClassName="paginationButton-0-2-3"
+    previousLabel="Back"
+    previousLinkClassName="paginationLink-0-2-4"
+  />
+</div>
+`;

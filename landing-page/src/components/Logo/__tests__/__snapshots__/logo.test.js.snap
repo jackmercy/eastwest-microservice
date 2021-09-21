@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Logo component should render match snapshot 1`] = `
+<Link
+  href="/"
+  passHref={true}
+>
+  <a
+    className="root-0-2-1"
+    data-test="component-logo-root"
+    href="/"
+  >
+    <img
+      alt="The East West Initiative"
+      className="image-0-2-2"
+      data-test="component-logo-image"
+      loading="lazy"
+      src="/static/images/logo/east-west.svg"
+    />
+  </a>
+</Link>
+`;

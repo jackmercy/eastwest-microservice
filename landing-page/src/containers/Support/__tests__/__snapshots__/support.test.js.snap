@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Support should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="Description here"
+    image=""
+    keywords=""
+    siteName=""
+    title="East West - Support"
+    url="https://dev.eastwest.live/support"
+  />
+  <ForwardRef(LoadableComponent) />
+  <div>
+    <h1>
+      This is Support Page
+    </h1>
+    <p>
+      Comming soon
+    </p>
+  </div>
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

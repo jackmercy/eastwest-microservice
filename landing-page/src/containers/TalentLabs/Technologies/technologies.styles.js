@@ -1,0 +1,121 @@
+import { createUseStyles } from 'react-jss';
+
+import COLORS from '../../../constants/COLORS';
+import { hexToRgbA, rem } from '../../../utils/jss';
+import BREAKPOINTS from '../../../constants/BREAKPOINTS';
+
+export default createUseStyles({
+  root: {
+    marginTop: rem(64),
+    width: '100%',
+    boxSizing: 'border-box',
+    backgroundColor: hexToRgbA(COLORS.bgBlack01, 0.03),
+  },
+  content: { paddingTop: rem(64), paddingBottom: rem(64) },
+  title: {
+    textAlign: 'center',
+    fontWeight: 900,
+    fontSize: rem(56),
+    lineHeight: rem(72),
+    marginTop: 0,
+    marginBottom: rem(24),
+    transition: 'font-size .5s ease',
+  },
+  description: {
+    textAlign: 'center',
+    fontWeight: 600,
+    fontSize: rem(24),
+    lineHeight: rem(40),
+    marginTop: 0,
+    marginBottom: rem(64),
+    transition: 'font-size .5s ease',
+  },
+  group: {
+    display: 'flex',
+    padding: [0, rem(24)],
+    '& + $group': { marginTop: rem(80) },
+  },
+  groupIntroduce: { width: '100%' },
+  techLabel: {
+    fontWeight: 900,
+    fontSize: rem(24),
+    lineHeight: rem(40),
+    color: COLORS.primary,
+    marginTop: 0,
+    marginBottom: rem(32),
+  },
+  techInfo: { display: 'flex' },
+  techImage: { width: rem(120), height: rem(120), flex: 'none' },
+  techSummary: { marginLeft: rem(60) },
+  techTitle: {
+    fontWeight: 900,
+    fontSize: rem(40),
+    lineHeight: rem(56),
+    margin: 0,
+  },
+  techDescription: {
+    fontWeight: 600,
+    fontSize: rem(18),
+    lineHeight: rem(32),
+    marginTop: rem(16),
+    marginBottom: 0,
+    maxWidth: rem(475),
+  },
+  groupServices: { width: '100%', maxWidth: rem(350), marginLeft: rem(16) },
+  serviceLabel: {
+    color: COLORS.primary,
+    fontWeight: 900,
+    fontSize: rem(16),
+    lineHeight: rem(40),
+    marginTop: 0,
+    marginBottom: rem(16),
+  },
+  serviceItem: {
+    fontWeight: 900,
+    fontSize: rem(18),
+    lineHeight: rem(32),
+    marginBottom: 0,
+    '&::before': {
+      content: '""',
+      display: 'inline-block',
+      width: rem(10),
+      height: rem(10),
+      marginRight: rem(20),
+      transform: 'rotate(45deg)',
+      backgroundColor: COLORS.primary,
+      verticalAlign: 'middle',
+    },
+    '& + $serviceItem': { marginTop: rem(16) },
+  },
+
+  [`@media only screen and (max-width: ${BREAKPOINTS.maxMd}px)`]: {
+    root: { marginTop: rem(32), padding: [rem(32), rem(16)] },
+    title: { fontSize: rem(40), lineHeight: rem(48), marginBottom: rem(16) },
+    description: { fontSize: rem(20), lineHeight: rem(24) },
+    group: {
+      display: 'block',
+      padding: 0,
+      '& + $group': { marginTop: rem(64) },
+    },
+    techLabel: {
+      fontSize: rem(20),
+      lineHeight: rem(24),
+      marginBottom: rem(16),
+    },
+    techImage: { width: rem(80), height: rem(80) },
+    techSummary: { marginLeft: rem(24) },
+    techTitle: { fontSize: rem(28), lineHeight: rem(40) },
+    groupServices: { maxWidth: '100%', marginLeft: 0, marginTop: rem(24) },
+    serviceLabel: { lineHeight: rem(24) },
+  },
+  [`@media only screen and (max-width: ${BREAKPOINTS.maxSm}px)`]: {
+    title: { fontSize: rem(32), lineHeight: rem(40) },
+    description: { fontSize: rem(16) },
+    groupIntroduce: {},
+    techLabel: { fontSize: rem(16), lineHeight: rem(24) },
+    techImage: { width: rem(64), height: rem(64) },
+    techSummary: { marginLeft: rem(16) },
+    techTitle: { fontSize: rem(24), lineHeight: rem(32) },
+    techDescription: { fontSize: rem(16), lineHeight: rem(24) },
+  },
+});

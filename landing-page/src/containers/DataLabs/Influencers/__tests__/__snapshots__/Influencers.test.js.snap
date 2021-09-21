@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs > Influencers should render match snapshot 1`] = `
+<Fragment>
+  <ForwardRef(LoadableComponent)
+    defaultReason={5}
+    description="Let your voice influence your external and internal environment. Get compensated by helping brands build products that matter. Work together with your peers on diverse and complicated issues on cloudscale. You are the generation that can bring great change the world! Help us matter, and leverage value!"
+    image="/static/images/data-labs/influencers/teaser.png"
+    mobileImage="/static/images/data-labs/influencers/teaser-mobile.png"
+    otherText="For Brands"
+    purpose="For Influencers"
+  />
+  <Memo(HowItWorks)
+    data={
+      Array [
+        Object {
+          "description": "Join now for our closed alpha and start leveraging change in the world! More than a 1000 campaigns are available on our platform tailor made just for you!",
+          "icon": "/static/images/data-labs/influencers/hiw-icon-01.png",
+          "image": "/static/images/data-labs/influencers/hiw-01.png",
+          "key": "join",
+          "title": "Join as an influencer",
+        },
+        Object {
+          "description": "As in influencer you need to decide what topics and fields are important to you. The more accurate you setup your platform. The more passionatly you can work on things that matter to you.",
+          "icon": "/static/images/data-labs/influencers/hiw-icon-02.png",
+          "image": "/static/images/data-labs/influencers/hiw-02.png",
+          "key": "setup",
+          "title": "Setup your profile",
+        },
+        Object {
+          "description": "Based on your profile, we will be able to decide what projects match with your intersts. You will have access to an influencer panel that allows you to receive invitations to participate in studies, surveys, interviews, focus groups, and see how your influence changes products for the better.",
+          "icon": "/static/images/data-labs/influencers/hiw-icon-03.png",
+          "image": "/static/images/data-labs/influencers/hiw-03.png",
+          "key": "matching-engine",
+          "title": "Matching engine",
+        },
+        Object {
+          "description": "You will receive invitations to participate on projects that matter to you. Our platform allows you to review the details and decide which ones you want to work on first.",
+          "icon": "/static/images/data-labs/influencers/hiw-icon-04.png",
+          "image": "/static/images/data-labs/influencers/hiw-04.png",
+          "key": "choose-project",
+          "title": "Choose which projects to work on",
+        },
+        Object {
+          "description": "By participating in campaigns, you will be compensated for your influence in fiat. We are implementing alternatives to give you more options. Earn money on the side, while practicing the art of User-centered and iterative product/market development. The more people you introduce, the better your leverage.",
+          "icon": "/static/images/data-labs/influencers/hiw-icon-05.png",
+          "image": "/static/images/data-labs/influencers/hiw-05.png",
+          "key": "get-compensated",
+          "title": "Get compensated in Fiat or Crypto",
+        },
+      ]
+    }
+    description="How to become an influencer on Data Labs and get started!"
+    title="How it works"
+  />
+  <Memo(Become)
+    data={
+      Array [
+        Object {
+          "countUpConfigs": Object {
+            "prefix": "",
+            "suffix": "%",
+          },
+          "description": "Participating in more projects allows you to earn additional income in your spare time. It can increase your revenue up to 45%.",
+          "image": "/static/images/data-labs/become-01.png",
+          "key": "brand-become-01",
+          "number": 45,
+          "title": "Additional passive revenue streams",
+        },
+        Object {
+          "countUpConfigs": Object {
+            "prefix": "",
+            "suffix": "%",
+          },
+          "description": "Not only will you get real experience in developing products. You will also continuously solve problems, creating an 18% increase in  opportunities for more people around you.",
+          "image": "/static/images/data-labs/become-02.png",
+          "key": "brand-become-02",
+          "number": 18,
+          "title": "Helping brands build products that matter",
+        },
+        Object {
+          "countUpConfigs": Object {
+            "prefix": "",
+            "suffix": "%",
+          },
+          "description": "Be the change you want to see in the world. No matter how small or big your contribution, your voice can influence the way we live in society 1% at a time.",
+          "image": "/static/images/data-labs/become-03.png",
+          "key": "brand-become-03",
+          "number": 1,
+          "title": "Real influence in your environment",
+        },
+      ]
+    }
+    title="Why you should become an influencer!"
+  />
+  <ForwardRef(LoadableComponent)
+    defaultReason={5}
+  />
+  <Memo(Reviews) />
+  <Memo(JoinUs)
+    defaultReason={5}
+    description="Join Data Labs as an influencer"
+  />
+</Fragment>
+`;

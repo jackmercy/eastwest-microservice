@@ -1,0 +1,54 @@
+{
+  "vetur.format.options.tabSize": 4,
+  "prettier.tabWidth": 4,
+  "prettier.trailingComma": "none",
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "eslint.lintTask.enable": true,
+  "eslint.alwaysShowStatus": true,
+  "sqltools.connections": [
+    {
+      "database": "${workspaceFolder:e2w}/landing-page/content/data/ghost-dev.db",
+      "driver": "SQLite",
+      "name": "e2w-dev",
+      "previewLimit": 50
+    }
+  ],
+  "sqltools.useNodeRuntime": true,
+  "files.exclude": {
+    "**/themes/**/built": true,
+    "**/themes/casper": true
+  },
+  "files.watcherExclude": {
+    "**/themes/**/built": true,
+    "**/themes/casper/**": true
+  },
+  "scssFormatter.singleQuote": true,
+  "eslint.probe": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "html",
+    "vue"
+  ],
+  "vetur.format.defaultFormatterOptions": {
+    "js-beautify-html": {
+      "wrap_attributes": "force-expand-multiline"
+    },
+    "prettyhtml": {
+      "printWidth": 100,
+      "singleQuote": false,
+      "wrapAttributes": false,
+      "sortAttributes": false
+    }
+  },
+  "eslint.workingDirectories": [
+    "landing-page"
+  ],
+  "workbench.editor.showTabs": true
+}

@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers > OurMission should render match snapshot 1`] = `
+<Fragment>
+  <Memo(SectionTitle)
+    id="our-mission"
+    translateId="CAREERS.OUR_MISSION.TITLE"
+  />
+  <p
+    className="text-0-2-1"
+  >
+    We are on a mission to help everyone achieve product scalability. Our eyes are set beyond the world of engineering, and want to create an ecosytem anyone can use.
+  </p>
+  <img
+    alt="our mission"
+    className="image-0-2-2"
+    src="/static/images/careers/our-mission.png"
+  />
+  <p
+    className="text-0-2-1"
+  >
+    Our approach unites culture, process, tools and best practices that help them build quickly, release often and continuously Innovate. To keep scaling products going we’re going to need a few more critical thinkers. Join East West and help us build the future products that our users envision. The most rewarding thing is when you see people grow. To see them taking on more responsibility, setting their own goals and realizing what’s important to them. This happens at East West, every day.
+  </p>
+</Fragment>
+`;

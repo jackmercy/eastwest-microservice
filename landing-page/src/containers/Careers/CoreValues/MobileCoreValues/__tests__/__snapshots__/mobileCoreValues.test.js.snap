@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers > CoreValues > MobileCoreValues should render match snapshot 1`] = `
+Array [
+  <div
+    className="detailsWrapper-0-2-1"
+    data-test="mobile-core-value-item"
+    key="key-01"
+  >
+    <div
+      className="details-0-2-2"
+    >
+      <p
+        className="detailsSubTitle-0-2-3"
+        data-test="mobile-core-value-sub-title"
+      >
+        Core values
+      </p>
+      <Memo(SectionTitle)
+        className="sectionTitle-0-2-4"
+        id="core-value-key-01"
+        translateId="CAREERS.CORE_VALUE.01.TITLE"
+      />
+      <p
+        className="detailsDescription-0-2-5"
+        data-test="mobile-core-value-description"
+      >
+        descriptipn 01
+      </p>
+    </div>
+    <img
+      alt="title 01"
+      className="image-0-2-6"
+      data-test="mobile-core-value-image"
+      src="image-01.png"
+      srcSet="image-01.png 500w"
+    />
+  </div>,
+  <div
+    className="detailsWrapper-0-2-1"
+    data-test="mobile-core-value-item"
+    key="key-02"
+  >
+    <div
+      className="details-0-2-2"
+    >
+      <p
+        className="detailsSubTitle-0-2-3"
+        data-test="mobile-core-value-sub-title"
+      >
+        Core values
+      </p>
+      <Memo(SectionTitle)
+        className="sectionTitle-0-2-4"
+        id="core-value-key-02"
+        translateId="CAREERS.CORE_VALUE.02.TITLE"
+      />
+      <p
+        className="detailsDescription-0-2-5"
+        data-test="mobile-core-value-description"
+      >
+        description 02
+      </p>
+    </div>
+    <img
+      alt="title 01"
+      className="image-0-2-6"
+      data-test="mobile-core-value-image"
+      src="image-02.png"
+      srcSet="image-02.png 500w"
+    />
+  </div>,
+]
+`;

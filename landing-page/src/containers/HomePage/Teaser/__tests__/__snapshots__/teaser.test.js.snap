@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage > Teaser should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  data-test="teaser-cover-image"
+>
+  <Memo(Content)
+    className="contentLayout-0-2-2"
+  >
+    <div
+      className="content-0-2-3"
+    >
+      <h1
+        className="title-0-2-4"
+        data-test="teaser-title"
+      >
+        Build, Innovate & Scale Products
+      </h1>
+      <p
+        className="description-0-2-5"
+        data-test="teaser-description"
+      >
+        Work with the world’s most comprehensive and reliable product development tools. Build and scale products using eXtreme Programming, User-Centered Design, Lean Product Management, Growth & Business Analysis
+      </p>
+      <div
+        className="buttonGroup-0-2-6"
+      >
+        <Memo([object Object])
+          className="button-0-2-7"
+          color="primary"
+          dataTest="teaser-button-get-started"
+          keepSizeOnMobile={true}
+          onClick={[Function]}
+          size="large"
+        >
+          Get started
+        </Memo([object Object])>
+        <Link
+          href="/company"
+          passHref={true}
+        >
+          <Memo([object Object])
+            className="button-0-2-7"
+            color="tertiary"
+            dataTest="teaser-button-learn-more"
+            keepSizeOnMobile={true}
+            size="large"
+            tag="a"
+          >
+            Learn more
+            <i
+              className="icon-arrow-right"
+            />
+          </Memo([object Object])>
+        </Link>
+      </div>
+    </div>
+  </Memo(Content)>
+</div>
+`;

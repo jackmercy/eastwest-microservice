@@ -1,0 +1,4 @@
+src/**/*.duck.js
+src/**/ducks/index.js
+src/**/sagas/index.js
+# src/configs.js

@@ -1,0 +1,99 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMediaDetails > Comments > CommentPreview should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <div
+    className="avatarWrapper-0-2-2"
+  >
+    <img
+      alt="avatar"
+      className="avatar-0-2-3"
+      data-test="comment-preview-avatar"
+      src="https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3"
+    />
+  </div>
+  <div
+    className="information-0-2-4"
+  >
+    <div
+      className="summary-0-2-5"
+    >
+      <p
+        className="name-0-2-6"
+        data-test="comment-preview-name"
+      >
+        Hai
+         
+        Bui
+        <span
+          className="date-0-2-7"
+          data-test="comment-preview-date"
+        >
+          16 days ago
+        </span>
+      </p>
+      <button
+        className="options-0-2-8"
+        data-test="comment-preview-options"
+        onClick={[Function]}
+      >
+        <i
+          className="icon-three-dots-vertical"
+        />
+        <Memo([object Object])
+          className="popupMenu-0-2-9"
+          list={
+            Array [
+              Object {
+                "key": "edit-comment",
+                "label": "Edit",
+                "onClick": [Function],
+              },
+              Object {
+                "key": "delete-comment",
+                "label": "Delete",
+                "onClick": [Function],
+              },
+            ]
+          }
+          menuPosition="right"
+          show={false}
+        />
+      </button>
+    </div>
+    <p
+      className="comment-0-2-10"
+      data-test="comment-preview-comment"
+    >
+      Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+  voluptate pariatur deserunt ad est. Sint exercitation minim labore
+  aute deserunt cillum laboris aute esse ut.
+    </p>
+    <div
+      className="actions-0-2-11"
+    >
+      <p
+        className="like-0-2-12"
+        data-test="comment-preview-likes"
+      >
+        <i
+          className="icon-heart"
+          onClick={[Function]}
+          role="presentation"
+        />
+        100
+      </p>
+      <button
+        className="reply-0-2-13"
+        data-test="comment-preview-reply-button"
+        disabled={false}
+        onClick={[Function]}
+      >
+        Reply
+      </button>
+    </div>
+  </div>
+</div>
+`;

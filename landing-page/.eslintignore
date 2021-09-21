@@ -1,0 +1,20 @@
+# Node modules
+/node_modules
+/.next
+/.vscode
+
+# Build products
+/build
+/coverage
+/config
+
+
+# Specify files
+configs.js
+configs.template.js
+next.config.js
+/src/assets
+
+# test files
+/jest.config.js
+/jest.setup.js

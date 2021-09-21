@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMedia > Outstanding > Item should render match snapshot 1`] = `
+<div
+  className="root-0-2-1 medium"
+  data-test=""
+>
+  <Link
+    href="/news-and-media/technology-news/test-new"
+    passHref={true}
+  >
+    <a
+      href="/news-and-media/technology-news/test-new"
+    >
+      <img
+        alt="Some title"
+        className="thumbnail-0-2-2"
+        data-test="item-thumbnail"
+        loading="lazy"
+        onError={[Function]}
+        src="http://localhost:3411/files/public/image url"
+      />
+    </a>
+  </Link>
+  <div
+    className="content-0-2-3"
+  >
+    <Link
+      href="/news-and-media/technology-news"
+      passHref={true}
+    >
+      <a
+        className="category-0-2-4"
+        data-test="item-category"
+        href="/news-and-media/technology-news"
+      >
+        Technology news
+      </a>
+    </Link>
+    <Link
+      href="/news-and-media/technology-news/test-new"
+      passHref={true}
+    >
+      <a
+        className="title-0-2-5"
+        data-test="item-title"
+        href="/news-and-media/technology-news/test-new"
+        title="Some title"
+      >
+        <Responsive(LinesEllipsis)
+          basedOn="words"
+          ellipsis="..."
+          innerRef={[Function]}
+          maxLine="2"
+          text="Some title"
+          trimRight={true}
+        />
+      </a>
+    </Link>
+  </div>
+</div>
+`;

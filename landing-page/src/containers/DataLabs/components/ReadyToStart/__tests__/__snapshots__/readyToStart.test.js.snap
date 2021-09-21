@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs components > ReadyToStart should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(Content)
+    className="contentWrapper-0-2-2"
+  >
+    <div
+      className="content-0-2-3"
+    >
+      <img
+        alt="Ready to start use Data Labs?"
+        className="image-0-2-4"
+        src="/static/images/data-labs/get-start-01.png"
+      />
+      <div
+        className="group-0-2-5"
+      >
+        <h2
+          className="title-0-2-6"
+          data-test="ready-to-start-title"
+        >
+          Ready to start use Data Labs?
+        </h2>
+        <Link
+          as="/contact/#contact-form"
+          href="/contact/?defaultReason=4#contact-form"
+          passHref={true}
+        >
+          <Memo([object Object])
+            className="button-0-2-7"
+            color="primary"
+            dataTest="ready-to-start-button"
+            keepSizeOnMobile={true}
+            size="large"
+            tag="a"
+          >
+            Get started
+          </Memo([object Object])>
+        </Link>
+      </div>
+    </div>
+  </Memo(Content)>
+</div>
+`;

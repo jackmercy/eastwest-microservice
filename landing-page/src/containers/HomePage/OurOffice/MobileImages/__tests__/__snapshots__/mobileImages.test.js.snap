@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage > OurOffice > MobileImages should render match snapshot 1`] = `
+<Memo(Carousel)
+  className="carousel-0-2-1"
+  dots={true}
+  nextArrow={null}
+  prevArrow={null}
+>
+  <div
+    key="our-office-image-cover-1"
+  >
+    <img
+      alt="Eastwest office"
+      className="image-0-2-2"
+      src="/static/images/homepage/office-01.png"
+      srcSet="/static/images/homepage/office-01.png 500w, /static/images/homepage/office-01@2x.png 1500w, /static/images/homepage/office-01@3x.png 2000w"
+    />
+  </div>
+  <div
+    key="our-office-image-cover-2"
+  >
+    <img
+      alt="Eastwest office"
+      className="image-0-2-2"
+      src="/static/images/homepage/office-02.png"
+      srcSet="/static/images/homepage/office-02.png 500w, /static/images/homepage/office-02@2x.png 1500w, /static/images/homepage/office-02@3x.png 2000w"
+    />
+  </div>
+</Memo(Carousel)>
+`;

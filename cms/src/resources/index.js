@@ -1,0 +1,9 @@
+export { default as users } from './users';
+export { default as contacts } from './contacts';
+export { default as prospects } from './prospects';
+export { default as vacancies } from './vacancies';
+export { default as vacancyCategories } from './vacancyCategories';
+export { default as vacancyApplications } from './vacancyApplications';
+export { default as news } from './news';
+export { default as newsAuthors } from './newsAuthors';
+export { default as newsCategories } from './newsCategories';

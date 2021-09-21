@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing CreateTicket should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="A modern mindset and methodology that turns technology into business outcomes and scales Tech Ventures to the next level. East to West unifies these concepts in comprehensive products."
+    image=""
+    keywords=""
+    siteName=""
+    title="East West - Create a ticket"
+    url="https://dev.eastwest.live/create-a-ticket"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(ComingSoon) />
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

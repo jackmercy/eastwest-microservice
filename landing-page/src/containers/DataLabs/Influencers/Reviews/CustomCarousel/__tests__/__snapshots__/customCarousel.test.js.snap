@@ -1,0 +1,113 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs > Brands > Influencers > CustomCarousel should render match snapshot 1`] = `
+<div
+  className="root-0-2-2"
+>
+  <Slider
+    arrows={false}
+    autoplay={true}
+    autoplaySpeed={10000}
+    className="carousel-0-2-3"
+    dots={false}
+    infinite={true}
+    pauseOnHover={true}
+    slidesToScroll={1}
+    slidesToShow={1}
+    touchMove={false}
+  >
+    <div
+      key="carousel-0"
+    >
+      <div
+        className="itemWrapper-0-2-4"
+      >
+        <div
+          className="group-0-2-5"
+        >
+          <div
+            className="avatarWrapper-0-2-6"
+          >
+            <img
+              alt="Ninh Lương"
+              className="avatar-0-2-7"
+              loading="lazy"
+              src="/static/images/logo/east-west-no-text.svg"
+            />
+          </div>
+          <p
+            className="name-0-2-8"
+          >
+            Ninh Lương
+          </p>
+          <p
+            className="reward-0-2-9"
+          >
+            Projects Participated: 
+            <span
+              className="black-0-2-1"
+              key=".1"
+            >
+              123
+            </span>
+          </p>
+          <p
+            className="reward-0-2-9"
+          >
+            Earnings: 
+            <span
+              className="black-0-2-1"
+              key=".1"
+            >
+              $ 123
+            </span>
+          </p>
+        </div>
+        <div
+          className="group-0-2-5"
+        >
+          <img
+            alt="Ninh Lương"
+            className="quotesImage-0-2-10"
+            loading="lazy"
+            src="/static/images/data-labs/quotes.png"
+          />
+          <p
+            className="review-0-2-11"
+          >
+            Our business relies entirly on the feedback of consumers. We print and develop packaging for product in every day use. Understanding exactly what the end consumers needs are, allows us to better develop solutions for our clients and literally gives us the edge over our competitors.
+          </p>
+        </div>
+      </div>
+    </div>
+  </Slider>
+  <div
+    className="groupButton-0-2-12"
+  >
+    <Memo([object Object])
+      className="carouselButton-0-2-13"
+      color="secondary"
+      dataTest="custom-carousel-button-prev"
+      keepSizeOnMobile={true}
+      onClick={[Function]}
+      size="large"
+    >
+      <i
+        className="icon-caret-left"
+      />
+    </Memo([object Object])>
+    <Memo([object Object])
+      className="carouselButton-0-2-13"
+      color="secondary"
+      dataTest="custom-carousel-button-next"
+      keepSizeOnMobile={true}
+      onClick={[Function]}
+      size="large"
+    >
+      <i
+        className="icon-caret-right"
+      />
+    </Memo([object Object])>
+  </div>
+</div>
+`;

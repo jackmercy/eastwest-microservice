@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Privacy should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="This policy (“Privacy Policy”) explains what information the East West Initiative and its subsidiaries (“East West”) or our service providers collect from or about users of the East West websites, including any content East West may provide through the websites (collectively, the “East West Websites”), the East West services, including but not limited to, Talent Labs. Dashboard, ART, RMT, Admin, Data Labs, or any other services that East West may provide through the East West Websites (collectively, the “Service Offerings”), our mobile applications, and other interactions (e.g., customer service inquiries, user conferences, etc.), and states our practices regarding such information. If you are outside the European Economic Area (EEA), by accessing files, browsing, or otherwise using the East West Websites, you have agreed to the use of your data as described in this Privacy Policy. If you are in the EEA, by accessing the East West Websites, you have agreed to the use of my data as described in this Privacy Policy. It also describes the choices regarding use, access and collection of personal information as well as your rights to your personal data that we process. If you do not agree with the terms, please do not access or use the East West Websites, Service Offerings, mobile applications, or any other aspect of East West’s business."
+    image=""
+    keywords=""
+    siteName=""
+    title="Privacy Policy of East West"
+    url="https://dev.eastwest.live/privacy"
+  />
+  <ForwardRef(LoadableComponent) />
+  <div
+    className="teaser-0-2-1"
+    data-test="privacy-teaser-image"
+  >
+    <Memo(Content)
+      className="teaserContent-0-2-2"
+    >
+      <h1
+        className="teaserTitle-0-2-3"
+        data-test="privacy-teaser-title"
+      >
+        Privacy Policy
+      </h1>
+    </Memo(Content)>
+  </div>
+  <Memo(Content)
+    className="content-0-2-4"
+  >
+    <Memo(Content) />
+  </Memo(Content)>
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

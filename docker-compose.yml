@@ -1,0 +1,478 @@
+version: '3.3'
+services:
+  news-service:
+    container_name: e2w-news-service
+    build:
+      context: ./api/news-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: news-service
+    restart: always
+    expose:
+      - '3411'
+    ports:
+      - '3411:3411'
+    # labels:
+    #   - traefik.backend=news-service
+    #   - traefik.frontend.rule=HostRegexp:${MAIN_DOMAIN},www.${MAIN_DOMAIN},{subdomain:[a-z]+}.${MAIN_DOMAIN},www.{subdomain:[a-z]+}.${MAIN_DOMAIN};
+    #   - traefik.news.frontend.rule=PathPrefixStripRegex:/api/news;AddPrefix:/news
+    #   - traefik.categories.frontend.rule=PathPrefixStripRegex:/api/news-categories;AddPrefix:/news-categories
+    #   - traefik.authors.frontend.rule=PathPrefixStripRegex:/api/news-authors;AddPrefix:/news-authors
+    #   - traefik.port=3411
+    #   - traefik.enable=true
+    #   - traefik.docker.network=proxy
+    environment:
+      PORT: 3411
+      NODE_ENV: ${NODE_ENV}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      AUTH_SERVICE_HOST: 'e2w-auth-service'
+      AUTH_SERVICE_PORT: 3406
+      FILES_SERVICE_HOST: 'e2w-files-service'
+      FILES_SERVICE_PORT: 3410
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - proxy
+      - e2w
+      - db
+    depends_on:
+      - mongo
+  files-service:
+    container_name: e2w-files-service
+    build:
+      context: ./api/files-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: files-service
+    restart: always
+    expose:
+      - '3410'
+    ports:
+      - "3410:3410"
+    # labels:
+    #   - traefik.backend=files-service
+    #   - traefik.frontend.rule=HostRegexp:${MAIN_DOMAIN},www.${MAIN_DOMAIN},{subdomain:[a-z]+}.${MAIN_DOMAIN},www.{subdomain:[a-z]+}.${MAIN_DOMAIN};PathPrefixStrip:/api/files;AddPrefix:/files
+    #   - traefik.port=3410
+    #   - traefik.enable=true
+    #   - traefik.docker.network=proxy
+    environment:
+      PORT: 3410
+      NODE_ENV: ${NODE_ENV}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      GG_DRIVE_CLIENT_ID: ${GG_DRIVE_CLIENT_ID}
+      GG_DRIVE_CLIENT_SECRET: ${GG_DRIVE_CLIENT_SECRET}
+      GG_DRIVE_REFRESH_TOKEN: ${GG_DRIVE_REFRESH_TOKEN}
+      AUTH_SERVICE_HOST: 'e2w-auth-service'
+      AUTH_SERVICE_PORT: 3406
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - proxy
+      - e2w
+      - db
+    depends_on:
+      - mongo
+  vacancies-service:
+    container_name: e2w-vacancies-service
+    build:
+      context: ./api/vacancies-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: vacancies-service
+    restart: always
+    expose:
+      - '3409'
+    ports:
+      - "3409:3409"
+    # labels:
+    #   - traefik.backend=vacancies-service
+    #   - traefik.frontend.rule=HostRegexp:${MAIN_DOMAIN},www.${MAIN_DOMAIN},{subdomain:[a-z]+}.${MAIN_DOMAIN},www.{subdomain:[a-z]+}.${MAIN_DOMAIN};
+    #   - traefik.vacancies.frontend.rule=PathPrefixStripRegex:/api/vacancies;AddPrefix:/vacancies
+    #   - traefik.categories.frontend.rule=PathPrefixStripRegex:/api/vacancy-categories;AddPrefix:/vacancy-categories
+    #   - traefik.applications.frontend.rule=PathPrefixStripRegex:/api/vacancy-applications;AddPrefix:/vacancy-applications
+    #   - traefik.port=3409
+    #   - traefik.enable=true
+    #   - traefik.docker.network=proxy
+    environment:
+      PORT: 3409
+      NODE_ENV: ${NODE_ENV}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      NOTIFICATIONS_SERVICE_HOST: 'e2w-notifications-service'
+      NOTIFICATIONS_SERVICE_PORT: 3402
+      AUTH_SERVICE_HOST: 'e2w-auth-service'
+      AUTH_SERVICE_PORT: 3406
+      FILES_SERVICE_HOST: 'e2w-files-service'
+      FILES_SERVICE_PORT: 3410
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - proxy
+      - e2w
+      - db
+    depends_on:
+      - mongo
+  contacts-service:
+    container_name: e2w-contacts-service
+    build:
+      context: ./api/contacts-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: contacts-service
+    restart: always
+    expose:
+      - '3408'
+    ports:
+      - "3408:3408"
+    # labels:
+    #   - traefik.backend=contacts-service
+    #   - traefik.frontend.rule=HostRegexp:${MAIN_DOMAIN},www.${MAIN_DOMAIN},{subdomain:[a-z]+}.${MAIN_DOMAIN},www.{subdomain:[a-z]+}.${MAIN_DOMAIN};PathPrefixStrip:/api/contacts;AddPrefix:/contacts
+    #   - traefik.port=3408
+    #   - traefik.enable=true
+    #   - traefik.docker.network=proxy
+    environment:
+      PORT: 3408
+      NODE_ENV: ${NODE_ENV}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      NOTIFICATIONS_SERVICE_HOST: 'e2w-notifications-service'
+      NOTIFICATIONS_SERVICE_PORT: 3402
+      AUTH_SERVICE_HOST: 'e2w-auth-service'
+      AUTH_SERVICE_PORT: 3406
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - proxy
+      - e2w
+      - db
+    depends_on:
+      - mongo
+  admins-service:
+    container_name: e2w-admins-service
+    build:
+      context: ./api/admins-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: admins-services
+    restart: always
+    expose:
+      - '3407'
+    ports:
+      - "3407:3407"
+    # labels:
+    #   - traefik.backend=admins-service
+    #   - traefik.frontend.rule=HostRegexp:${MAIN_DOMAIN},www.${MAIN_DOMAIN},{subdomain:[a-z]+}.${MAIN_DOMAIN},www.{subdomain:[a-z]+}.${MAIN_DOMAIN};PathPrefixStrip:/api/admins;AddPrefix:/admins
+    #   - traefik.port=3407
+    #   - traefik.enable=true
+    #   - traefik.docker.network=proxy
+    environment:
+      PORT: 3407
+      NODE_ENV: ${NODE_ENV}
+      ROLES_SERVICE_HOST: 'e2w-roles-service'
+      ROLES_SERVICE_PORT: 3404
+      USERS_SERVICE_HOST: 'e2w-users-service'
+      USERS_SERVICE_PORT: 3405
+      AUTH_SERVICE_HOST: 'e2w-auth-service'
+      AUTH_SERVICE_PORT: 3406
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - proxy
+      - e2w
+  auth-service:
+    container_name: e2w-auth-service
+    build:
+      context: ./api/auth-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: auth-service
+    restart: always
+    expose:
+      - '3406'
+    ports:
+      - "3406:3406"
+    # labels:
+    #   - traefik.enable=false
+    environment:
+      PORT: 3406
+      NODE_ENV: ${NODE_ENV}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - e2w
+      - db
+    depends_on:
+      - mongo
+  users-service:
+    container_name: e2w-users-service
+    build:
+      context: ./api/users-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: users-service
+    restart: always
+    expose:
+      - '3405'
+    ports:
+      - "3405:3405"
+    # labels:
+    #   - traefik.backend=users-service
+    #   - traefik.frontend.rule=HostRegexp:${MAIN_DOMAIN},www.${MAIN_DOMAIN},{subdomain:[a-z]+}.${MAIN_DOMAIN},www.{subdomain:[a-z]+}.${MAIN_DOMAIN};PathPrefixStrip:/api/users;AddPrefix:/users
+    #   - traefik.port=3405
+    #   - traefik.enable=true
+    #   - traefik.docker.network=proxy
+    environment:
+      PORT: 3405
+      NODE_ENV: ${NODE_ENV}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      ROLES_SERVICE_HOST: 'e2w-roles-service'
+      ROLES_SERVICE_PORT: 3404
+      AUTH_SERVICE_HOST: 'e2w-auth-service'
+      AUTH_SERVICE_PORT: 3406
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - proxy
+      - e2w
+      - db
+    depends_on:
+      - mongo
+  roles-service:
+    container_name: e2w-roles-service
+    build:
+      context: ./api/roles-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: roles-service
+    restart: always
+    expose:
+      - '3404'
+    ports:
+      - "3404:3404"
+    # labels:
+    #   - traefik.backend=roles-service
+    #   - traefik.frontend.rule=HostRegexp:${MAIN_DOMAIN},www.${MAIN_DOMAIN},{subdomain:[a-z]+}.${MAIN_DOMAIN},www.{subdomain:[a-z]+}.${MAIN_DOMAIN};PathPrefixStrip:/api/roles;AddPrefix:/roles
+    #   - traefik.port=3404
+    #   - traefik.enable=true
+    #   - traefik.docker.network=proxy
+    environment:
+      PORT: 3404
+      NODE_ENV: ${NODE_ENV}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      AUTH_SERVICE_HOST: 'e2w-auth-service'
+      AUTH_SERVICE_PORT: 3406
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - e2w
+      - db
+    depends_on:
+      - mongo
+  mail-service:
+    container_name: e2w-mail-service
+    build:
+      context: ./api/mail-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: mail-service
+    restart: always
+    expose:
+      - '3403'
+    ports:
+      - "3403:3403"
+    # labels:
+    #   - traefik.enable=false
+    environment:
+      PORT: 3403
+      NODE_ENV: ${NODE_ENV}
+      MAILGUN_DOMAIN: ${MAILGUN_DOMAIN}
+      MAILGUN_SECRET: ${MAILGUN_SECRET}
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - e2w
+  notifications-service:
+    container_name: e2w-notifications-service
+    build:
+      context: ./api/notifications-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: notifications-service
+    restart: always
+    expose:
+      - '3402'
+    ports:
+      - "3402:3402"
+    # labels:
+    #   - traefik.enable=false
+    environment:
+      PORT: 3402
+      NODE_ENV: ${NODE_ENV}
+      ADMIN_EMAIL: ${ADMIN_EMAIL}
+      SYSTEM_EMAIL: ${SYSTEM_EMAIL}
+      SUPPORT_EMAIL: ${SUPPORT_EMAIL}
+      LANDING_PAGE_DOMAIN: ${LANDING_PAGE_DOMAIN}
+      CMS_DOMAIN: ${CMS_DOMAIN}
+      MAIL_SERVICE_HOST: 'e2w-mail-service'
+      MAIL_SERVICE_PORT: 3403
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - e2w
+  prospects-service:
+    container_name: e2w-prospects-service
+    build:
+      context: ./api/prospects-service
+      dockerfile: Dockerfile
+    # image: ${DOCKER_REGISTRY_DOMAIN}/${SERVICE_NAME}:${SERVICE_VERSION}${IMAGE_SUFFIX}
+    image: prospects-service
+    restart: always
+    expose:
+      - '3401'
+    ports:
+      - "3401:3401"
+    # labels:
+    #   - traefik.backend=prospects-service
+    #   - traefik.frontend.rule=HostRegexp:${MAIN_DOMAIN},www.${MAIN_DOMAIN},{subdomain:[a-z]+}.${MAIN_DOMAIN},www.{subdomain:[a-z]+}.${MAIN_DOMAIN};PathPrefixStrip:/api/prospects;AddPrefix:/prospects
+    #   - traefik.port=3401
+    #   - traefik.enable=true
+    #   - traefik.docker.network=proxy
+    environment:
+      PORT: 3401
+      NODE_ENV: ${NODE_ENV}
+      MONGO_DB: ${MONGO_DB}
+      MONGO_HOST: ${MONGO_HOST}
+      MONGO_PORT: ${MONGO_PORT}
+      MONGO_USER: ${MONGO_USER}
+      MONGO_PASSWORD: ${MONGO_PASSWORD}
+      NOTIFICATIONS_SERVICE_HOST: 'e2w-notifications-service'
+      NOTIFICATIONS_SERVICE_PORT: 3402
+      AUTH_SERVICE_HOST: 'e2w-auth-service'
+      AUTH_SERVICE_PORT: 3406
+    volumes:
+      - ~/services/${SERVICE_NAME}:/home/app/.tmp
+    networks:
+      - proxy
+      - e2w
+      - db
+    depends_on:
+      - mongo
+  e2w-cms:
+    container_name: e2w-cms
+    build:
+      context: ./cms
+      dockerfile: Dockerfile
+    image: ${DOCKER_REGISTRY_DOMAIN}/e2w-cms:${CMS_VERSION}${IMAGE_SUFFIX}
+    restart: always
+    labels:
+      - traefik.backend=e2w-cms
+      - traefik.frontend.rule=Host:${CMS_DOMAIN},www.${CMS_DOMAIN}
+      - traefik.frontend.entryPoints=http,https
+      - traefik.port=80
+      - traefik.enable=true
+      - traefik.docker.network=proxy
+    environment:
+      NODE_ENV: ${NODE_ENV}
+    networks:
+      - proxy
+      - e2w
+  e2w-landing-page:
+    container_name: e2w-landing-page
+    build:
+      context: ./landing-page
+      dockerfile: Dockerfile
+    image: ${DOCKER_REGISTRY_DOMAIN}/e2w-landing-page:${LANDING_PAGE_VERSION}${IMAGE_SUFFIX}
+    restart: always
+    labels:
+      - traefik.backend=e2w-landing-page
+      - traefik.frontend.rule=Host:${LANDING_PAGE_DOMAIN},www.${LANDING_PAGE_DOMAIN}
+      - traefik.frontend.entryPoints=http,https
+      - traefik.port=3000
+      - traefik.enable=true
+      - traefik.docker.network=proxy
+    environment:
+      NODE_ENV: ${NODE_ENV}
+      GA_MEASUREMENT_ID: ${GA_MEASUREMENT_ID}
+      LANDING_PAGE_DOMAIN: ${LANDING_PAGE_DOMAIN}
+    networks:
+      - proxy
+      - e2w
+  mongo:
+    container_name: e2w-mongo
+    image: mongo:4.0.3
+    restart: always
+    labels:
+      - traefik.enable=false
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${MONGO_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_PASSWORD}
+    volumes:
+      # For Window
+      - /Users/HAIBUI/data/db/eastwest:/data/db
+      # - ~/data/db/e2w:/data/db
+    # ports:
+    #   - "${MONGO_PORT}:27017"
+    ports:
+      - "27017:27017"
+    networks:
+      - db
+  e2w-traefik:
+    image: traefik:1.7.10
+    command: --api --docker
+    ports:
+      # only expose https to outside world
+      - '443:443' # SSL
+      - '80:80'
+    expose:
+      # traefik dashboard port
+      - '8080'
+    labels:
+      - traefik.backend=traefik
+      - traefik.enable=true
+      # important: do NOT specify the entryPoint
+      - traefik.frontend.rule=Host:${TRAEFIK_DASHBOARD_DOMAIN}
+      - traefik.port=8080
+      - traefik.docker.network=proxy
+    volumes:
+      # So that Traefik can listen to the Docker events
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /root/traefik.toml:/traefik.toml
+      - /root/acme.json:/acme.json
+    restart: 'always'
+    networks:
+      - proxy
+
+networks:
+  proxy:
+    external: true
+  e2w:
+    external: false
+  db:
+    external: false

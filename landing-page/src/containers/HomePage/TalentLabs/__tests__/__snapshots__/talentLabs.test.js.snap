@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage > TalentLabs should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  data-test="talent-labs-cover-image"
+>
+  <Memo(Content)
+    className="contentLayout-0-2-2"
+  >
+    <div
+      className="content-0-2-3"
+    >
+      <Memo(Logo)
+        className="logo-0-2-4"
+        dataTest="talent-labs-logo"
+        type="talent-labs"
+      />
+      <p
+        className="description-0-2-5"
+        data-test="talent-labs-description"
+      >
+        Our world-class team of agile engineers, product managers, and designers works alongside you to build and deploy products differently than you have before. In the process, you become enabled to do this work self-sufficiently in the future. Your team learns cutting-edge technology and best practices the best way possible: by doing it. The knowledge you absorb while working with Talent Labs is just as valuable as the finished product itself.
+      </p>
+      <Link
+        href="/talent-labs"
+        passHref={true}
+      >
+        <Memo([object Object])
+          className="button-0-2-6"
+          color="primary"
+          dataTest="talent-labs-button"
+          keepSizeOnMobile={true}
+          size="large"
+          tag="a"
+        >
+          Explore now
+        </Memo([object Object])>
+      </Link>
+    </div>
+  </Memo(Content)>
+</div>
+`;

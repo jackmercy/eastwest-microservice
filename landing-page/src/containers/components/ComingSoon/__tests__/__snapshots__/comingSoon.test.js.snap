@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing ComingSoon should render match snapshot 1`] = `
+<Fragment>
+  <div
+    className="teaser-0-2-1"
+    data-test="coming-soon-teaser-image"
+  >
+    <Memo(Content)
+      className="teaserContent-0-2-2"
+    >
+      <h1
+        className="teaserTitle-0-2-3"
+        data-test="coming-soon-teaser-title"
+      >
+        Coming soon
+      </h1>
+    </Memo(Content)>
+  </div>
+  <Memo(Content)
+    className="content-0-2-4"
+  >
+    <img
+      alt="coming soon"
+      className="image-0-2-5"
+      data-test="coming-soon-cover-image"
+      loading="lazy"
+      src="/static/images/coming-soon/cover.png"
+    />
+    <h1
+      className="title-0-2-6"
+      data-test="coming-soon-title"
+    >
+      Coming soon
+    </h1>
+    <p
+      className="description-0-2-7"
+      data-test="coming-soon-description"
+    >
+      This page is under construction
+    </p>
+  </Memo(Content)>
+</Fragment>
+`;

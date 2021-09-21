@@ -1,0 +1,72 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs components > Teaser should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  data-test="teaser-cover-image"
+  style={
+    Object {
+      "backgroundImage": "url(/static/images/data-labs/influencers/teaser.png)",
+    }
+  }
+>
+  <Memo(Content)
+    className="contentLayout-0-2-2"
+  >
+    <div
+      className="content-0-2-3"
+    >
+      <Memo(Logo)
+        className="logo-0-2-4"
+        type="data-labs"
+      />
+      <p
+        className="purpose-0-2-5"
+        data-test="teaser-purpose"
+      >
+        nothing
+      </p>
+      <p
+        className="description-0-2-6"
+        data-test="teaser-description"
+      >
+        something
+      </p>
+      <div
+        className="buttonGroup-0-2-7"
+      >
+        <Link
+          as="/contact/#contact-form"
+          href="/contact/?defaultReason=5#contact-form"
+          passHref={true}
+        >
+          <Memo([object Object])
+            className="button-0-2-8"
+            color="primary"
+            dataTest="teaser-button-get-started"
+            keepSizeOnMobile={true}
+            size="large"
+            tag="a"
+          >
+            Get started
+          </Memo([object Object])>
+        </Link>
+        <Memo([object Object])
+          className="button-0-2-8"
+          color="tertiary"
+          dataTest="teaser-button-more"
+          keepSizeOnMobile={true}
+          onClick={[Function]}
+          size="large"
+          tag="a"
+        >
+          more
+          <i
+            className="icon-arrow-right"
+          />
+        </Memo([object Object])>
+      </div>
+    </div>
+  </Memo(Content)>
+</div>
+`;

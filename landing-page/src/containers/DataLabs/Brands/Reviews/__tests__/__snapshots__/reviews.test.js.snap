@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs > Brands > Reviews should render match snapshot 1`] = `
+<Memo(Content)
+  className="content-0-2-1"
+>
+  <h2
+    className="title-0-2-2"
+    data-test="reviews-title"
+  >
+    What other brands say about Data Labs
+  </h2>
+  <Memo(CustomCarousel)
+    data={
+      Array [
+        Object {
+          "avatar": "/static/images/data-labs/brands/quote-02.svg",
+          "highlight": true,
+          "name": "RNW",
+          "review": "We build solutions for our real estate plaform on a continuous basis. Implmenting Data Labs for our User-Centered Design process allowed us to gather insights from our users to fine tune our products. Less costs on quantitative research and a brilliant form of Lead Generation.",
+        },
+        Object {
+          "avatar": "/static/images/data-labs/brands/quote-03.svg",
+          "highlight": true,
+          "name": "KimOo Beatz",
+          "review": "Sampling for our music is subjective most of the time. We try to set or follow trends and engage with our audience on music released. Data Labs, allowed us to integrate data driven decision making on what direction we can take with our music to reach a better audience.",
+        },
+        Object {
+          "avatar": "/static/images/data-labs/brands/quote-04.svg",
+          "highlight": true,
+          "name": "Toiya",
+          "review": "Creating content and gathering market insights became such an easy thing to do with Data Labs. We heavily rely on the feedback of our user base and manage requests on a continuous basis. Setting up multiple data streams has allowed us to allocate resources better and scale easier.",
+        },
+        Object {
+          "avatar": "/static/images/data-labs/brands/quote-05.svg",
+          "highlight": true,
+          "name": "Voice Pick",
+          "review": "We work continuosly with data, generate reports and make recommendations to clients. Data is usually outdated, highly generalized and not specific. With Data Labs we get feedback from our users now. It’s accurate, reliable and gives us a selling point that competitors dont have.",
+        },
+      ]
+    }
+  />
+  <div
+    className="listItems-0-2-3"
+    data-test="reviews-list-items"
+  >
+    <div
+      className="itemLayout-0-2-4"
+      data-test="reviews-item"
+      key="review-0"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+      >
+        <img
+          alt="RNW"
+          className="itemQuotesImage-0-2-6"
+          loading="lazy"
+          src="/static/images/data-labs/quotes.png"
+        />
+        <p
+          className="itemReview-0-2-7"
+        >
+          We build solutions for our real estate plaform on a continuous basis. Implmenting Data Labs for our User-Centered Design process allowed us to gather insights from our users to fine tune our products. Less costs on quantitative research and a brilliant form of Lead Generation.
+        </p>
+        <div
+          className="itemGroup-0-2-8"
+        >
+          <div
+            className="itemAvatarImageWrapper-0-2-9"
+          >
+            <img
+              alt="RNW"
+              className="itemAvatarImage-0-2-10"
+              loading="lazy"
+              src="/static/images/data-labs/brands/quote-02.svg"
+            />
+          </div>
+          <p
+            className="itemName-0-2-11"
+          >
+            RNW
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="itemLayout-0-2-4"
+      data-test="reviews-item"
+      key="review-1"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+      >
+        <img
+          alt="KimOo Beatz"
+          className="itemQuotesImage-0-2-6"
+          loading="lazy"
+          src="/static/images/data-labs/quotes.png"
+        />
+        <p
+          className="itemReview-0-2-7"
+        >
+          Sampling for our music is subjective most of the time. We try to set or follow trends and engage with our audience on music released. Data Labs, allowed us to integrate data driven decision making on what direction we can take with our music to reach a better audience.
+        </p>
+        <div
+          className="itemGroup-0-2-8"
+        >
+          <div
+            className="itemAvatarImageWrapper-0-2-9"
+          >
+            <img
+              alt="KimOo Beatz"
+              className="itemAvatarImage-0-2-10"
+              loading="lazy"
+              src="/static/images/data-labs/brands/quote-03.svg"
+            />
+          </div>
+          <p
+            className="itemName-0-2-11"
+          >
+            KimOo Beatz
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="itemLayout-0-2-4"
+      data-test="reviews-item"
+      key="review-2"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+      >
+        <img
+          alt="Toiya"
+          className="itemQuotesImage-0-2-6"
+          loading="lazy"
+          src="/static/images/data-labs/quotes.png"
+        />
+        <p
+          className="itemReview-0-2-7"
+        >
+          Creating content and gathering market insights became such an easy thing to do with Data Labs. We heavily rely on the feedback of our user base and manage requests on a continuous basis. Setting up multiple data streams has allowed us to allocate resources better and scale easier.
+        </p>
+        <div
+          className="itemGroup-0-2-8"
+        >
+          <div
+            className="itemAvatarImageWrapper-0-2-9"
+          >
+            <img
+              alt="Toiya"
+              className="itemAvatarImage-0-2-10"
+              loading="lazy"
+              src="/static/images/data-labs/brands/quote-04.svg"
+            />
+          </div>
+          <p
+            className="itemName-0-2-11"
+          >
+            Toiya
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      className="itemLayout-0-2-4"
+      data-test="reviews-item"
+      key="review-3"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+      >
+        <img
+          alt="Voice Pick"
+          className="itemQuotesImage-0-2-6"
+          loading="lazy"
+          src="/static/images/data-labs/quotes.png"
+        />
+        <p
+          className="itemReview-0-2-7"
+        >
+          We work continuosly with data, generate reports and make recommendations to clients. Data is usually outdated, highly generalized and not specific. With Data Labs we get feedback from our users now. It’s accurate, reliable and gives us a selling point that competitors dont have.
+        </p>
+        <div
+          className="itemGroup-0-2-8"
+        >
+          <div
+            className="itemAvatarImageWrapper-0-2-9"
+          >
+            <img
+              alt="Voice Pick"
+              className="itemAvatarImage-0-2-10"
+              loading="lazy"
+              src="/static/images/data-labs/brands/quote-05.svg"
+            />
+          </div>
+          <p
+            className="itemName-0-2-11"
+          >
+            Voice Pick
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</Memo(Content)>
+`;

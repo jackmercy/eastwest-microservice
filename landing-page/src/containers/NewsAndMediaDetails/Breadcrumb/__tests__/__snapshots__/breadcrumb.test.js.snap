@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMediaDetails > Breadcrumb should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(Content)
+    className="hide-scrollbar content-0-2-2"
+  >
+    <Link
+      href="/news-and-media"
+      passHref={true}
+    >
+      <a
+        className="link-0-2-3"
+        href="/news-and-media"
+        title="News and media"
+      >
+        News and media
+      </a>
+    </Link>
+    <span
+      className="arrow-0-2-4"
+    >
+      <i
+        className="icon-caret-right"
+      />
+    </span>
+    <Link
+      href="/news-and-media"
+      passHref={true}
+    >
+      <a
+        className="link-0-2-3"
+        href="/news-and-media"
+        title="Technology news"
+      >
+        Technology news
+      </a>
+    </Link>
+    <span
+      className="arrow-0-2-4"
+    >
+      <i
+        className="icon-caret-right"
+      />
+    </span>
+    <span
+      className="subLink-0-2-5"
+      title="iPhone SE has some of the best iPhone 11 features, including wireless charging"
+    >
+      iPhone SE has some of the best iPhone 11 features, including wireless charging
+    </span>
+  </Memo(Content)>
+</div>
+`;

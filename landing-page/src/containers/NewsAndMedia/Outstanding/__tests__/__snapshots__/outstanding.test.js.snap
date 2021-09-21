@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMedia > Outstanding should render match snapshot 1`] = `
+<Memo(Content)
+  className="root-0-2-1"
+>
+  <div
+    className="main-0-2-2"
+  >
+    <Memo(Item)
+      className="mainItem-0-2-4"
+      data={
+        Object {
+          "category": Object {
+            "id": "610752dd1f174b00188e6359",
+            "name": "Insights",
+            "shortDescription": "Insights",
+            "slug": "insights",
+            "tags": Array [
+              "Insights",
+            ],
+          },
+          "id": "abc",
+          "shortDescription": "some description",
+          "slug": "test-new",
+          "thumbnail": "image url",
+          "title": "Some title",
+        }
+      }
+      dataTest="outstanding-main-item"
+      main={true}
+    />
+  </div>
+  <div
+    className="others-0-2-3"
+  >
+    <Memo(Item)
+      className="otherItem-0-2-5"
+      data={
+        Object {
+          "category": Object {
+            "id": "610752dd1f174b00188e6359",
+            "name": "Insights",
+            "shortDescription": "Insights",
+            "slug": "insights",
+            "tags": Array [
+              "Insights",
+            ],
+          },
+          "id": "abc1",
+          "shortDescription": "some description",
+          "slug": "test-new",
+          "thumbnail": "image url",
+          "title": "Some title",
+        }
+      }
+      dataTest="outstanding-sub-item"
+      key="abc1"
+      size="small"
+    />
+    <Memo(Item)
+      className="otherItem-0-2-5"
+      data={
+        Object {
+          "category": Object {
+            "id": "610752dd1f174b00188e6359",
+            "name": "Insights",
+            "shortDescription": "Insights",
+            "slug": "insights",
+            "tags": Array [
+              "Insights",
+            ],
+          },
+          "id": "abc2",
+          "shortDescription": "some description",
+          "slug": "test-new",
+          "thumbnail": "image url",
+          "title": "Some title",
+        }
+      }
+      dataTest="outstanding-sub-item"
+      key="abc2"
+      size="small"
+    />
+  </div>
+</Memo(Content)>
+`;

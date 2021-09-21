@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Modal component > ModalContent should render match snapshot 1`] = `
+<div
+  className="custom-scrollbar root-0-2-1"
+>
+  Content
+</div>
+`;

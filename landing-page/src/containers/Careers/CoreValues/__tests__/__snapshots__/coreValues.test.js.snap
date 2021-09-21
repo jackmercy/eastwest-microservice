@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers > CoreValues should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  id="our-mission"
+>
+  <Memo(WebCoreValues)
+    data={
+      Array [
+        Object {
+          "description": "Given our responsibility to each other and our customers, behaving ethically is a critical, and elemental, part of our success. Our clients are pouring their heart and soul into their product. There is no alternative for us but do the same.",
+          "image": "/static/images/careers/core-value-01.png",
+          "key": "strive-for-excellence",
+          "srcSet": "/static/images/careers/core-value-01-mobile.png 500w, /static/images/careers/core-value-01.png 2000w",
+          "title": "Strive for excellence",
+          "titleTranslationId": "CAREERS.CORE_VALUE.01.TITLE",
+        },
+        Object {
+          "description": "We start from a baseline of common sense, feedback loops and retrospectives that show us how to improve. Problems are meant to be challenged. Sharing that knowledge with each other, and acting on it, is essential for our Talents.",
+          "image": "/static/images/careers/core-value-02.png",
+          "key": "think-in-solutions",
+          "srcSet": "/static/images/careers/core-value-02-mobile.png 500w, /static/images/careers/core-value-02.png 2000w",
+          "title": "Think in solutions",
+          "titleTranslationId": "CAREERS.CORE_VALUE.02.TITLE",
+        },
+        Object {
+          "description": "In a competitive landscape full of talented people, empathy and kindness go a long way. Our Talents have built a culture where inclusion and respect are a defining part of our identity.",
+          "image": "/static/images/careers/core-value-03.png",
+          "key": "be-inclusive",
+          "srcSet": "/static/images/careers/core-value-03-mobile.png 500w, /static/images/careers/core-value-03.png 2000w",
+          "title": "Be inclusive",
+          "titleTranslationId": "CAREERS.CORE_VALUE.03.TITLE",
+        },
+        Object {
+          "description": "We hire intelligent people to tell us what to do, not to tell them what to do! You and your team mates are part of the solution. Work together and continuously strive to be productive.",
+          "image": "/static/images/careers/core-value-04.png",
+          "key": "work-towards-productivity",
+          "srcSet": "/static/images/careers/core-value-04-mobile.png 500w, /static/images/careers/core-value-04.png 2000w",
+          "title": "Work towards productivity",
+          "titleTranslationId": "CAREERS.CORE_VALUE.04.TITLE",
+        },
+      ]
+    }
+  />
+</div>
+`;

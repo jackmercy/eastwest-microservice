@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage > Introduction should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <h2
+    className="title-0-2-2"
+    data-test="introduction-title"
+  >
+    Why you should work with us?
+  </h2>
+  <div
+    className="video-0-2-3"
+  >
+    <div
+      className="ratio-0-2-4"
+    >
+      <iframe
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen={true}
+        className="iframe-0-2-5"
+        data-test="introduction-video"
+        frameBorder="0"
+        loading="lazy"
+        src="https://www.youtube.com/embed/CueWrmany8A"
+        title="East West Introduction"
+      />
+    </div>
+  </div>
+</div>
+`;

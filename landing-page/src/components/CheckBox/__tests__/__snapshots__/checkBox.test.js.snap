@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing CheckBox component should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  data-test="component-checkbox-root"
+>
+  <input
+    className="input-0-2-2"
+    data-test="component-checkbox-input"
+    id="checkbox"
+    name="checkbox"
+    type="checkbox"
+  />
+  <label
+    className="label-0-2-3"
+    data-test="component-checkbox-label"
+    htmlFor="checkbox"
+  >
+    checkbox
+  </label>
+</div>
+`;

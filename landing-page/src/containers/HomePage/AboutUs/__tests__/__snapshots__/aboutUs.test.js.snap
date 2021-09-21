@@ -1,0 +1,208 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage > AboutUs should render match snapshot 1`] = `
+<Memo(Content)
+  className="root-0-2-1"
+>
+  <h2
+    className="title-0-2-2"
+    data-test="about-us-title"
+  >
+    About us
+  </h2>
+  <p
+    className="description-0-2-3"
+    data-test="about-us-description"
+  >
+    We provide the tools you need to build and scale your business & product.
+    <br
+      key=".1"
+    />
+    Get support and guidance to enable Growth and innovation, free from bad practices, risk and technical debt.
+  </p>
+  <div
+    className="group-0-2-4"
+  >
+    <div
+      className="groupItem-0-2-5"
+      data-test="about-us-info-founded"
+      key="founded"
+    >
+      <img
+        alt="Founded"
+        className="groupItemImage-0-2-6"
+        loading="lazy"
+        src="/static/images/homepage/about-us-1.png"
+      />
+      <h2
+        className="groupItemValue-0-2-7"
+      >
+        <CountUp
+          decimal="."
+          decimals={0}
+          delay={null}
+          duration={null}
+          easingFn={null}
+          end={2018}
+          formattingFn={null}
+          onEnd={[Function]}
+          onPauseResume={[Function]}
+          onReset={[Function]}
+          onStart={[Function]}
+          onUpdate={[Function]}
+          prefix=""
+          preserveValue={false}
+          redraw={false}
+          separator=""
+          start={null}
+          startOnMount={true}
+          suffix=""
+          useEasing={true}
+        >
+          <Component />
+        </CountUp>
+      </h2>
+      <p
+        className="groupItemLabel-0-2-8"
+      >
+        Founded
+      </p>
+    </div>
+    <div
+      className="groupItem-0-2-5"
+      data-test="about-us-info-talents"
+      key="talents"
+    >
+      <img
+        alt="XP Talents"
+        className="groupItemImage-0-2-6"
+        loading="lazy"
+        src="/static/images/homepage/about-us-2.png"
+      />
+      <h2
+        className="groupItemValue-0-2-7"
+      >
+        <CountUp
+          decimal="."
+          decimals={0}
+          delay={null}
+          duration={null}
+          easingFn={null}
+          end={800}
+          formattingFn={null}
+          onEnd={[Function]}
+          onPauseResume={[Function]}
+          onReset={[Function]}
+          onStart={[Function]}
+          onUpdate={[Function]}
+          prefix=""
+          preserveValue={false}
+          redraw={false}
+          separator=""
+          start={null}
+          startOnMount={true}
+          suffix="+"
+          useEasing={true}
+        >
+          <Component />
+        </CountUp>
+      </h2>
+      <p
+        className="groupItemLabel-0-2-8"
+      >
+        XP Talents
+      </p>
+    </div>
+    <div
+      className="groupItem-0-2-5"
+      data-test="about-us-info-projects"
+      key="projects"
+    >
+      <img
+        alt="Amazing Projects"
+        className="groupItemImage-0-2-6"
+        loading="lazy"
+        src="/static/images/homepage/about-us-3.png"
+      />
+      <h2
+        className="groupItemValue-0-2-7"
+      >
+        <CountUp
+          decimal="."
+          decimals={0}
+          delay={null}
+          duration={null}
+          easingFn={null}
+          end={140}
+          formattingFn={null}
+          onEnd={[Function]}
+          onPauseResume={[Function]}
+          onReset={[Function]}
+          onStart={[Function]}
+          onUpdate={[Function]}
+          prefix=""
+          preserveValue={false}
+          redraw={false}
+          separator=""
+          start={null}
+          startOnMount={true}
+          suffix="+"
+          useEasing={true}
+        >
+          <Component />
+        </CountUp>
+      </h2>
+      <p
+        className="groupItemLabel-0-2-8"
+      >
+        Amazing Projects
+      </p>
+    </div>
+    <div
+      className="groupItem-0-2-5"
+      data-test="about-us-info-raised"
+      key="raised"
+    >
+      <img
+        alt="Raised by our clients globally"
+        className="groupItemImage-0-2-6"
+        loading="lazy"
+        src="/static/images/homepage/about-us-4.png"
+      />
+      <h2
+        className="groupItemValue-0-2-7"
+      >
+        <CountUp
+          decimal="."
+          decimals={1}
+          delay={null}
+          duration={null}
+          easingFn={null}
+          end={1.5}
+          formattingFn={null}
+          onEnd={[Function]}
+          onPauseResume={[Function]}
+          onReset={[Function]}
+          onStart={[Function]}
+          onUpdate={[Function]}
+          prefix=""
+          preserveValue={false}
+          redraw={false}
+          separator=""
+          start={null}
+          startOnMount={true}
+          suffix="B+"
+          useEasing={true}
+        >
+          <Component />
+        </CountUp>
+      </h2>
+      <p
+        className="groupItemLabel-0-2-8"
+      >
+        Raised by our clients globally
+      </p>
+    </div>
+  </div>
+</Memo(Content)>
+`;

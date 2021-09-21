@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Footer > SummaryInfo should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(Logo)
+    className="logo-0-2-2"
+    dataTest="summary-info-logo"
+    type="east-west-white"
+  />
+  <p
+    className="description-0-2-3"
+    data-test="summary-info-description"
+  >
+    A modern mindset and methodology that turns technology into business outcomes and scales Tech Ventures to the next level. East to West unifies these concepts in comprehensive products
+  </p>
+</div>
+`;

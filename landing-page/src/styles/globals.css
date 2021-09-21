@@ -1,0 +1,155 @@
+/* Localize font */
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf')
+    format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-Black.ttf')
+    format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-BlackItalic.ttf')
+    format('truetype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-ExtraLight.ttf')
+    format('truetype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-ExtraLightItalic.ttf')
+    format('truetype');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-Light.ttf')
+    format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-LightItalic.ttf')
+    format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-Italic.ttf')
+    format('truetype');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBold.ttf')
+    format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../assets/fonts/Source_Sans_Pro/SourceSansPro-SemiBoldItalic.ttf')
+    format('truetype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* HTML styles */
+html {
+  font-size: 16px;
+}
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (min-width: 1200px) and (max-width: 1439px) {
+  html {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 576px) and (max-width: 1199px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* Custom scrollbar styles */
+body::-webkit-scrollbar,
+.custom-scrollbar::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+}
+body::-webkit-scrollbar-track,
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+body::-webkit-scrollbar-thumb,
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #c80030;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumbhover,
+.custom-scrollbar::-webkit-scrollbar-thumbhover {
+  background: transparent;
+}
+
+/* Hide scrollbar styles */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

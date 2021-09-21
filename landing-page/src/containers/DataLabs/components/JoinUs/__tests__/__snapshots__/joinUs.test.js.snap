@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs components > JoinUs should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(Content)
+    className="content-0-2-2"
+  >
+    <h2
+      className="description-0-2-3"
+      data-test="join-us-description"
+    >
+      Something
+    </h2>
+    <Link
+      as="/contact/#contact-form"
+      href="/contact/?defaultReason=4#contact-form"
+      passHref={true}
+    >
+      <Memo([object Object])
+        className="button-0-2-4"
+        color="secondary"
+        dataTest="join-us-cta"
+        keepSizeOnMobile={true}
+        size="large"
+        tag="a"
+      >
+        Join now!
+      </Memo([object Object])>
+    </Link>
+  </Memo(Content)>
+</div>
+`;

@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage should render match snapshot 1`] = `
+<Memo(Layout)
+  className="layout-0-2-1"
+>
+  <SEO
+    creator=""
+    description="Build, Innovate & Scale Products - Work with the world’s most comprehensive and reliable product development tools. Build and Scale products using eXtreme Programming, User-Centered Design, Lean product Management Growth marketing & Business Analysis"
+    image=""
+    keywords=""
+    siteName=""
+    title="The East West Initiative"
+    url="https://dev.eastwest.live"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(Teaser) />
+  <Memo(TalentLabs) />
+  <Memo(AboutUs) />
+  <Memo(Partners) />
+  <ForwardRef(LoadableComponent) />
+  <Memo(ContactUs) />
+  <Memo(CreateProject) />
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

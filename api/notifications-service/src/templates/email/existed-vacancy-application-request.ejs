@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Thank for your application!</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body style="font-family: 'Source Sans Pro', sans-serif; color: #333">
+    <div style="max-width: 775px; margin: 0 auto; background-color: #fff">
+      <div
+        style="
+          padding: 40px 16px 70px;
+          max-width: 562px;
+          margin: 0 auto;
+          box-sizing: border-box;
+        "
+      >
+        <a
+          href="<%= landingPageUrl %>"
+          target="_blank"
+          style="
+            display: block;
+            width: 100%;
+            max-width: 170px;
+            margin-bottom: 48px;
+          "
+        >
+          <img
+            alt="East west logo"
+            src="<%= landingPageUrl + '/static/images/logo/east-west.png' %>"
+            style="display: block; width: 100%"
+          />
+        </a>
+        <h1
+          style="
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 48px;
+            margin: 0 0 18px;
+          "
+        >
+          Thank for your application!
+        </h1>
+
+        <p style="font-size: 16px; line-height: 24px">
+          Dear <span style="font-weight: bold"><%= fullName %></span>,
+        </p>
+        <p style="font-size: 16px; line-height: 24px">
+          Thank you for your interest in East West.
+        </p>
+        <p style="font-size: 16px; line-height: 24px">
+          You have already applied for this job, we will get back to you as soon as possible.
+        </p>
+        <p style="font-size: 16px; line-height: 24px">
+          Please have a look at other opportunities at East West follow link below:
+        </p>
+        <p style="font-size: 16px; line-height: 24px">
+          <a
+            href="<%= careersUrl %>"
+            target="_blank"
+            style="color: #c80030; font-weight: bold; text-decoration: none"
+            >East West Jobs</a
+          >
+        </p>
+        <p style="font-size: 16px; line-height: 24px">Kind regards,</p>
+      </div>
+      <div style="background-color: #333">
+        <div
+          style="
+            padding: 32px 16px;
+            max-width: 564px;
+            margin: 0 auto;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+          "
+        >
+          <p style="font-size: 16px; line-height: 24px; margin: 0">
+            © 2020 The East to West Initiative Limited.
+          </p>
+          <p style="font-size: 16px; line-height: 24px; margin: 0">
+            Unit 3D North Point House, North Point Business Park, New Mallow
+            Road, Cork. T23 AT2P, Ireland.
+          </p>
+          <p style="font-size: 16px; line-height: 24px; margin: 16px 0 0">
+            <a
+              href="<%= termsUrl %>"
+              target="_blank"
+              style="text-decoration: none; color: #c80030"
+            >
+              Terms of Use
+            </a>
+            &nbsp;
+            <span style="color: #fff">|</span>
+            &nbsp;
+            <a
+              href="<%= privacyUrl %>"
+              target="_blank"
+              style="text-decoration: none; color: #c80030"
+            >
+              Privacy Policy
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

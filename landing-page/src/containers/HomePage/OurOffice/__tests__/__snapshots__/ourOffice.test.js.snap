@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage > OurOffice should render match snapshot 1`] = `
+<Memo(Content)
+  className="root-0-2-1"
+>
+  <h2
+    className="title-0-2-2"
+    data-test="our-office-title"
+  >
+    Our workspace in Vietnam
+  </h2>
+  <Memo(WebImages)
+    images={
+      Array [
+        Object {
+          "key": "cover-1",
+          "src": "/static/images/homepage/office-01.png",
+          "srcSet": "/static/images/homepage/office-01.png 500w, /static/images/homepage/office-01@2x.png 1500w, /static/images/homepage/office-01@3x.png 2000w",
+        },
+        Object {
+          "key": "cover-2",
+          "src": "/static/images/homepage/office-02.png",
+          "srcSet": "/static/images/homepage/office-02.png 500w, /static/images/homepage/office-02@2x.png 1500w, /static/images/homepage/office-02@3x.png 2000w",
+        },
+        Object {
+          "key": "cover-3",
+          "src": "/static/images/homepage/office-03.png",
+          "srcSet": "/static/images/homepage/office-03.png 500w, /static/images/homepage/office-03@2x.png 1500w, /static/images/homepage/office-03@3x.png 2000w",
+        },
+        Object {
+          "key": "cover-4",
+          "src": "/static/images/homepage/office-04.png",
+          "srcSet": "/static/images/homepage/office-04.png 500w, /static/images/homepage/office-04@2x.png 1500w, /static/images/homepage/office-04@3x.png 2000w",
+        },
+      ]
+    }
+  />
+  <h2
+    className="introTitle-0-2-3"
+  >
+    We work with passion
+  </h2>
+  <p
+    className="introDescription-0-2-4"
+    data-test="our-office-description"
+  >
+    Our eyes are set beyond the world of engineering, we want to create an ecosytem anyone can use. We believe East West will be the go-to platform for excellence and product scalability.
+  </p>
+  <Link
+    href="/talent-labs"
+    passHref={true}
+  >
+    <a
+      className="introDescription-0-2-4 introLink-0-2-5"
+      data-test="our-office-link-talent-labs"
+      href="/#"
+    >
+      Become a Talent at Talent Labs
+      <i
+        className="icon-arrow-right"
+      />
+    </a>
+  </Link>
+  <h2
+    className="introTitle-0-2-3"
+  >
+    Help each other grow up
+  </h2>
+  <p
+    className="introDescription-0-2-4"
+    data-test="our-office-description"
+  >
+    Are you ready to innovate and make an impact? Join us, we are always looking for new talent! See all our current openings and apply to our vacancies and internships.
+  </p>
+  <Link
+    href="/careers"
+    passHref={true}
+  >
+    <a
+      className="introDescription-0-2-4 introLink-0-2-5"
+      data-test="our-office-link-careers"
+      href="/#"
+    >
+      Learn more about opportunities at East West
+      <i
+        className="icon-arrow-right"
+      />
+    </a>
+  </Link>
+</Memo(Content)>
+`;

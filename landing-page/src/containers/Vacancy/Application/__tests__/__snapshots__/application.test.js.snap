@@ -1,0 +1,1742 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Vacancy > Application should render match snapshot 1`] = `
+<Fragment>
+  <Memo(Content)
+    className="content-0-2-1"
+  >
+    <div
+      className="form-0-2-2"
+    >
+      <div
+        className="avatar-0-2-12"
+        data-test="application-input-avatar"
+      >
+        <div
+          className="avatarPreviewWrapper-0-2-13"
+        >
+          <div
+            className="avatarDefault-0-2-14"
+          >
+            <i
+              className="icon-avatar"
+            />
+          </div>
+        </div>
+        <Memo([object Object])
+          className="avatarButton-0-2-16"
+          color="secondary"
+          tag="label"
+        >
+          Upload your photo
+          <input
+            accept="image/*"
+            className="inputHidden-0-2-17"
+            name="avatar"
+            onChange={[Function]}
+            type="file"
+          />
+        </Memo([object Object])>
+      </div>
+      <Memo(Input)
+        className="formInput-0-2-3 form50-0-2-5"
+        dataTest="application-input-first-name"
+        error=""
+        key="firstName"
+        label="First name"
+        name="firstName"
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Your first name"
+        required={true}
+        size="large"
+        type="text"
+        value=""
+      />
+      <Memo(Input)
+        className="formInput-0-2-3 form50-0-2-5"
+        dataTest="application-input-last-name"
+        error=""
+        key="lastName"
+        label="Last name"
+        name="lastName"
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Your last name"
+        required={true}
+        size="large"
+        type="text"
+        value=""
+      />
+      <Memo(Input)
+        className="formInput-0-2-3"
+        dataTest="application-input-email-address"
+        error=""
+        key="emailAddress"
+        label="Email address"
+        name="emailAddress"
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Your email address"
+        required={true}
+        size="large"
+        type="email"
+        value=""
+      />
+      <Memo(Select)
+        className="formInput-0-2-3 form30-0-2-4"
+        dataTest="application-select-phone-code"
+        error=""
+        isSearchable={true}
+        key="phoneCode"
+        label="Phone number"
+        name="phoneCode"
+        onChange={[Function]}
+        onFocus={[Function]}
+        options={
+          Array [
+            Object {
+              "code": "93",
+              "default": false,
+              "label": "Afghanistan (+93)",
+              "value": "AF",
+            },
+            Object {
+              "code": "+358-18",
+              "default": false,
+              "label": "Aland Islands (++358-18)",
+              "value": "AX",
+            },
+            Object {
+              "code": "355",
+              "default": false,
+              "label": "Albania (+355)",
+              "value": "AL",
+            },
+            Object {
+              "code": "213",
+              "default": false,
+              "label": "Algeria (+213)",
+              "value": "DZ",
+            },
+            Object {
+              "code": "+1-684",
+              "default": false,
+              "label": "American Samoa (++1-684)",
+              "value": "AS",
+            },
+            Object {
+              "code": "376",
+              "default": false,
+              "label": "Andorra (+376)",
+              "value": "AD",
+            },
+            Object {
+              "code": "244",
+              "default": false,
+              "label": "Angola (+244)",
+              "value": "AO",
+            },
+            Object {
+              "code": "+1-264",
+              "default": false,
+              "label": "Anguilla (++1-264)",
+              "value": "AI",
+            },
+            Object {
+              "code": "",
+              "default": false,
+              "label": "Antarctica (+)",
+              "value": "AQ",
+            },
+            Object {
+              "code": "+1-268",
+              "default": false,
+              "label": "Antigua And Barbuda (++1-268)",
+              "value": "AG",
+            },
+            Object {
+              "code": "54",
+              "default": false,
+              "label": "Argentina (+54)",
+              "value": "AR",
+            },
+            Object {
+              "code": "374",
+              "default": false,
+              "label": "Armenia (+374)",
+              "value": "AM",
+            },
+            Object {
+              "code": "297",
+              "default": false,
+              "label": "Aruba (+297)",
+              "value": "AW",
+            },
+            Object {
+              "code": "61",
+              "default": false,
+              "label": "Australia (+61)",
+              "value": "AU",
+            },
+            Object {
+              "code": "43",
+              "default": false,
+              "label": "Austria (+43)",
+              "value": "AT",
+            },
+            Object {
+              "code": "994",
+              "default": false,
+              "label": "Azerbaijan (+994)",
+              "value": "AZ",
+            },
+            Object {
+              "code": "+1-242",
+              "default": false,
+              "label": "Bahamas The (++1-242)",
+              "value": "BS",
+            },
+            Object {
+              "code": "973",
+              "default": false,
+              "label": "Bahrain (+973)",
+              "value": "BH",
+            },
+            Object {
+              "code": "880",
+              "default": false,
+              "label": "Bangladesh (+880)",
+              "value": "BD",
+            },
+            Object {
+              "code": "+1-246",
+              "default": false,
+              "label": "Barbados (++1-246)",
+              "value": "BB",
+            },
+            Object {
+              "code": "375",
+              "default": false,
+              "label": "Belarus (+375)",
+              "value": "BY",
+            },
+            Object {
+              "code": "32",
+              "default": false,
+              "label": "Belgium (+32)",
+              "value": "BE",
+            },
+            Object {
+              "code": "501",
+              "default": false,
+              "label": "Belize (+501)",
+              "value": "BZ",
+            },
+            Object {
+              "code": "229",
+              "default": false,
+              "label": "Benin (+229)",
+              "value": "BJ",
+            },
+            Object {
+              "code": "+1-441",
+              "default": false,
+              "label": "Bermuda (++1-441)",
+              "value": "BM",
+            },
+            Object {
+              "code": "975",
+              "default": false,
+              "label": "Bhutan (+975)",
+              "value": "BT",
+            },
+            Object {
+              "code": "591",
+              "default": false,
+              "label": "Bolivia (+591)",
+              "value": "BO",
+            },
+            Object {
+              "code": "387",
+              "default": false,
+              "label": "Bosnia and Herzegovina (+387)",
+              "value": "BA",
+            },
+            Object {
+              "code": "267",
+              "default": false,
+              "label": "Botswana (+267)",
+              "value": "BW",
+            },
+            Object {
+              "code": "0055",
+              "default": false,
+              "label": "Bouvet Island (+0055)",
+              "value": "BV",
+            },
+            Object {
+              "code": "55",
+              "default": false,
+              "label": "Brazil (+55)",
+              "value": "BR",
+            },
+            Object {
+              "code": "246",
+              "default": false,
+              "label": "British Indian Ocean Territory (+246)",
+              "value": "IO",
+            },
+            Object {
+              "code": "673",
+              "default": false,
+              "label": "Brunei (+673)",
+              "value": "BN",
+            },
+            Object {
+              "code": "359",
+              "default": false,
+              "label": "Bulgaria (+359)",
+              "value": "BG",
+            },
+            Object {
+              "code": "226",
+              "default": false,
+              "label": "Burkina Faso (+226)",
+              "value": "BF",
+            },
+            Object {
+              "code": "257",
+              "default": false,
+              "label": "Burundi (+257)",
+              "value": "BI",
+            },
+            Object {
+              "code": "855",
+              "default": false,
+              "label": "Cambodia (+855)",
+              "value": "KH",
+            },
+            Object {
+              "code": "237",
+              "default": false,
+              "label": "Cameroon (+237)",
+              "value": "CM",
+            },
+            Object {
+              "code": "1",
+              "default": false,
+              "label": "Canada (+1)",
+              "value": "CA",
+            },
+            Object {
+              "code": "238",
+              "default": false,
+              "label": "Cape Verde (+238)",
+              "value": "CV",
+            },
+            Object {
+              "code": "+1-345",
+              "default": false,
+              "label": "Cayman Islands (++1-345)",
+              "value": "KY",
+            },
+            Object {
+              "code": "236",
+              "default": false,
+              "label": "Central African Republic (+236)",
+              "value": "CF",
+            },
+            Object {
+              "code": "235",
+              "default": false,
+              "label": "Chad (+235)",
+              "value": "TD",
+            },
+            Object {
+              "code": "56",
+              "default": false,
+              "label": "Chile (+56)",
+              "value": "CL",
+            },
+            Object {
+              "code": "86",
+              "default": false,
+              "label": "China (+86)",
+              "value": "CN",
+            },
+            Object {
+              "code": "61",
+              "default": false,
+              "label": "Christmas Island (+61)",
+              "value": "CX",
+            },
+            Object {
+              "code": "61",
+              "default": false,
+              "label": "Cocos (Keeling) Islands (+61)",
+              "value": "CC",
+            },
+            Object {
+              "code": "57",
+              "default": false,
+              "label": "Colombia (+57)",
+              "value": "CO",
+            },
+            Object {
+              "code": "269",
+              "default": false,
+              "label": "Comoros (+269)",
+              "value": "KM",
+            },
+            Object {
+              "code": "242",
+              "default": false,
+              "label": "Congo (+242)",
+              "value": "CG",
+            },
+            Object {
+              "code": "243",
+              "default": false,
+              "label": "Congo The Democratic Republic Of The (+243)",
+              "value": "CD",
+            },
+            Object {
+              "code": "682",
+              "default": false,
+              "label": "Cook Islands (+682)",
+              "value": "CK",
+            },
+            Object {
+              "code": "506",
+              "default": false,
+              "label": "Costa Rica (+506)",
+              "value": "CR",
+            },
+            Object {
+              "code": "225",
+              "default": false,
+              "label": "Cote D'Ivoire (Ivory Coast) (+225)",
+              "value": "CI",
+            },
+            Object {
+              "code": "385",
+              "default": false,
+              "label": "Croatia (Hrvatska) (+385)",
+              "value": "HR",
+            },
+            Object {
+              "code": "53",
+              "default": false,
+              "label": "Cuba (+53)",
+              "value": "CU",
+            },
+            Object {
+              "code": "357",
+              "default": false,
+              "label": "Cyprus (+357)",
+              "value": "CY",
+            },
+            Object {
+              "code": "420",
+              "default": false,
+              "label": "Czech Republic (+420)",
+              "value": "CZ",
+            },
+            Object {
+              "code": "45",
+              "default": false,
+              "label": "Denmark (+45)",
+              "value": "DK",
+            },
+            Object {
+              "code": "253",
+              "default": false,
+              "label": "Djibouti (+253)",
+              "value": "DJ",
+            },
+            Object {
+              "code": "+1-767",
+              "default": false,
+              "label": "Dominica (++1-767)",
+              "value": "DM",
+            },
+            Object {
+              "code": "+1-809 and 1-829",
+              "default": false,
+              "label": "Dominican Republic (++1-809 and 1-829)",
+              "value": "DO",
+            },
+            Object {
+              "code": "670",
+              "default": false,
+              "label": "East Timor (+670)",
+              "value": "TL",
+            },
+            Object {
+              "code": "593",
+              "default": false,
+              "label": "Ecuador (+593)",
+              "value": "EC",
+            },
+            Object {
+              "code": "20",
+              "default": false,
+              "label": "Egypt (+20)",
+              "value": "EG",
+            },
+            Object {
+              "code": "503",
+              "default": false,
+              "label": "El Salvador (+503)",
+              "value": "SV",
+            },
+            Object {
+              "code": "240",
+              "default": false,
+              "label": "Equatorial Guinea (+240)",
+              "value": "GQ",
+            },
+            Object {
+              "code": "291",
+              "default": false,
+              "label": "Eritrea (+291)",
+              "value": "ER",
+            },
+            Object {
+              "code": "372",
+              "default": false,
+              "label": "Estonia (+372)",
+              "value": "EE",
+            },
+            Object {
+              "code": "251",
+              "default": false,
+              "label": "Ethiopia (+251)",
+              "value": "ET",
+            },
+            Object {
+              "code": "500",
+              "default": false,
+              "label": "Falkland Islands (+500)",
+              "value": "FK",
+            },
+            Object {
+              "code": "298",
+              "default": false,
+              "label": "Faroe Islands (+298)",
+              "value": "FO",
+            },
+            Object {
+              "code": "679",
+              "default": false,
+              "label": "Fiji Islands (+679)",
+              "value": "FJ",
+            },
+            Object {
+              "code": "358",
+              "default": false,
+              "label": "Finland (+358)",
+              "value": "FI",
+            },
+            Object {
+              "code": "33",
+              "default": false,
+              "label": "France (+33)",
+              "value": "FR",
+            },
+            Object {
+              "code": "594",
+              "default": false,
+              "label": "French Guiana (+594)",
+              "value": "GF",
+            },
+            Object {
+              "code": "689",
+              "default": false,
+              "label": "French Polynesia (+689)",
+              "value": "PF",
+            },
+            Object {
+              "code": "",
+              "default": false,
+              "label": "French Southern Territories (+)",
+              "value": "TF",
+            },
+            Object {
+              "code": "241",
+              "default": false,
+              "label": "Gabon (+241)",
+              "value": "GA",
+            },
+            Object {
+              "code": "220",
+              "default": false,
+              "label": "Gambia The (+220)",
+              "value": "GM",
+            },
+            Object {
+              "code": "995",
+              "default": false,
+              "label": "Georgia (+995)",
+              "value": "GE",
+            },
+            Object {
+              "code": "49",
+              "default": false,
+              "label": "Germany (+49)",
+              "value": "DE",
+            },
+            Object {
+              "code": "233",
+              "default": false,
+              "label": "Ghana (+233)",
+              "value": "GH",
+            },
+            Object {
+              "code": "350",
+              "default": false,
+              "label": "Gibraltar (+350)",
+              "value": "GI",
+            },
+            Object {
+              "code": "30",
+              "default": false,
+              "label": "Greece (+30)",
+              "value": "GR",
+            },
+            Object {
+              "code": "299",
+              "default": false,
+              "label": "Greenland (+299)",
+              "value": "GL",
+            },
+            Object {
+              "code": "+1-473",
+              "default": false,
+              "label": "Grenada (++1-473)",
+              "value": "GD",
+            },
+            Object {
+              "code": "590",
+              "default": false,
+              "label": "Guadeloupe (+590)",
+              "value": "GP",
+            },
+            Object {
+              "code": "+1-671",
+              "default": false,
+              "label": "Guam (++1-671)",
+              "value": "GU",
+            },
+            Object {
+              "code": "502",
+              "default": false,
+              "label": "Guatemala (+502)",
+              "value": "GT",
+            },
+            Object {
+              "code": "+44-1481",
+              "default": false,
+              "label": "Guernsey and Alderney (++44-1481)",
+              "value": "GG",
+            },
+            Object {
+              "code": "224",
+              "default": false,
+              "label": "Guinea (+224)",
+              "value": "GN",
+            },
+            Object {
+              "code": "245",
+              "default": false,
+              "label": "Guinea-Bissau (+245)",
+              "value": "GW",
+            },
+            Object {
+              "code": "592",
+              "default": false,
+              "label": "Guyana (+592)",
+              "value": "GY",
+            },
+            Object {
+              "code": "509",
+              "default": false,
+              "label": "Haiti (+509)",
+              "value": "HT",
+            },
+            Object {
+              "code": "",
+              "default": false,
+              "label": "Heard Island and McDonald Islands (+)",
+              "value": "HM",
+            },
+            Object {
+              "code": "504",
+              "default": false,
+              "label": "Honduras (+504)",
+              "value": "HN",
+            },
+            Object {
+              "code": "852",
+              "default": false,
+              "label": "Hong Kong S.A.R. (+852)",
+              "value": "HK",
+            },
+            Object {
+              "code": "36",
+              "default": false,
+              "label": "Hungary (+36)",
+              "value": "HU",
+            },
+            Object {
+              "code": "354",
+              "default": false,
+              "label": "Iceland (+354)",
+              "value": "IS",
+            },
+            Object {
+              "code": "91",
+              "default": false,
+              "label": "India (+91)",
+              "value": "IN",
+            },
+            Object {
+              "code": "62",
+              "default": false,
+              "label": "Indonesia (+62)",
+              "value": "ID",
+            },
+            Object {
+              "code": "98",
+              "default": false,
+              "label": "Iran (+98)",
+              "value": "IR",
+            },
+            Object {
+              "code": "964",
+              "default": false,
+              "label": "Iraq (+964)",
+              "value": "IQ",
+            },
+            Object {
+              "code": "353",
+              "default": false,
+              "label": "Ireland (+353)",
+              "value": "IE",
+            },
+            Object {
+              "code": "972",
+              "default": false,
+              "label": "Israel (+972)",
+              "value": "IL",
+            },
+            Object {
+              "code": "39",
+              "default": false,
+              "label": "Italy (+39)",
+              "value": "IT",
+            },
+            Object {
+              "code": "+1-876",
+              "default": false,
+              "label": "Jamaica (++1-876)",
+              "value": "JM",
+            },
+            Object {
+              "code": "81",
+              "default": false,
+              "label": "Japan (+81)",
+              "value": "JP",
+            },
+            Object {
+              "code": "+44-1534",
+              "default": false,
+              "label": "Jersey (++44-1534)",
+              "value": "JE",
+            },
+            Object {
+              "code": "962",
+              "default": false,
+              "label": "Jordan (+962)",
+              "value": "JO",
+            },
+            Object {
+              "code": "7",
+              "default": false,
+              "label": "Kazakhstan (+7)",
+              "value": "KZ",
+            },
+            Object {
+              "code": "254",
+              "default": false,
+              "label": "Kenya (+254)",
+              "value": "KE",
+            },
+            Object {
+              "code": "686",
+              "default": false,
+              "label": "Kiribati (+686)",
+              "value": "KI",
+            },
+            Object {
+              "code": "850",
+              "default": false,
+              "label": "Korea North (+850)",
+              "value": "KP",
+            },
+            Object {
+              "code": "82",
+              "default": false,
+              "label": "Korea South (+82)",
+              "value": "KR",
+            },
+            Object {
+              "code": "965",
+              "default": false,
+              "label": "Kuwait (+965)",
+              "value": "KW",
+            },
+            Object {
+              "code": "996",
+              "default": false,
+              "label": "Kyrgyzstan (+996)",
+              "value": "KG",
+            },
+            Object {
+              "code": "856",
+              "default": false,
+              "label": "Laos (+856)",
+              "value": "LA",
+            },
+            Object {
+              "code": "371",
+              "default": false,
+              "label": "Latvia (+371)",
+              "value": "LV",
+            },
+            Object {
+              "code": "961",
+              "default": false,
+              "label": "Lebanon (+961)",
+              "value": "LB",
+            },
+            Object {
+              "code": "266",
+              "default": false,
+              "label": "Lesotho (+266)",
+              "value": "LS",
+            },
+            Object {
+              "code": "231",
+              "default": false,
+              "label": "Liberia (+231)",
+              "value": "LR",
+            },
+            Object {
+              "code": "218",
+              "default": false,
+              "label": "Libya (+218)",
+              "value": "LY",
+            },
+            Object {
+              "code": "423",
+              "default": false,
+              "label": "Liechtenstein (+423)",
+              "value": "LI",
+            },
+            Object {
+              "code": "370",
+              "default": false,
+              "label": "Lithuania (+370)",
+              "value": "LT",
+            },
+            Object {
+              "code": "352",
+              "default": false,
+              "label": "Luxembourg (+352)",
+              "value": "LU",
+            },
+            Object {
+              "code": "853",
+              "default": false,
+              "label": "Macau S.A.R. (+853)",
+              "value": "MO",
+            },
+            Object {
+              "code": "389",
+              "default": false,
+              "label": "Macedonia (+389)",
+              "value": "MK",
+            },
+            Object {
+              "code": "261",
+              "default": false,
+              "label": "Madagascar (+261)",
+              "value": "MG",
+            },
+            Object {
+              "code": "265",
+              "default": false,
+              "label": "Malawi (+265)",
+              "value": "MW",
+            },
+            Object {
+              "code": "60",
+              "default": false,
+              "label": "Malaysia (+60)",
+              "value": "MY",
+            },
+            Object {
+              "code": "960",
+              "default": false,
+              "label": "Maldives (+960)",
+              "value": "MV",
+            },
+            Object {
+              "code": "223",
+              "default": false,
+              "label": "Mali (+223)",
+              "value": "ML",
+            },
+            Object {
+              "code": "356",
+              "default": false,
+              "label": "Malta (+356)",
+              "value": "MT",
+            },
+            Object {
+              "code": "+44-1624",
+              "default": false,
+              "label": "Man (Isle of) (++44-1624)",
+              "value": "IM",
+            },
+            Object {
+              "code": "692",
+              "default": false,
+              "label": "Marshall Islands (+692)",
+              "value": "MH",
+            },
+            Object {
+              "code": "596",
+              "default": false,
+              "label": "Martinique (+596)",
+              "value": "MQ",
+            },
+            Object {
+              "code": "222",
+              "default": false,
+              "label": "Mauritania (+222)",
+              "value": "MR",
+            },
+            Object {
+              "code": "230",
+              "default": false,
+              "label": "Mauritius (+230)",
+              "value": "MU",
+            },
+            Object {
+              "code": "262",
+              "default": false,
+              "label": "Mayotte (+262)",
+              "value": "YT",
+            },
+            Object {
+              "code": "52",
+              "default": false,
+              "label": "Mexico (+52)",
+              "value": "MX",
+            },
+            Object {
+              "code": "691",
+              "default": false,
+              "label": "Micronesia (+691)",
+              "value": "FM",
+            },
+            Object {
+              "code": "373",
+              "default": false,
+              "label": "Moldova (+373)",
+              "value": "MD",
+            },
+            Object {
+              "code": "377",
+              "default": false,
+              "label": "Monaco (+377)",
+              "value": "MC",
+            },
+            Object {
+              "code": "976",
+              "default": false,
+              "label": "Mongolia (+976)",
+              "value": "MN",
+            },
+            Object {
+              "code": "382",
+              "default": false,
+              "label": "Montenegro (+382)",
+              "value": "ME",
+            },
+            Object {
+              "code": "+1-664",
+              "default": false,
+              "label": "Montserrat (++1-664)",
+              "value": "MS",
+            },
+            Object {
+              "code": "212",
+              "default": false,
+              "label": "Morocco (+212)",
+              "value": "MA",
+            },
+            Object {
+              "code": "258",
+              "default": false,
+              "label": "Mozambique (+258)",
+              "value": "MZ",
+            },
+            Object {
+              "code": "95",
+              "default": false,
+              "label": "Myanmar (+95)",
+              "value": "MM",
+            },
+            Object {
+              "code": "264",
+              "default": false,
+              "label": "Namibia (+264)",
+              "value": "NA",
+            },
+            Object {
+              "code": "674",
+              "default": false,
+              "label": "Nauru (+674)",
+              "value": "NR",
+            },
+            Object {
+              "code": "977",
+              "default": false,
+              "label": "Nepal (+977)",
+              "value": "NP",
+            },
+            Object {
+              "code": "599",
+              "default": false,
+              "label": "Bonaire, Sint Eustatius and Saba (+599)",
+              "value": "BQ",
+            },
+            Object {
+              "code": "31",
+              "default": false,
+              "label": "Netherlands The (+31)",
+              "value": "NL",
+            },
+            Object {
+              "code": "687",
+              "default": false,
+              "label": "New Caledonia (+687)",
+              "value": "NC",
+            },
+            Object {
+              "code": "64",
+              "default": false,
+              "label": "New Zealand (+64)",
+              "value": "NZ",
+            },
+            Object {
+              "code": "505",
+              "default": false,
+              "label": "Nicaragua (+505)",
+              "value": "NI",
+            },
+            Object {
+              "code": "227",
+              "default": false,
+              "label": "Niger (+227)",
+              "value": "NE",
+            },
+            Object {
+              "code": "234",
+              "default": false,
+              "label": "Nigeria (+234)",
+              "value": "NG",
+            },
+            Object {
+              "code": "683",
+              "default": false,
+              "label": "Niue (+683)",
+              "value": "NU",
+            },
+            Object {
+              "code": "672",
+              "default": false,
+              "label": "Norfolk Island (+672)",
+              "value": "NF",
+            },
+            Object {
+              "code": "+1-670",
+              "default": false,
+              "label": "Northern Mariana Islands (++1-670)",
+              "value": "MP",
+            },
+            Object {
+              "code": "47",
+              "default": false,
+              "label": "Norway (+47)",
+              "value": "NO",
+            },
+            Object {
+              "code": "968",
+              "default": false,
+              "label": "Oman (+968)",
+              "value": "OM",
+            },
+            Object {
+              "code": "92",
+              "default": false,
+              "label": "Pakistan (+92)",
+              "value": "PK",
+            },
+            Object {
+              "code": "680",
+              "default": false,
+              "label": "Palau (+680)",
+              "value": "PW",
+            },
+            Object {
+              "code": "970",
+              "default": false,
+              "label": "Palestinian Territory Occupied (+970)",
+              "value": "PS",
+            },
+            Object {
+              "code": "507",
+              "default": false,
+              "label": "Panama (+507)",
+              "value": "PA",
+            },
+            Object {
+              "code": "675",
+              "default": false,
+              "label": "Papua new Guinea (+675)",
+              "value": "PG",
+            },
+            Object {
+              "code": "595",
+              "default": false,
+              "label": "Paraguay (+595)",
+              "value": "PY",
+            },
+            Object {
+              "code": "51",
+              "default": false,
+              "label": "Peru (+51)",
+              "value": "PE",
+            },
+            Object {
+              "code": "63",
+              "default": false,
+              "label": "Philippines (+63)",
+              "value": "PH",
+            },
+            Object {
+              "code": "870",
+              "default": false,
+              "label": "Pitcairn Island (+870)",
+              "value": "PN",
+            },
+            Object {
+              "code": "48",
+              "default": false,
+              "label": "Poland (+48)",
+              "value": "PL",
+            },
+            Object {
+              "code": "351",
+              "default": false,
+              "label": "Portugal (+351)",
+              "value": "PT",
+            },
+            Object {
+              "code": "+1-787 and 1-939",
+              "default": false,
+              "label": "Puerto Rico (++1-787 and 1-939)",
+              "value": "PR",
+            },
+            Object {
+              "code": "974",
+              "default": false,
+              "label": "Qatar (+974)",
+              "value": "QA",
+            },
+            Object {
+              "code": "262",
+              "default": false,
+              "label": "Reunion (+262)",
+              "value": "RE",
+            },
+            Object {
+              "code": "40",
+              "default": false,
+              "label": "Romania (+40)",
+              "value": "RO",
+            },
+            Object {
+              "code": "7",
+              "default": false,
+              "label": "Russia (+7)",
+              "value": "RU",
+            },
+            Object {
+              "code": "250",
+              "default": false,
+              "label": "Rwanda (+250)",
+              "value": "RW",
+            },
+            Object {
+              "code": "290",
+              "default": false,
+              "label": "Saint Helena (+290)",
+              "value": "SH",
+            },
+            Object {
+              "code": "+1-869",
+              "default": false,
+              "label": "Saint Kitts And Nevis (++1-869)",
+              "value": "KN",
+            },
+            Object {
+              "code": "+1-758",
+              "default": false,
+              "label": "Saint Lucia (++1-758)",
+              "value": "LC",
+            },
+            Object {
+              "code": "508",
+              "default": false,
+              "label": "Saint Pierre and Miquelon (+508)",
+              "value": "PM",
+            },
+            Object {
+              "code": "+1-784",
+              "default": false,
+              "label": "Saint Vincent And The Grenadines (++1-784)",
+              "value": "VC",
+            },
+            Object {
+              "code": "590",
+              "default": false,
+              "label": "Saint-Barthelemy (+590)",
+              "value": "BL",
+            },
+            Object {
+              "code": "590",
+              "default": false,
+              "label": "Saint-Martin (French part) (+590)",
+              "value": "MF",
+            },
+            Object {
+              "code": "685",
+              "default": false,
+              "label": "Samoa (+685)",
+              "value": "WS",
+            },
+            Object {
+              "code": "378",
+              "default": false,
+              "label": "San Marino (+378)",
+              "value": "SM",
+            },
+            Object {
+              "code": "239",
+              "default": false,
+              "label": "Sao Tome and Principe (+239)",
+              "value": "ST",
+            },
+            Object {
+              "code": "966",
+              "default": false,
+              "label": "Saudi Arabia (+966)",
+              "value": "SA",
+            },
+            Object {
+              "code": "221",
+              "default": false,
+              "label": "Senegal (+221)",
+              "value": "SN",
+            },
+            Object {
+              "code": "381",
+              "default": false,
+              "label": "Serbia (+381)",
+              "value": "RS",
+            },
+            Object {
+              "code": "248",
+              "default": false,
+              "label": "Seychelles (+248)",
+              "value": "SC",
+            },
+            Object {
+              "code": "232",
+              "default": false,
+              "label": "Sierra Leone (+232)",
+              "value": "SL",
+            },
+            Object {
+              "code": "65",
+              "default": false,
+              "label": "Singapore (+65)",
+              "value": "SG",
+            },
+            Object {
+              "code": "421",
+              "default": false,
+              "label": "Slovakia (+421)",
+              "value": "SK",
+            },
+            Object {
+              "code": "386",
+              "default": false,
+              "label": "Slovenia (+386)",
+              "value": "SI",
+            },
+            Object {
+              "code": "677",
+              "default": false,
+              "label": "Solomon Islands (+677)",
+              "value": "SB",
+            },
+            Object {
+              "code": "252",
+              "default": false,
+              "label": "Somalia (+252)",
+              "value": "SO",
+            },
+            Object {
+              "code": "27",
+              "default": false,
+              "label": "South Africa (+27)",
+              "value": "ZA",
+            },
+            Object {
+              "code": "",
+              "default": false,
+              "label": "South Georgia (+)",
+              "value": "GS",
+            },
+            Object {
+              "code": "211",
+              "default": false,
+              "label": "South Sudan (+211)",
+              "value": "SS",
+            },
+            Object {
+              "code": "34",
+              "default": false,
+              "label": "Spain (+34)",
+              "value": "ES",
+            },
+            Object {
+              "code": "94",
+              "default": false,
+              "label": "Sri Lanka (+94)",
+              "value": "LK",
+            },
+            Object {
+              "code": "249",
+              "default": false,
+              "label": "Sudan (+249)",
+              "value": "SD",
+            },
+            Object {
+              "code": "597",
+              "default": false,
+              "label": "Suriname (+597)",
+              "value": "SR",
+            },
+            Object {
+              "code": "47",
+              "default": false,
+              "label": "Svalbard And Jan Mayen Islands (+47)",
+              "value": "SJ",
+            },
+            Object {
+              "code": "268",
+              "default": false,
+              "label": "Swaziland (+268)",
+              "value": "SZ",
+            },
+            Object {
+              "code": "46",
+              "default": false,
+              "label": "Sweden (+46)",
+              "value": "SE",
+            },
+            Object {
+              "code": "41",
+              "default": false,
+              "label": "Switzerland (+41)",
+              "value": "CH",
+            },
+            Object {
+              "code": "963",
+              "default": false,
+              "label": "Syria (+963)",
+              "value": "SY",
+            },
+            Object {
+              "code": "886",
+              "default": false,
+              "label": "Taiwan (+886)",
+              "value": "TW",
+            },
+            Object {
+              "code": "992",
+              "default": false,
+              "label": "Tajikistan (+992)",
+              "value": "TJ",
+            },
+            Object {
+              "code": "255",
+              "default": false,
+              "label": "Tanzania (+255)",
+              "value": "TZ",
+            },
+            Object {
+              "code": "66",
+              "default": false,
+              "label": "Thailand (+66)",
+              "value": "TH",
+            },
+            Object {
+              "code": "228",
+              "default": false,
+              "label": "Togo (+228)",
+              "value": "TG",
+            },
+            Object {
+              "code": "690",
+              "default": false,
+              "label": "Tokelau (+690)",
+              "value": "TK",
+            },
+            Object {
+              "code": "676",
+              "default": false,
+              "label": "Tonga (+676)",
+              "value": "TO",
+            },
+            Object {
+              "code": "+1-868",
+              "default": false,
+              "label": "Trinidad And Tobago (++1-868)",
+              "value": "TT",
+            },
+            Object {
+              "code": "216",
+              "default": false,
+              "label": "Tunisia (+216)",
+              "value": "TN",
+            },
+            Object {
+              "code": "90",
+              "default": false,
+              "label": "Turkey (+90)",
+              "value": "TR",
+            },
+            Object {
+              "code": "993",
+              "default": false,
+              "label": "Turkmenistan (+993)",
+              "value": "TM",
+            },
+            Object {
+              "code": "+1-649",
+              "default": false,
+              "label": "Turks And Caicos Islands (++1-649)",
+              "value": "TC",
+            },
+            Object {
+              "code": "688",
+              "default": false,
+              "label": "Tuvalu (+688)",
+              "value": "TV",
+            },
+            Object {
+              "code": "256",
+              "default": false,
+              "label": "Uganda (+256)",
+              "value": "UG",
+            },
+            Object {
+              "code": "380",
+              "default": false,
+              "label": "Ukraine (+380)",
+              "value": "UA",
+            },
+            Object {
+              "code": "971",
+              "default": false,
+              "label": "United Arab Emirates (+971)",
+              "value": "AE",
+            },
+            Object {
+              "code": "44",
+              "default": false,
+              "label": "United Kingdom (+44)",
+              "value": "GB",
+            },
+            Object {
+              "code": "1",
+              "default": false,
+              "label": "United States (+1)",
+              "value": "US",
+            },
+            Object {
+              "code": "1",
+              "default": false,
+              "label": "United States Minor Outlying Islands (+1)",
+              "value": "UM",
+            },
+            Object {
+              "code": "598",
+              "default": false,
+              "label": "Uruguay (+598)",
+              "value": "UY",
+            },
+            Object {
+              "code": "998",
+              "default": false,
+              "label": "Uzbekistan (+998)",
+              "value": "UZ",
+            },
+            Object {
+              "code": "678",
+              "default": false,
+              "label": "Vanuatu (+678)",
+              "value": "VU",
+            },
+            Object {
+              "code": "379",
+              "default": false,
+              "label": "Vatican City State (Holy See) (+379)",
+              "value": "VA",
+            },
+            Object {
+              "code": "58",
+              "default": false,
+              "label": "Venezuela (+58)",
+              "value": "VE",
+            },
+            Object {
+              "code": "84",
+              "default": true,
+              "label": "Vietnam (+84)",
+              "value": "VN",
+            },
+            Object {
+              "code": "+1-284",
+              "default": false,
+              "label": "Virgin Islands (British) (++1-284)",
+              "value": "VG",
+            },
+            Object {
+              "code": "+1-340",
+              "default": false,
+              "label": "Virgin Islands (US) (++1-340)",
+              "value": "VI",
+            },
+            Object {
+              "code": "681",
+              "default": false,
+              "label": "Wallis And Futuna Islands (+681)",
+              "value": "WF",
+            },
+            Object {
+              "code": "212",
+              "default": false,
+              "label": "Western Sahara (+212)",
+              "value": "EH",
+            },
+            Object {
+              "code": "967",
+              "default": false,
+              "label": "Yemen (+967)",
+              "value": "YE",
+            },
+            Object {
+              "code": "260",
+              "default": false,
+              "label": "Zambia (+260)",
+              "value": "ZM",
+            },
+            Object {
+              "code": "263",
+              "default": false,
+              "label": "Zimbabwe (+263)",
+              "value": "ZW",
+            },
+            Object {
+              "code": "383",
+              "default": false,
+              "label": "Kosovo (+383)",
+              "value": "XK",
+            },
+            Object {
+              "code": "599",
+              "default": false,
+              "label": "Curaçao (+599)",
+              "value": "CW",
+            },
+            Object {
+              "code": "1721",
+              "default": false,
+              "label": "Sint Maarten (Dutch part) (+1721)",
+              "value": "SX",
+            },
+          ]
+        }
+        required={true}
+        size="large"
+        value={
+          Object {
+            "code": "84",
+            "default": true,
+            "label": "Vietnam (+84)",
+            "value": "VN",
+          }
+        }
+      />
+      <Memo(InputPhone)
+        className="formInput-0-2-3 form70-0-2-6"
+        dataTest="application-input-phone-number"
+        error=""
+        key="phoneNumber"
+        label="Phone number"
+        labelClassName="formInputPhoneLabel-0-2-7"
+        name="phoneNumber"
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Your phone number"
+        required={true}
+        size="large"
+        value=""
+      />
+      <Memo(Input)
+        className="formInput-0-2-3"
+        dataTest="application-input-address"
+        error=""
+        key="address"
+        label="Address"
+        name="address"
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Your address"
+        size="large"
+        type="text"
+        value=""
+      />
+      <Memo(Input)
+        className="formInput-0-2-3"
+        dataTest="application-input-linkedin"
+        error=""
+        key="linkedinProfile"
+        label="Linkedin profile"
+        name="linkedinProfile"
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Enter your profile's URL"
+        size="large"
+        type="text"
+        value=""
+      />
+      <Memo(Input)
+        className="formInput-0-2-3"
+        dataTest="application-input-known-from"
+        error=""
+        key="knownFrom"
+        label="How did you learn about this vacancy?"
+        name="knownFrom"
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Enter source"
+        required={true}
+        size="large"
+        type="text"
+        value=""
+      />
+      <div
+        className="resume-0-2-18"
+        data-test="application-input-resumes"
+      >
+        <p
+          className="resumeLabel-0-2-19"
+        >
+          Upload files (Resume, Portfolio, Cover letter etc.)
+        </p>
+        <Memo([object Object])
+          className="resumeButton-0-2-20"
+          color="secondary"
+          size="large"
+          tag="label"
+        >
+          <i
+            className="icon-plus"
+          />
+          <input
+            accept="application/pdf,application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+            className="inputHidden-0-2-17"
+            multiple={true}
+            name="resumes"
+            onChange={[Function]}
+            type="file"
+          />
+        </Memo([object Object])>
+      </div>
+      <div
+        className="formCheckBox-0-2-8"
+      >
+        <Memo(CheckBox)
+          dataTest="application-checkbox-privacy"
+          defaultChecked={false}
+          label="I agree to the terms of East West’s"
+          name="agreeWithTerms"
+          onChange={[Function]}
+        />
+         
+        <span
+          className="formTerms-0-2-9"
+          onClick={[Function]}
+          role="presentation"
+        >
+          Privacy Policy
+        </span>
+      </div>
+      <Memo([object Object])
+        className="formButton-0-2-10"
+        color="primary"
+        dataTest="application-button-submit"
+        disabled={true}
+        onClick={[Function]}
+        size="large"
+      >
+        Submit application
+      </Memo([object Object])>
+    </div>
+  </Memo(Content)>
+  <Memo(Modal)
+    className="modal-0-2-11"
+    open={false}
+    toggle={[Function]}
+  >
+    <Memo(ModalHeader)
+      title="Privacy policy"
+      toggle={[Function]}
+    />
+    <Memo(ModalContent)>
+      <Memo(Content) />
+    </Memo(ModalContent)>
+  </Memo(Modal)>
+</Fragment>
+`;

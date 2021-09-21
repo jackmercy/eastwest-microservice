@@ -1,0 +1,384 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing TalentLabs > Technologies should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(Content)
+    className="content-0-2-2"
+  >
+    <h2
+      className="title-0-2-3"
+      data-test="technologies-title"
+    >
+      Master the key of Modern technology
+    </h2>
+    <p
+      className="description-0-2-4"
+      data-test="technologies-description"
+    >
+      Our approach unifies development, design, and product management to create exceptional products. Our Talents provide you with expertise in these three key areas, in addition to strategic business advice and planning.
+    </p>
+    <div
+      className="group-0-2-5"
+      key="Engineering"
+    >
+      <div
+        className="groupIntroduce-0-2-6"
+      >
+        <p
+          className="techLabel-0-2-7"
+        >
+          Engineering
+        </p>
+        <div
+          className="techInfo-0-2-8"
+        >
+          <img
+            alt="Engineering"
+            className="techImage-0-2-9"
+            loading="lazy"
+            src="/static/images/talent-labs/people-01.png"
+            srcSet="/static/images/talent-labs/people-01.png 500w, /static/images/talent-labs/people-01@2x.png 2000w"
+          />
+          <div
+            className="techSummary-0-2-10"
+          >
+            <h2
+              className="techTitle-0-2-11"
+            >
+              eXtreme programming
+            </h2>
+            <p
+              className="techDescription-0-2-12"
+            >
+              Building scalable products at lightning fast velocity with the highest possible quality, in the face of continuous changing requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="groupServices-0-2-13"
+      >
+        <p
+          className="serviceLabel-0-2-14"
+        >
+          What will we provide:
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Paired programming"
+        >
+          Paired programming
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Test-driven developments"
+        >
+          Test-driven developments
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Short iteratations"
+        >
+          Short iteratations
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Continuous integration/ Deployment"
+        >
+          Continuous integration/ Deployment
+        </p>
+      </div>
+    </div>
+    <div
+      className="group-0-2-5"
+      key="Design"
+    >
+      <div
+        className="groupIntroduce-0-2-6"
+      >
+        <p
+          className="techLabel-0-2-7"
+        >
+          Design
+        </p>
+        <div
+          className="techInfo-0-2-8"
+        >
+          <img
+            alt="Design"
+            className="techImage-0-2-9"
+            loading="lazy"
+            src="/static/images/talent-labs/people-02.png"
+            srcSet="/static/images/talent-labs/people-02.png 500w, /static/images/talent-labs/people-02@2x.png 2000w"
+          />
+          <div
+            className="techSummary-0-2-10"
+          >
+            <h2
+              className="techTitle-0-2-11"
+            >
+              User-centered design
+            </h2>
+            <p
+              className="techDescription-0-2-12"
+            >
+              Ensuring the software solves a real problem for real users in a desirable and usable product.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="groupServices-0-2-13"
+      >
+        <p
+          className="serviceLabel-0-2-14"
+        >
+          What will we provide:
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="User interviews"
+        >
+          User interviews
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Ethnographic studies"
+        >
+          Ethnographic studies
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Persona definition"
+        >
+          Persona definition
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Prototype creation"
+        >
+          Prototype creation
+        </p>
+      </div>
+    </div>
+    <div
+      className="group-0-2-5"
+      key="Product management"
+    >
+      <div
+        className="groupIntroduce-0-2-6"
+      >
+        <p
+          className="techLabel-0-2-7"
+        >
+          Product management
+        </p>
+        <div
+          className="techInfo-0-2-8"
+        >
+          <img
+            alt="Product management"
+            className="techImage-0-2-9"
+            loading="lazy"
+            src="/static/images/talent-labs/people-03.png"
+            srcSet="/static/images/talent-labs/people-03.png 500w, /static/images/talent-labs/people-03@2x.png 2000w"
+          />
+          <div
+            className="techSummary-0-2-10"
+          >
+            <h2
+              className="techTitle-0-2-11"
+            >
+              Lean product management
+            </h2>
+            <p
+              className="techDescription-0-2-12"
+            >
+              Low Engineering Risk at a consistent speed & quality while comfortably changing direction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="groupServices-0-2-13"
+      >
+        <p
+          className="serviceLabel-0-2-14"
+        >
+          What will we provide:
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Minimum viable product definition"
+        >
+          Minimum viable product definition
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Lean experiments"
+        >
+          Lean experiments
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Identify & Test assumption"
+        >
+          Identify & Test assumption
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Data driven decision making"
+        >
+          Data driven decision making
+        </p>
+      </div>
+    </div>
+    <div
+      className="group-0-2-5"
+      key="Growth"
+    >
+      <div
+        className="groupIntroduce-0-2-6"
+      >
+        <p
+          className="techLabel-0-2-7"
+        >
+          Growth
+        </p>
+        <div
+          className="techInfo-0-2-8"
+        >
+          <img
+            alt="Growth"
+            className="techImage-0-2-9"
+            loading="lazy"
+            src="/static/images/talent-labs/people-04.png"
+            srcSet="/static/images/talent-labs/people-04.png 500w, /static/images/talent-labs/people-04@2x.png 2000w"
+          />
+          <div
+            className="techSummary-0-2-10"
+          >
+            <h2
+              className="techTitle-0-2-11"
+            >
+              Growth
+            </h2>
+            <p
+              className="techDescription-0-2-12"
+            >
+              We focus on a full funnel holistic approach based on Data- & Behaviour  driven decision making.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="groupServices-0-2-13"
+      >
+        <p
+          className="serviceLabel-0-2-14"
+        >
+          What will we provide:
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Data driven decision making"
+        >
+          Data driven decision making
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Creative thinking"
+        >
+          Creative thinking
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Product focused business development"
+        >
+          Product focused business development
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Branding, architecture & Positioning"
+        >
+          Branding, architecture & Positioning
+        </p>
+      </div>
+    </div>
+    <div
+      className="group-0-2-5"
+      key="Analysis"
+    >
+      <div
+        className="groupIntroduce-0-2-6"
+      >
+        <p
+          className="techLabel-0-2-7"
+        >
+          Analysis
+        </p>
+        <div
+          className="techInfo-0-2-8"
+        >
+          <img
+            alt="Analysis"
+            className="techImage-0-2-9"
+            loading="lazy"
+            src="/static/images/talent-labs/people-05.png"
+            srcSet="/static/images/talent-labs/people-05.png 500w, /static/images/talent-labs/people-05@2x.png 2000w"
+          />
+          <div
+            className="techSummary-0-2-10"
+          >
+            <h2
+              className="techTitle-0-2-11"
+            >
+              Business analysis
+            </h2>
+            <p
+              className="techDescription-0-2-12"
+            >
+              We identify business needs, and determine solutions to business problems.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        className="groupServices-0-2-13"
+      >
+        <p
+          className="serviceLabel-0-2-14"
+        >
+          What will we provide:
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Enterprise analysis"
+        >
+          Enterprise analysis
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Business architecture"
+        >
+          Business architecture
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="Process improvement"
+        >
+          Process improvement
+        </p>
+        <p
+          className="serviceItem-0-2-15"
+          key="System analysis"
+        >
+          System analysis
+        </p>
+      </div>
+    </div>
+  </Memo(Content)>
+</div>
+`;

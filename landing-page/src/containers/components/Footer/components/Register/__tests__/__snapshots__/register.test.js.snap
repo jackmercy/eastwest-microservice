@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Footer > Register should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(SectionTitle)
+    dataTest="register-title"
+    title="NEWSLETTER"
+  />
+  <div
+    className="form-0-2-2"
+    title="Feature under construction, Available Soon"
+  >
+    <Memo(Input)
+      className="input-0-2-3"
+      dataTest="register-input"
+      disabled={true}
+      error=""
+      inputClassName="customInput-0-2-4"
+      name="emailAddress"
+      onChange={[Function]}
+      onFocus={[Function]}
+      placeholder="Your email address"
+      size="small"
+    />
+    <Memo([object Object])
+      className="button-0-2-5"
+      color="primary"
+      dataTest="register-button"
+      disabled={true}
+      onClick={[Function]}
+      size="small"
+    >
+      Sign up
+    </Memo([object Object])>
+  </div>
+  <div
+    className="socials-0-2-6"
+    data-test="register-socials"
+  >
+    <a
+      className="socialsItem-0-2-7"
+      href="https://twitter.com/E2W_Rabih"
+      key="social-twitter"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="twitter"
+    >
+      <i
+        className="icon-twitter"
+      />
+    </a>
+    <a
+      className="socialsItem-0-2-7"
+      href="https://www.facebook.com/e2wlive"
+      key="social-facebook"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="facebook"
+    >
+      <i
+        className="icon-facebook"
+      />
+    </a>
+    <a
+      className="socialsItem-0-2-7"
+      href="https://www.linkedin.com/company/e2wlive"
+      key="social-linkedin"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="linkedin"
+    >
+      <i
+        className="icon-linkedin"
+      />
+    </a>
+    <a
+      className="socialsItem-0-2-7"
+      href="https://www.youtube.com/channel/UCgCfYEIWpTziQzjQ7i85-zA"
+      key="social-youtube"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="youtube"
+    >
+      <i
+        className="icon-youtube"
+      />
+    </a>
+  </div>
+</div>
+`;

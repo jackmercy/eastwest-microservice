@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers > CoreValues > WebCoreValues should render match snapshot 1`] = `
+<Fragment>
+  <Slider
+    arrows={false}
+    autoplay={true}
+    autoplaySpeed={10000}
+    beforeChange={[Function]}
+    className="slider-0-2-1"
+    dots={false}
+    infinite={true}
+    initialSlide={0}
+    pauseOnHover={true}
+    slidesToScroll={1}
+    slidesToShow={1}
+    touchMove={false}
+  >
+    <div
+      className="detailsWrapper-0-2-2"
+      key="key-01"
+    >
+      <div
+        className="details-0-2-3"
+      >
+        <p
+          className="detailsSubTitle-0-2-4"
+        >
+          Core values
+        </p>
+        <Memo(SectionTitle)
+          id="core-value-key-01"
+          translateId="CAREERS.CORE_VALUE.01.TITLE"
+        />
+        <p
+          className="detailsDescription-0-2-5"
+        >
+          descriptipn 01
+        </p>
+      </div>
+      <img
+        alt="title 01"
+        className="image-0-2-6"
+        src="image-01.png"
+        srcSet="image-01.png 500w"
+      />
+    </div>
+    <div
+      className="detailsWrapper-0-2-2"
+      key="key-02"
+    >
+      <div
+        className="details-0-2-3"
+      >
+        <p
+          className="detailsSubTitle-0-2-4"
+        >
+          Core values
+        </p>
+        <Memo(SectionTitle)
+          id="core-value-key-02"
+          translateId="CAREERS.CORE_VALUE.02.TITLE"
+        />
+        <p
+          className="detailsDescription-0-2-5"
+        >
+          description 02
+        </p>
+      </div>
+      <img
+        alt="title 01"
+        className="image-0-2-6"
+        src="image-02.png"
+        srcSet="image-02.png 500w"
+      />
+    </div>
+  </Slider>
+  <div
+    className="listKeys-0-2-7"
+  >
+    <div
+      className="listKeysItem-0-2-8 active"
+      key="core-value-key-01"
+      onClick={[Function]}
+      role="presentation"
+    >
+      <p
+        className="listKeysNumber-0-2-9"
+      >
+        01
+      </p>
+      <h2
+        className="listKeysLabel-0-2-10"
+      >
+        title 01
+      </h2>
+    </div>
+    <div
+      className="listKeysItem-0-2-8"
+      key="core-value-key-02"
+      onClick={[Function]}
+      role="presentation"
+    >
+      <p
+        className="listKeysNumber-0-2-9"
+      >
+        02
+      </p>
+      <h2
+        className="listKeysLabel-0-2-10"
+      >
+        title 01
+      </h2>
+    </div>
+  </div>
+</Fragment>
+`;

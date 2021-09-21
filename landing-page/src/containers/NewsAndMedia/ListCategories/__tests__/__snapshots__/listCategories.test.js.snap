@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMedia > ListCategories should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+  id="list-categories"
+>
+  <ul
+    className="hide-scrollbar list-0-2-2"
+    data-test="list-categories-list"
+  >
+    <li
+      className="listItem-0-2-3 active"
+      key=""
+    >
+      <Link
+        href="/news-and-media"
+        passHref={true}
+      >
+        <a
+          className="link-0-2-4"
+          href="/news-and-media"
+        >
+          Latest
+        </a>
+      </Link>
+    </li>
+    <li
+      className="listItem-0-2-3"
+      key="610752dd1f174b00188e6359"
+    >
+      <Link
+        href="/news-and-media/insights"
+        passHref={true}
+      >
+        <a
+          className="link-0-2-4"
+          href="/news-and-media/insights"
+        >
+          Insights
+        </a>
+      </Link>
+    </li>
+  </ul>
+</div>
+`;

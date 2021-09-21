@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMedia > ListRankings should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <Memo(Item)
+    data={
+      Object {
+        "category": Object {
+          "id": "610752dd1f174b00188e6359",
+          "name": "Insights",
+          "shortDescription": "Insights",
+          "slug": "insights",
+          "tags": Array [
+            "Insights",
+          ],
+        },
+        "id": "abc",
+        "slug": "test-new",
+        "thumbnail": "image url",
+        "title": "Some title",
+      }
+    }
+    index={1}
+    key="abc"
+  />
+</div>
+`;

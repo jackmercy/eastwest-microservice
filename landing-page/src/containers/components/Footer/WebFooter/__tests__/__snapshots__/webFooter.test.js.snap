@@ -1,0 +1,125 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Footer > WebFooter should render match snapshot 1`] = `
+<footer
+  className="footer-0-2-1"
+>
+  <Memo(Content)>
+    <div
+      className="content-0-2-2"
+    >
+      <Memo(SummaryInfo) />
+      <div
+        className="group-0-2-3"
+        key="product"
+      >
+        <Memo(SectionTitle)
+          className="groupTitle-0-2-4"
+          title="Products"
+        />
+        <Link
+          href="/talent-labs"
+          key="product-talent-labs"
+          passHref={true}
+        >
+          <a
+            className="groupItem-0-2-5"
+            data-test="footer-product"
+            href="/#"
+          >
+            Talent labs
+          </a>
+        </Link>
+        <Link
+          href="/data-labs"
+          key="product-data-labs"
+          passHref={true}
+        >
+          <a
+            className="groupItem-0-2-5"
+            data-test="footer-product"
+            href="/#"
+          >
+            Data labs
+          </a>
+        </Link>
+      </div>
+      <div
+        className="group-0-2-3"
+        key="company"
+      >
+        <Memo(SectionTitle)
+          className="groupTitle-0-2-4"
+          title="Company"
+        />
+        <Link
+          href="/company"
+          key="company-about-us"
+          passHref={true}
+        >
+          <a
+            className="groupItem-0-2-5"
+            data-test="footer-page"
+            href="/#"
+          >
+            About us
+          </a>
+        </Link>
+        <Link
+          href="/careers"
+          key="company-careers"
+          passHref={true}
+        >
+          <a
+            className="groupItem-0-2-5"
+            data-test="footer-page"
+            href="/#"
+          >
+            Careers
+          </a>
+        </Link>
+        <Link
+          href="/contact"
+          key="company-contact"
+          passHref={true}
+        >
+          <a
+            className="groupItem-0-2-5"
+            data-test="footer-page"
+            href="/#"
+          >
+            Contact us
+          </a>
+        </Link>
+      </div>
+      <div
+        className="group-0-2-3"
+        key="learn"
+      >
+        <Memo(SectionTitle)
+          className="groupTitle-0-2-4"
+          title="Learn"
+        />
+        <Link
+          href="/news-and-media"
+          key="learn-news"
+          passHref={true}
+        >
+          <a
+            className="groupItem-0-2-5"
+            data-test="footer-other"
+            href="/#"
+          >
+            News & Media
+          </a>
+        </Link>
+      </div>
+      <div>
+        <Memo(SwitchLanguages) />
+        <Memo(Register) />
+      </div>
+    </div>
+    <Memo(CopyRight) />
+  </Memo(Content)>
+</footer>
+`;

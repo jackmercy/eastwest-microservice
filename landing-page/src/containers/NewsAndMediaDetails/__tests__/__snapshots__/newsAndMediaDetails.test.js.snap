@@ -1,0 +1,210 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMediaDetails should render match snapshot 1`] = `
+<Memo(Layout)>
+  <SEO
+    creator=""
+    description="some description"
+    image="http://localhost:3411/files/public/image url"
+    keywords=""
+    siteName=""
+    title="Some title"
+    url="https://dev.eastwest.live/undefined"
+  />
+  <ForwardRef(LoadableComponent) />
+  <Memo(Breadcrumb)
+    paths={
+      Array [
+        Object {
+          "href": "/news-and-media",
+          "label": "News & Media",
+        },
+        Object {
+          "href": "/news-and-media/insights",
+          "label": "Insights",
+        },
+        Object {
+          "label": "Some title",
+        },
+      ]
+    }
+  />
+  <Memo(Content)
+    className="content-0-2-1"
+  >
+    <p
+      className="category-0-2-2"
+      data-test="news-details-category"
+    >
+      Insights
+    </p>
+    <h1
+      className="title-0-2-3"
+      data-test="news-details-title"
+    >
+      Some title
+    </h1>
+    <div
+      className="summary-0-2-4"
+    >
+      <div
+        className="author-0-2-5"
+      >
+        <div
+          className="authorImageWrapper-0-2-6"
+        >
+          <a
+            href="http://localhost:3411/files/public/avatar id"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="author"
+              className="authorImage-0-2-7"
+              data-test="news-details-author-image"
+              src="http://localhost:3411/files/public/avatar id"
+            />
+          </a>
+        </div>
+        <div
+          className="authorInfo-0-2-8"
+        >
+          <p
+            className="authorName-0-2-9"
+            data-test="news-details-author-name"
+          >
+            test 123
+          </p>
+          <p
+            className="lastUpdated-0-2-10"
+            data-test="news-details-updated-time"
+          >
+            2 Aug, 2021
+             
+            Updated 1 month ago
+          </p>
+        </div>
+      </div>
+      <div
+        className="sharing-0-2-11"
+        data-test="news-details-socials-sharing"
+      >
+        <p
+          className="sharingLabel-0-2-12"
+        >
+          Share
+        </p>
+        <div
+          className="sharingIcon-0-2-13"
+          onClick={[Function]}
+          role="presentation"
+        >
+          <i
+            className="icon-share"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      className="thumbnailWrapper-0-2-18"
+    >
+      <img
+        alt="Some title"
+        className="thumbnail-0-2-19"
+        data-test="news-details-thumbnail"
+        loading="lazy"
+        src="http://localhost:3411/files/public/image url"
+      />
+    </div>
+    <Memo(ListRankings)
+      categories={
+        Array [
+          Object {
+            "id": "610752dd1f174b00188e6359",
+            "name": "Insights",
+            "shortDescription": "Insights",
+            "slug": "insights",
+            "tags": Array [
+              "Insights",
+            ],
+          },
+        ]
+      }
+      className="listRankings-0-2-20"
+      data={
+        Array [
+          Object {
+            "category": "610752dd1f174b00188e6359",
+            "id": "abc1",
+            "shortDescription": "some description",
+            "slug": "test-new",
+            "thumbnail": "image url",
+            "title": "Some title",
+          },
+          Object {
+            "category": "610752dd1f174b00188e6359",
+            "id": "abc2",
+            "shortDescription": "some description",
+            "slug": "test-new",
+            "thumbnail": "image url",
+            "title": "Some title",
+          },
+        ]
+      }
+    />
+    <div
+      className="ck-content newsContent-0-2-21"
+      data-test="news-details-content"
+    >
+      <StaticHTML
+        stringHtml="<div>hello</div>"
+      />
+    </div>
+    <ForwardRef(LoadableComponent)
+      className="comments-0-2-22"
+      data={
+        Array [
+          Object {
+            "avatar": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3",
+            "comment": "Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+    voluptate pariatur deserunt ad est. Sint exercitation minim labore
+    aute deserunt cillum laboris aute esse ut.",
+            "firstName": "Hai",
+            "id": "abc",
+            "lastName": "Bui",
+            "likes": 100,
+            "replies": Array [
+              Object {
+                "avatar": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3",
+                "comment": "Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+    voluptate pariatur deserunt ad est. Sint exercitation minim labore
+    aute deserunt cillum laboris aute esse ut.",
+                "firstName": "Hai",
+                "id": "abcd",
+                "lastName": "Bui",
+                "likes": 100,
+                "replies": Array [],
+                "updatedAt": "2021-08-03T03:03:13.945Z",
+              },
+              Object {
+                "avatar": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3",
+                "comment": "Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+    voluptate pariatur deserunt ad est. Sint exercitation minim labore
+    aute deserunt cillum laboris aute esse ut.",
+                "firstName": "Hai",
+                "id": "abcde",
+                "lastName": "Bui",
+                "likes": 100,
+                "replies": Array [],
+                "updatedAt": "2021-08-03T03:03:13.945Z",
+              },
+            ],
+            "updatedAt": "2021-08-03T03:03:13.945Z",
+          },
+        ]
+      }
+    />
+  </Memo(Content)>
+  <ForwardRef(LoadableComponent) />
+</Memo(Layout)>
+`;

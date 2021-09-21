@@ -1,0 +1,297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing DataLabs > Influencers > Reviews should render match snapshot 1`] = `
+<Memo(Content)
+  className="content-0-2-1"
+>
+  <h2
+    className="title-0-2-2"
+    data-test="reviews-title"
+  >
+    What other brands say about Data Labs
+  </h2>
+  <Memo(CustomCarousel)
+    data={
+      Array [
+        Object {
+          "avatar": "/static/images/data-labs/influencers/quote-01.png",
+          "highlight": false,
+          "name": "Duy Tran",
+          "points": 1970,
+          "projects": 228,
+          "review": "I have a very deep passion for fashion. I love wearing it and I enjoy watching buying it. Online shopping has become a norm. However, the use of excessive amounts of plastic is bothering me. It is amazing to see how many companies started to become more aware of hazardous packaging. Think straws in drinks and double wrapped bottle caps.",
+        },
+        Object {
+          "avatar": "/static/images/data-labs/influencers/quote-02.png",
+          "highlight": true,
+          "name": "Thao Nguyen",
+          "points": 1512,
+          "projects": 210,
+          "review": "Having a voice with brands, I was able to contribute a lot in improving the product quality, without increasing the product costs. I am hoping other consumers can enjoy products more with this feedback.",
+        },
+        Object {
+          "avatar": "/static/images/data-labs/influencers/quote-03.png",
+          "highlight": true,
+          "name": "Tuan Anh",
+          "points": 1470,
+          "projects": 490,
+          "review": "A great way to participate in small projects and get rewards. It doesn't take a lot time. I can participate during lunch breaks or in my spare time, without stressing my work load. It is a lot of fun and a great way of earning extra cash every month.",
+        },
+        Object {
+          "avatar": "/static/images/data-labs/influencers/quote-04.png",
+          "highlight": true,
+          "name": "Nhi Dang",
+          "points": 470,
+          "projects": 87,
+          "review": "Simple interface and easy to use, I receive participation requests in my inbox and can easily participate. The best part is, that we don’t get rewarded with vouchers or discounts but with currency. They told me crypto solutions are coming soon 😍",
+        },
+        Object {
+          "avatar": "/static/images/data-labs/influencers/quote-05.png",
+          "highlight": true,
+          "name": "Tai Nguyen",
+          "points": 390,
+          "projects": 130,
+          "review": "I like to travel a lot. Data Labs, was able to pay for my last trip to the beach. I also got compensated for referring my friends to to become influencers. We actually worked on a few assignments together. Pretty amazing",
+        },
+      ]
+    }
+  />
+  <div
+    className="listItems-0-2-3"
+    data-test="reviews-list-items"
+  >
+    <div
+      className="itemLayout-0-2-4"
+      data-test="reviews-item"
+      key="review-0"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+      >
+        <img
+          alt="Thao Nguyen"
+          className="itemQuotesImage-0-2-6"
+          loading="lazy"
+          src="/static/images/data-labs/quotes.png"
+        />
+        <p
+          className="itemReview-0-2-7"
+        >
+          Having a voice with brands, I was able to contribute a lot in improving the product quality, without increasing the product costs. I am hoping other consumers can enjoy products more with this feedback.
+        </p>
+        <div
+          className="itemGroup-0-2-8"
+        >
+          <div
+            className="itemAvatarImageWrapper-0-2-9"
+          >
+            <img
+              alt="Thao Nguyen"
+              className="itemAvatarImage-0-2-10"
+              loading="lazy"
+              src="/static/images/data-labs/influencers/quote-02.png"
+            />
+          </div>
+          <div>
+            <p
+              className="itemName-0-2-11"
+            >
+              Thao Nguyen
+            </p>
+            <p
+              className="itemReward-0-2-12"
+            >
+              <i
+                className="icon-comment"
+              />
+              210
+            </p>
+            <p
+              className="itemReward-0-2-12"
+            >
+              <i
+                className="icon-circle-dollar"
+              />
+              1512
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="itemLayout-0-2-4"
+      data-test="reviews-item"
+      key="review-1"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+      >
+        <img
+          alt="Tuan Anh"
+          className="itemQuotesImage-0-2-6"
+          loading="lazy"
+          src="/static/images/data-labs/quotes.png"
+        />
+        <p
+          className="itemReview-0-2-7"
+        >
+          A great way to participate in small projects and get rewards. It doesn't take a lot time. I can participate during lunch breaks or in my spare time, without stressing my work load. It is a lot of fun and a great way of earning extra cash every month.
+        </p>
+        <div
+          className="itemGroup-0-2-8"
+        >
+          <div
+            className="itemAvatarImageWrapper-0-2-9"
+          >
+            <img
+              alt="Tuan Anh"
+              className="itemAvatarImage-0-2-10"
+              loading="lazy"
+              src="/static/images/data-labs/influencers/quote-03.png"
+            />
+          </div>
+          <div>
+            <p
+              className="itemName-0-2-11"
+            >
+              Tuan Anh
+            </p>
+            <p
+              className="itemReward-0-2-12"
+            >
+              <i
+                className="icon-comment"
+              />
+              490
+            </p>
+            <p
+              className="itemReward-0-2-12"
+            >
+              <i
+                className="icon-circle-dollar"
+              />
+              1470
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="itemLayout-0-2-4"
+      data-test="reviews-item"
+      key="review-2"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+      >
+        <img
+          alt="Nhi Dang"
+          className="itemQuotesImage-0-2-6"
+          loading="lazy"
+          src="/static/images/data-labs/quotes.png"
+        />
+        <p
+          className="itemReview-0-2-7"
+        >
+          Simple interface and easy to use, I receive participation requests in my inbox and can easily participate. The best part is, that we don’t get rewarded with vouchers or discounts but with currency. They told me crypto solutions are coming soon 😍
+        </p>
+        <div
+          className="itemGroup-0-2-8"
+        >
+          <div
+            className="itemAvatarImageWrapper-0-2-9"
+          >
+            <img
+              alt="Nhi Dang"
+              className="itemAvatarImage-0-2-10"
+              loading="lazy"
+              src="/static/images/data-labs/influencers/quote-04.png"
+            />
+          </div>
+          <div>
+            <p
+              className="itemName-0-2-11"
+            >
+              Nhi Dang
+            </p>
+            <p
+              className="itemReward-0-2-12"
+            >
+              <i
+                className="icon-comment"
+              />
+              87
+            </p>
+            <p
+              className="itemReward-0-2-12"
+            >
+              <i
+                className="icon-circle-dollar"
+              />
+              470
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      className="itemLayout-0-2-4"
+      data-test="reviews-item"
+      key="review-3"
+    >
+      <div
+        className="itemWrapper-0-2-5"
+      >
+        <img
+          alt="Tai Nguyen"
+          className="itemQuotesImage-0-2-6"
+          loading="lazy"
+          src="/static/images/data-labs/quotes.png"
+        />
+        <p
+          className="itemReview-0-2-7"
+        >
+          I like to travel a lot. Data Labs, was able to pay for my last trip to the beach. I also got compensated for referring my friends to to become influencers. We actually worked on a few assignments together. Pretty amazing
+        </p>
+        <div
+          className="itemGroup-0-2-8"
+        >
+          <div
+            className="itemAvatarImageWrapper-0-2-9"
+          >
+            <img
+              alt="Tai Nguyen"
+              className="itemAvatarImage-0-2-10"
+              loading="lazy"
+              src="/static/images/data-labs/influencers/quote-05.png"
+            />
+          </div>
+          <div>
+            <p
+              className="itemName-0-2-11"
+            >
+              Tai Nguyen
+            </p>
+            <p
+              className="itemReward-0-2-12"
+            >
+              <i
+                className="icon-comment"
+              />
+              130
+            </p>
+            <p
+              className="itemReward-0-2-12"
+            >
+              <i
+                className="icon-circle-dollar"
+              />
+              390
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</Memo(Content)>
+`;

@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing NewsAndMediaDetails > Comments should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <div
+    className="titleGroup-0-2-2"
+  >
+    <h2
+      className="title-0-2-3"
+      data-test="comments-title"
+    >
+      1
+       
+      Comments
+    </h2>
+    <Memo([object Object])
+      className="filterButton-0-2-4"
+      color="primary"
+      dataTest="comments-filter"
+      onClick={[Function]}
+      size="small"
+    >
+      <i
+        className="icon-align-left"
+      />
+      Filter by
+      <Memo([object Object])
+        list={
+          Array [
+            Object {
+              "key": "filter-top-comments",
+              "label": "Top comments",
+              "onClick": [Function],
+            },
+            Object {
+              "key": "filter-newest-comments",
+              "label": "Newest comments",
+              "onClick": [Function],
+            },
+          ]
+        }
+        menuPosition="left"
+        show={false}
+      />
+    </Memo([object Object])>
+  </div>
+  <Memo(CommentBox)
+    id="main-comment-box"
+  />
+  <Memo(CommentPreview)
+    data={
+      Object {
+        "avatar": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3",
+        "comment": "Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+    voluptate pariatur deserunt ad est. Sint exercitation minim labore
+    aute deserunt cillum laboris aute esse ut.",
+        "firstName": "Hai",
+        "id": "abc",
+        "lastName": "Bui",
+        "likes": 100,
+        "replies": Array [
+          Object {
+            "avatar": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3",
+            "comment": "Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+    voluptate pariatur deserunt ad est. Sint exercitation minim labore
+    aute deserunt cillum laboris aute esse ut.",
+            "firstName": "Hai",
+            "id": "abcd",
+            "lastName": "Bui",
+            "likes": 100,
+            "replies": Array [],
+            "updatedAt": "2021-08-03T03:03:13.945Z",
+          },
+          Object {
+            "avatar": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3",
+            "comment": "Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+    voluptate pariatur deserunt ad est. Sint exercitation minim labore
+    aute deserunt cillum laboris aute esse ut.",
+            "firstName": "Hai",
+            "id": "abcde",
+            "lastName": "Bui",
+            "likes": 100,
+            "replies": Array [],
+            "updatedAt": "2021-08-03T03:03:13.945Z",
+          },
+        ],
+        "updatedAt": "2021-08-03T03:03:13.945Z",
+      }
+    }
+    key="abc"
+  >
+    <Memo(CommentPreview)
+      data={
+        Object {
+          "avatar": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3",
+          "comment": "Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+    voluptate pariatur deserunt ad est. Sint exercitation minim labore
+    aute deserunt cillum laboris aute esse ut.",
+          "firstName": "Hai",
+          "id": "abcd",
+          "lastName": "Bui",
+          "likes": 100,
+          "replies": Array [],
+          "updatedAt": "2021-08-03T03:03:13.945Z",
+        }
+      }
+      key="abcd"
+    />
+    <Memo(CommentPreview)
+      data={
+        Object {
+          "avatar": "https://play-lh.googleusercontent.com/IeNJWoKYx1waOhfWF6TiuSiWBLfqLb18lmZYXSgsH1fvb8v1IYiZr5aYWe0Gxu-pVZX3",
+          "comment": "Anim duis cupidatat aliquip id et. Lorem nulla aliqua nisi dolore
+    voluptate pariatur deserunt ad est. Sint exercitation minim labore
+    aute deserunt cillum laboris aute esse ut.",
+          "firstName": "Hai",
+          "id": "abcde",
+          "lastName": "Bui",
+          "likes": 100,
+          "replies": Array [],
+          "updatedAt": "2021-08-03T03:03:13.945Z",
+        }
+      }
+      key="abcde"
+    />
+  </Memo(CommentPreview)>
+</div>
+`;

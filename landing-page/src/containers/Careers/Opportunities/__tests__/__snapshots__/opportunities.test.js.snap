@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers > Opportunities should render match snapshot 1`] = `
+<Fragment>
+  <Memo(SectionTitle)
+    className="sectionTitle-0-2-1"
+    id="our-mission"
+    translateId="CAREERS.OPPORTUNITIES.TITLE"
+  />
+  <p
+    className="description-0-2-2"
+  >
+    Our eyes are set beyond the world of engineering, we want to create an ecosytem anyone can use. We believe East West will be the go-to platform for excellence and product scalability.
+  </p>
+  <ul
+    className="hide-scrollbar tabs-0-2-3"
+  >
+    <li
+      className="tab-0-2-4 active"
+      onClick={[Function]}
+      role="presentation"
+    >
+      All departments (0)
+    </li>
+  </ul>
+  <div
+    className="custom-scrollbar content-0-2-5"
+  />
+</Fragment>
+`;

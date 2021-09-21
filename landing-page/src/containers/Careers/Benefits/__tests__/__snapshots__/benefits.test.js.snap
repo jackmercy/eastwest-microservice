@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Careers > Benefits should render match snapshot 1`] = `
+<Fragment>
+  <Memo(SectionTitle)
+    className="sectionTitle-0-2-1"
+    id="benefits"
+    translateId="CAREERS.BENEFITS.TITLE"
+  />
+  <p
+    className="text-0-2-2"
+  >
+    We started with freelance assignments but haven’t stopped there. We’re here to help Tech ventures of all sizes start, run, and scale their business. Working at East West means economic empowerment becomes your purpose, too.
+  </p>
+  <div
+    className="benefits-0-2-3"
+  >
+    <div
+      className="benefit-0-2-4"
+      key="benefit-01"
+    >
+      <img
+        alt="Good things come in pairs"
+        className="benefitImage-0-2-5"
+        src="/static/images/careers/benefit-01.png"
+      />
+      <h4
+        className="benefitTitle-0-2-6"
+      >
+        Good things come in pairs
+      </h4>
+      <p
+        className="benefitDescription-0-2-7"
+      >
+        Work differently than you have before. Collaborative paired programming fuels creative solutions to hard challenges. And it's not just our talents. Many of our members—from Support to Marketing to Operations and IT, draw from and apply lean and agile methods.
+      </p>
+    </div>
+    <div
+      className="benefit-0-2-4"
+      key="benefit-02"
+    >
+      <img
+        alt="One size does not fit all"
+        className="benefitImage-0-2-5"
+        src="/static/images/careers/benefit-02.png"
+      />
+      <h4
+        className="benefitTitle-0-2-6"
+      >
+        One size does not fit all
+      </h4>
+      <p
+        className="benefitDescription-0-2-7"
+      >
+        Our workplace should be as diverse as our communities. We’re committed to fostering an inclusive environment for people with diverse backgrounds and experiences, including women, people of color, people with disabilities, and other underrepresented minorities.
+      </p>
+    </div>
+    <div
+      className="benefit-0-2-4"
+      key="benefit-03"
+    >
+      <img
+        alt={
+          Array [
+            "Life ",
+            <i
+              className="icon-arrow-right"
+            />,
+            " Work",
+          ]
+        }
+        className="benefitImage-0-2-5"
+        src="/static/images/careers/benefit-03.png"
+      />
+      <h4
+        className="benefitTitle-0-2-6"
+      >
+        Life 
+        <i
+          className="icon-arrow-right"
+          key=".1"
+        />
+         Work
+      </h4>
+      <p
+        className="benefitDescription-0-2-7"
+      >
+        Our Initiative revolves around you being able to work anywhere a smart way to enable living with the ones you love. E2W has team events, and provides flexible time off and generous benefits so that when you do need to work on private matters, and catch up with deliverables, anywhere - anytime!
+      </p>
+    </div>
+    <div
+      className="benefit-0-2-4"
+      key="benefit-04"
+    >
+      <img
+        alt="You will love this"
+        className="benefitImage-0-2-5"
+        src="/static/images/careers/benefit-04.png"
+      />
+      <h4
+        className="benefitTitle-0-2-6"
+      >
+        You will love this
+      </h4>
+      <p
+        className="benefitDescription-0-2-7"
+      >
+        Working with us may not be a picnic, but we try to make it enjoyable. Talents enjoy collaborative workspace priveleges, daily catered breakfast solutions, access to food with healthy options, sports & game activities, Events as well as relaxation solutions for when you just need a moment.
+      </p>
+    </div>
+    <div
+      className="benefit-0-2-4"
+      key="benefit-05"
+    >
+      <img
+        alt="Job with benefits"
+        className="benefitImage-0-2-5"
+        src="/static/images/careers/benefit-05.png"
+      />
+      <h4
+        className="benefitTitle-0-2-6"
+      >
+        Job with benefits
+      </h4>
+      <p
+        className="benefitDescription-0-2-7"
+      >
+        Joining East West should be worth your while. Our highly competitive compensation includes equity in the company, robust retirement options, comprehensive medical benefits, and fitness and tuition reimbursement programs.
+      </p>
+    </div>
+    <div
+      className="benefit-0-2-4"
+      key="benefit-06"
+    >
+      <img
+        alt="Family matter"
+        className="benefitImage-0-2-5"
+        src="/static/images/careers/benefit-06.png"
+      />
+      <h4
+        className="benefitTitle-0-2-6"
+      >
+        Family matter
+      </h4>
+      <p
+        className="benefitDescription-0-2-7"
+      >
+        Your family is our family, no matter the shape or size. We offer maternity, paternity, and adoption leave, along with pet insurance (where applicable)—because your furry, scaly, or winged friends are members of the family, too.
+      </p>
+    </div>
+  </div>
+  <div
+    className="ourOffice-0-2-8"
+  >
+    <h4
+      className="ourOfficeTitle-0-2-9"
+    >
+      Our office
+    </h4>
+    <img
+      alt="our office"
+      className="ourOfficeImage-0-2-10"
+      src="/static/images/careers/our-office.png"
+      srcSet="/static/images/careers/our-office-mobile.png 500w, /static/images/careers/our-office.png 2000w"
+    />
+    <div
+      className="ourOfficeIntroWrapper-0-2-11"
+    >
+      <div
+        className="ourOfficeIntro-0-2-12"
+      >
+        <h4
+          className="ourOfficeIntroTitle-0-2-13"
+        >
+          We work with passion
+        </h4>
+        <p
+          className="ourOfficeDescription-0-2-14"
+        >
+          Our eyes are set beyond the world of engineering, we want to create an ecosytem anyone can use. We believe East West will be the go-to platform for excellence and product scalability.
+        </p>
+        <Link
+          href="/talent-labs"
+          passHref={true}
+        >
+          <a
+            className="ourOfficeDescription-0-2-14 ourOfficeLink-0-2-15"
+            data-test="our-office-link-talent-labs"
+            href="/#"
+          >
+            Learn more about talent labs program
+            <i
+              className="icon-arrow-right"
+            />
+          </a>
+        </Link>
+      </div>
+      <div
+        className="ourOfficeIntro-0-2-12"
+      >
+        <h4
+          className="ourOfficeIntroTitle-0-2-13"
+        >
+          Help each other grow up
+        </h4>
+        <p
+          className="ourOfficeDescription-0-2-14"
+        >
+          Are you ready to innovate and make an impact? Join us, we are always looking for new talent! See all our current openings and apply to our vacancies and internships.
+        </p>
+        <Link
+          href="/internship-program"
+          passHref={true}
+        >
+          <a
+            className="ourOfficeDescription-0-2-14 ourOfficeLink-0-2-15"
+            data-test="our-office-link-internship-program"
+            href="/#"
+          >
+            Learn more about our internship program
+            <i
+              className="icon-arrow-right"
+            />
+          </a>
+        </Link>
+      </div>
+    </div>
+  </div>
+</Fragment>
+`;

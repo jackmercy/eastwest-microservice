@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Input component > InputSearch should render match snapshot 1`] = `
+<div
+  className=""
+  data-test="component-input-search-root"
+>
+  <Memo(FieldLabel)
+    className=""
+    htmlFor="search"
+    label="Search"
+    required={false}
+  />
+  <div
+    className="inputWrapper-0-2-1"
+  >
+    <Memo(FieldInput)
+      className="input-0-2-2"
+      error="some error"
+      hasError={false}
+      name="search"
+      onChange={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      required={false}
+      type="text"
+    />
+    <i
+      className="icon-search"
+      data-test="component-input-search-icon"
+      onClick={[Function]}
+      role="presentation"
+    />
+  </div>
+</div>
+`;

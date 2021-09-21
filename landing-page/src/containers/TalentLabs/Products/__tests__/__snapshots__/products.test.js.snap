@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing TalentLabs > Products should render match snapshot 1`] = `
+<Memo(Content)
+  className="root-0-2-1"
+>
+  <h2
+    className="title-0-2-2"
+    data-test="products-title"
+  >
+    Balanced teams build exceptional products
+  </h2>
+  <p
+    className="description-0-2-3"
+    data-test="products-description"
+  >
+    Our world-class team of agile talents work alongside you to build and deploy product differently than you have before. In the process, you become enabled to do this work self-sufficiently in the future. Your team learns cutting-edge technology and best practices the best way possible: by doing it. The knowledge you absorb while working with Talent Labs is just as valuable as the finished product itself.
+  </p>
+  <img
+    alt="products"
+    className="productImage-0-2-4"
+    loading="lazy"
+    src="/static/images/talent-labs/product.png"
+    srcSet="/static/images/talent-labs/product.png 500w, /static/images/talent-labs/product@2x.png 1500w, /static/images/talent-labs/product@3x.png 2000w"
+  />
+  <h2
+    className="title-0-2-2 howItWorkTitle-0-2-5"
+    data-test="products-how-it-work-title"
+  >
+    How Talent Labs works
+  </h2>
+  <div
+    className="productSteps-0-2-6"
+    onMouseLeave={[Function]}
+  >
+    <img
+      alt="products"
+      className="productStepsImage-0-2-7"
+      loading="lazy"
+      src="/static/images/talent-labs/product-steps.svg"
+    />
+    <TooltipPointers />
+  </div>
+</Memo(Content)>
+`;

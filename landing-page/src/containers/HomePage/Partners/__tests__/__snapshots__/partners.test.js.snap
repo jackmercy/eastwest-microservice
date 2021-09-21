@@ -1,0 +1,277 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage > Partners should render match snapshot 1`] = `
+<Memo(Content)
+  className="root-0-2-1"
+>
+  <h2
+    className="title-0-2-3"
+    data-test="partners-title"
+  >
+    We are trusted by
+  </h2>
+  <Memo(Carousel)
+    className="slider-0-2-2"
+    dataTest="partners-carousel"
+    responsive={
+      Array [
+        Object {
+          "breakpoint": 991,
+          "settings": Object {
+            "slidesToScroll": 4,
+            "slidesToShow": 4,
+          },
+        },
+        Object {
+          "breakpoint": 767,
+          "settings": Object {
+            "slidesToScroll": 3,
+            "slidesToShow": 3,
+          },
+        },
+        Object {
+          "breakpoint": 575,
+          "settings": Object {
+            "slidesToScroll": 1,
+            "slidesToShow": 1,
+          },
+        },
+      ]
+    }
+    slidesToScroll={5}
+    slidesToShow={5}
+  >
+    <div
+      key="Corekees"
+    >
+      <img
+        alt="Corekees"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-01.png"
+        title="Corekees"
+      />
+    </div>
+    <div
+      key="RNW"
+    >
+      <img
+        alt="RNW"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-02.png"
+        title="RNW"
+      />
+    </div>
+    <div
+      key="KoiQuestion"
+    >
+      <img
+        alt="KoiQuestion"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-03.png"
+        title="KoiQuestion"
+      />
+    </div>
+    <div
+      key="Phoenix"
+    >
+      <img
+        alt="Phoenix"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-04.png"
+        title="Phoenix"
+      />
+    </div>
+    <div
+      key="Voicepick"
+    >
+      <img
+        alt="Voicepick"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-05.png"
+        title="Voicepick"
+      />
+    </div>
+    <div
+      key="TymeBank"
+    >
+      <img
+        alt="TymeBank"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-06.png"
+        title="TymeBank"
+      />
+    </div>
+    <div
+      key="Quadriz"
+    >
+      <img
+        alt="Quadriz"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-07.png"
+        title="Quadriz"
+      />
+    </div>
+    <div
+      key="Toiya"
+    >
+      <img
+        alt="Toiya"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-08.png"
+        title="Toiya"
+      />
+    </div>
+    <div
+      key="Dias Advisors"
+    >
+      <img
+        alt="Dias Advisors"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-09.png"
+        title="Dias Advisors"
+      />
+    </div>
+    <div
+      key="Duality"
+    >
+      <img
+        alt="Duality"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-10.png"
+        title="Duality"
+      />
+    </div>
+    <div
+      key="5QLive"
+    >
+      <img
+        alt="5QLive"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-11.png"
+        title="5QLive"
+      />
+    </div>
+    <div
+      key="Media 21"
+    >
+      <img
+        alt="Media 21"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-12.png"
+        title="Media 21"
+      />
+    </div>
+    <div
+      key="GambleCoin"
+    >
+      <img
+        alt="GambleCoin"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-13.png"
+        title="GambleCoin"
+      />
+    </div>
+    <div
+      key="Microad"
+    >
+      <img
+        alt="Microad"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-14.png"
+        title="Microad"
+      />
+    </div>
+    <div
+      key="Grad Greenhouse"
+    >
+      <img
+        alt="Grad Greenhouse"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-15.png"
+        title="Grad Greenhouse"
+      />
+    </div>
+    <div
+      key="Pycogroup"
+    >
+      <img
+        alt="Pycogroup"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-16.png"
+        title="Pycogroup"
+      />
+    </div>
+    <div
+      key="Seleno"
+    >
+      <img
+        alt="Seleno"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-17.png"
+        title="Seleno"
+      />
+    </div>
+    <div
+      key="Dagiac"
+    >
+      <img
+        alt="Dagiac"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-18.png"
+        title="Dagiac"
+      />
+    </div>
+    <div
+      key="NashTech"
+    >
+      <img
+        alt="NashTech"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-19.png"
+        title="NashTech"
+      />
+    </div>
+    <div
+      key="Moogento"
+    >
+      <img
+        alt="Moogento"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-20.png"
+        title="Moogento"
+      />
+    </div>
+    <div
+      key="SourceOne"
+    >
+      <img
+        alt="SourceOne"
+        className="logo-0-2-4"
+        loading="lazy"
+        src="/static/images/homepage/partner-21.png"
+        title="SourceOne"
+      />
+    </div>
+  </Memo(Carousel)>
+</Memo(Content)>
+`;

@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing Footer > CopyRight should render match snapshot 1`] = `
+<div
+  className="root-0-2-1"
+>
+  <p
+    className="item-0-2-2"
+    data-test="copy-right-license"
+    key="copyright"
+  >
+    © 2020 The East to West Initiative Limited. All Rights Reserved.
+  </p>
+  <Component
+    dataTest="copy-right-url-terms"
+    href="/terms"
+    key="term-of-use"
+    label="Terms of Use"
+    target="_blank"
+  />
+  <Component
+    dataTest="copy-right-url-privacy"
+    href="/privacy"
+    key="privacy-policy"
+    label="Privacy Policy"
+    target="_blank"
+  />
+  <Component
+    dataTest="copy-right-url-cookie-statement"
+    href="/cookies"
+    key="cookie-statement"
+    label="Cookie Statement"
+    target="_blank"
+  />
+  <Component
+    dataTest="copy-right-url-legal"
+    href="/terms"
+    key="legal"
+    label="Legal"
+    target="_blank"
+  />
+</div>
+`;

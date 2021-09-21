@@ -1,0 +1,170 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Testing HomePage > CreateProject should render match snapshot 1`] = `
+<Fragment>
+  <Memo(Content)
+    className="root-0-2-1"
+    id="create-project-form"
+  >
+    <h2
+      className="title-0-2-2"
+      data-test="create-project-title"
+    >
+      Lets start with one project.
+    </h2>
+    <p
+      className="description-0-2-3"
+      data-test="create-project-description"
+    >
+      You name it, We got it!
+    </p>
+    <div
+      className="content-0-2-4"
+    >
+      <div
+        className="form-0-2-5"
+      >
+        <Memo(Input)
+          className="formInput-0-2-6"
+          dataTest="create-project-form-input-first-name"
+          error=""
+          key="firstName"
+          label="First name"
+          name="firstName"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="First name"
+          required={true}
+          size="large"
+          type="text"
+          value=""
+        />
+        <Memo(Input)
+          className="formInput-0-2-6"
+          dataTest="create-project-form-input-last-name"
+          error=""
+          key="lastName"
+          label="Last name"
+          name="lastName"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Last name"
+          required={true}
+          size="large"
+          type="text"
+          value=""
+        />
+        <Memo(Input)
+          className="formInput-0-2-6"
+          dataTest="create-project-form-input-email-address"
+          error=""
+          key="emailAddress"
+          label="Email address"
+          name="emailAddress"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Email address"
+          required={true}
+          size="large"
+          type="email"
+          value=""
+        />
+        <Memo(InputPhone)
+          className="formInput-0-2-6"
+          dataTest="create-project-form-input-phone-number"
+          error=""
+          key="phoneNumber"
+          label="Phone number"
+          name="phoneNumber"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Phone number"
+          required={true}
+          size="large"
+          value=""
+        />
+        <Memo(Input)
+          className="formInput-0-2-6"
+          dataTest="create-project-form-input-company-name"
+          error=""
+          key="companyName"
+          label="Company name"
+          name="companyName"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Company name"
+          required={true}
+          size="large"
+          type="text"
+          value=""
+        />
+        <Memo(Input)
+          className="formInput-0-2-6"
+          dataTest="create-project-form-input-title"
+          error=""
+          key="title"
+          label="Title"
+          name="title"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Title"
+          required={true}
+          size="large"
+          type="text"
+          value=""
+        />
+        <Memo(Input)
+          className="formInput-0-2-6"
+          dataTest="create-project-form-input-country"
+          error=""
+          key="country"
+          label="Country"
+          name="country"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Country"
+          required={true}
+          size="large"
+          type="text"
+          value=""
+        />
+        <Memo(Textarea)
+          className="formInput-0-2-6"
+          dataTest="create-project-form-textarea-comment"
+          error=""
+          key="description"
+          label="Descibe your project"
+          name="description"
+          onChange={[Function]}
+          onFocus={[Function]}
+          placeholder="Please describe your project"
+          size="large"
+          value=""
+        />
+        <Memo([object Object])
+          className="formButton-0-2-7"
+          color="primary"
+          dataTest="create-project-form-button-submit"
+          onClick={[Function]}
+          size="large"
+        >
+          Submit
+        </Memo([object Object])>
+      </div>
+      <img
+        alt="cover"
+        className="coverImage-0-2-8"
+        data-test="create-project-image"
+        loading="lazy"
+        src="/static/images/homepage/cover.png"
+        srcSet="/static/images/homepage/cover.png 500w, /static/images/homepage/cover@2x.png 1500w, /static/images/homepage/cover@3x.png 2000w"
+      />
+    </div>
+  </Memo(Content)>
+  <Memo(ModalSuccess)
+    name="undefined undefined"
+    open={false}
+    toggle={[Function]}
+  />
+</Fragment>
+`;
